@@ -1,0 +1,40 @@
+body.page-template-template-facebook{
+	background-color:black;
+	color:white;
+	padding:50px 0;
+}
+
+#facebook-signup{
+	width:100%;
+	max-width:520px;
+	margin:0 auto;
+	text-align:center;
+	h1,h2{
+		width:284px;
+		height:24px;
+		display: block;
+		@extend %ir;
+		background-image:url('../images/giselle-white.svg');
+		background-position:left top;
+		background-repeat: no-repeat;
+		background-size:100% auto;
+		margin:0 auto 47px;
+	}
+	h1{
+		.ie8 &{
+			background-image:url('../images/giselle-white.png');
+		}
+	}
+	h2{
+		width: 396px;
+		height:187px;
+		background-image:url('../images/facebook/offer.jpg');
+		margin-bottom:30px;
+	}
+	small{
+		@include font-size(14);
+		line-height: 130%;
+		display: block;
+	}
+	
+}

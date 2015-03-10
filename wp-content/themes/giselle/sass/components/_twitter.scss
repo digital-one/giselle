@@ -1,0 +1,36 @@
+.twitter-feed{
+	text-align:center;
+	width:100%;
+	height:100%;
+	display: block;
+	padding: 30px 30px 0;
+	.user{
+		width:38px;
+		height:31px;
+		display: block;
+		background:url('../images/twitter-feed.svg') left top no-repeat;
+		background-size:100% auto;
+		margin:0 auto 30px;
+		img,span{
+			display: none;
+		}
+		.ie8 &{
+			background:url('../images/twitter-feed.png') left top no-repeat;
+		}
+	}
+	.tweet{
+		@include font-size(20);
+		a{
+			&:link,&:visited{
+				font-family: $brandongrotesque-bold;
+			}
+		}
+	}
+	.timePosted,.interact{
+		display: none;
+	}
+	footer{
+		@include abs-pos(auto,0,0,0);
+		padding:0 0 30px;
+	}
+}

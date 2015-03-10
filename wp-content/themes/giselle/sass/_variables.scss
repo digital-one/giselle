@@ -1,0 +1,160 @@
+//neat overrides
+$max-width: 1920px; //overide neat outer container width
+$visual-grid: false; 
+
+//colours
+$dark-grey: #1d1d1d;
+$light-grey: #e9f0ed;
+
+//font face
+
+@font-face {
+    font-family: 'BrandonGrotesque-Light_gdi';
+    src: url('../fonts/BrandonGrotesque-Light_gdi.eot');
+    src: url('../fonts/BrandonGrotesque-Light_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrandonGrotesque-Light_gdi.woff') format('woff'),
+         url('../fonts/BrandonGrotesque-Light_gdi.ttf') format('truetype'),
+         url('../fonts/BrandonGrotesque-Light_gdi.svg#BrandonGrotesque-Light_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'BrandonGrotesque-Light_gdi';
+        src: url('../fonts/BrandonGrotesque-Light_gdi.svg#BrandonGrotesque-Light_gdi') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Regular_gdi';
+    src: url('../fonts/BrandonGrotesque-Regular_gdi.eot');
+    src: url('../fonts/BrandonGrotesque-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrandonGrotesque-Regular_gdi.woff') format('woff'),
+         url('../fonts/BrandonGrotesque-Regular_gdi.ttf') format('truetype'),
+         url('../fonts/BrandonGrotesque-Regular_gdi.svg#BrandonGrotesque-Regular_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'BrandonGrotesque-Regular_gdi';
+        src: url('../fonts/BrandonGrotesque-Regular_gdi.svg#BrandonGrotesque-Regular_gdi') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Medium_gdi';
+    src: url('../fonts/BrandonGrotesque-Medium_gdi.eot');
+    src: url('../fonts/BrandonGrotesque-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrandonGrotesque-Medium_gdi.woff') format('woff'),
+         url('../fonts/BrandonGrotesque-Medium_gdi.ttf') format('truetype'),
+         url('../fonts/BrandonGrotesque-Medium_gdi.svg#BrandonGrotesque-Medium_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'BrandonGrotesque-Medium_gdi';
+        src: url('../fonts/BrandonGrotesque-Medium_gdi.svg#BrandonGrotesque-Medium_gdi') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Bold_gdi';
+    src: url('../fonts/BrandonGrotesque-Bold_gdi.eot');
+    src: url('../fonts/BrandonGrotesque-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrandonGrotesque-Bold_gdi.woff') format('woff'),
+         url('../fonts/BrandonGrotesque-Bold_gdi.ttf') format('truetype'),
+         url('../fonts/BrandonGrotesque-Bold_gdi.svg#BrandonGrotesque-Bold_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'BrandonGrotesque-Bold_gdi';
+        src: url('../fonts/BrandonGrotesque-Bold_gdi.svg#BrandonGrotesque-Bold_gdi') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'Freight-BigLight_gdi';
+    src: url('../fonts/Freight-BigLight_gdi.eot');
+    src: url('../fonts/Freight-BigLight_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Freight-BigLight_gdi.woff') format('woff'),
+         url('../fonts/Freight-BigLight_gdi.ttf') format('truetype'),
+         url('../fonts/Freight-BigLight_gdi.svg#Freight-BigLight_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Freight-BigLight_gdi';
+        src: url('../fonts/Freight-BigLight_gdi.svg#Freight-BigLight_gdi') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'Freight-BigLightItalic_gdi';
+    src: url('../fonts/Freight-BigLightItalic_gdi.eot');
+    src: url('../fonts/Freight-BigLightItalic_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Freight-BigLightItalic_gdi.woff') format('woff'),
+         url('../fonts/Freight-BigLightItalic_gdi.ttf') format('truetype'),
+         url('../fonts/Freight-BigLightItalic_gdi.svg#Freight-BigLightItalic_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Freight-BigLightItalic_gdi';
+        src: url('../fonts/Freight-BigLightItalic_gdi.svg#Freight-BigLightItalic_gdi') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'Freight-BigBook_gdi';
+    src: url('../fonts/Freight-BigBook_gdi.eot');
+    src: url('../fonts/Freight-BigBook_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Freight-BigBook_gdi.woff') format('woff'),
+         url('../fonts/Freight-BigBook_gdi.ttf') format('truetype'),
+         url('../fonts/Freight-BigBook_gdi.svg#Freight-BigBook_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Freight-BigBook_gdi';
+        src: url('../fonts/Freight-BigBook_gdi.svg#Freight-BigBook_gdi') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'Freight-BigBookItalic_gdi';
+    src: url('../fonts/Freight-BigBookItalic_gdi.eot');
+    src: url('../fonts/Freight-BigBookItalic_gdi?#iefix') format('embedded-opentype'),
+         url('../fonts/Freight-BigBookItalic_gdi.woff') format('woff'),
+         url('../fonts/Freight-BigBookItalic_gdi.ttf') format('truetype'),
+         url('../fonts/Freight-BigBookItalic_gdi.svg#Freight-BigBookItalic_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Freight-BigBookItalic_gdi';
+        src: url('../fonts/Freight-BigBookItalic_gdi.svg#Freight-BigBookItalic_gdi') format('svg');
+    }
+}
+//fonts
+$brandongrotesque-light: "BrandonGrotesque-Light_gdi", sans-serif;
+$brandongrotesque-regular: "BrandonGrotesque-Regular_gdi", sans-serif;
+$brandongrotesque-medium: "BrandonGrotesque-Medium_gdi", sans-serif;
+$brandongrotesque-bold: "BrandonGrotesque-Bold_gdi", sans-serif;
+$freight-light: "Freight-BigLight_gdi", sans-serif;
+$freight-light-italic: "Freight-BigLightItalic_gdi", sans-serif;
+$freight-book: "Freight-BigBook_gdi", sans-serif;
+$freight-book-italic: "Freight-BigBookItalic_gdi", sans-serif;
+
+//break points
+$break-small: 660px; //mobile
+$break-medium: 768px; //ipad 
+$break-large: 1020px; //desktop
+$break-xlarge: 1450px; //hi res desktop

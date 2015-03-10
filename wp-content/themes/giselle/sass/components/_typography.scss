@@ -1,0 +1,36 @@
+h1,h2,h3,h4,h5{
+	font-family: $brandongrotesque-bold;
+	@include font-size(20);
+	color: $dark-grey;
+	font-weight:normal;
+	line-height:100%;
+	letter-spacing:5px;
+	margin: 0 0 30px;
+	@media screen and (max-width: $break-xlarge){
+	//	@include font-size(35);
+	}
+	@media screen and (max-width: $break-small){
+		//@include font-size(26);
+		//margin-bottom: 7px;
+	}
+}
+a{
+	&:link,&:visited{
+		text-decoration: none;
+		color: $dark-grey;
+	}
+}
+p{
+	&.intro{
+		font-family: $freight-book;
+		@include font-size(25);
+		line-height: 150%;
+		letter-spacing: 0.5px;
+		word-spacing: 1.5px;
+		i{
+			font-family: $freight-book-italic;
+			font-style: normal;
+		}
+	}
+}
+

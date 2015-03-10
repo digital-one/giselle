@@ -1,0 +1,50 @@
+header#header{
+	position: fixed;
+	z-index: 999;
+	top:0;
+	left:0;
+	display: block;
+	background-color: white;
+	width:100%;
+	height:120px;
+	overflow:visible;
+	@extend %zindex-fix;
+	@extend .clearfix;
+	#home-link{
+		width:250px;
+		height:22px;
+		display: block;
+		margin: 48px auto 48px;
+		background-image:url('../images/giselle.svg');
+		background-position:left top;
+		background-repeat:no-repeat;
+		background-size: 100% auto;
+		@extend %ir;
+		.ie8 &{
+			background-image:url('../images/giselle.png');
+		}
+	}
+	a#menu-toggle{
+		height: 38px;
+		display:inline-block;
+		@include abs-pos(0,15px,auto,auto); 
+		margin: 40px 0;
+		float:right;
+		padding:0 60px 0 0;
+		font-family:$brandongrotesque-bold;
+		text-transform: uppercase;
+		@include font-size(16);
+		line-height: 38px;
+		letter-spacing: 4px;
+		cursor:pointer;
+		&:after{
+			content:"";
+			width:38px;
+			height:38px;
+			@include abs-pos(0,0,auto,auto);
+			background-color: black;
+			background: black url('../images/menu.svg') center center no-repeat;
+		}
+	}
+}
+	

@@ -1,0 +1,65 @@
+input[type="text"], 
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea,
+.selectBox-dropdown{
+	line-height: 1;
+	height: 30px;
+	font-family: $brandongrotesque-regular;  
+	font-weight:400;
+	background-color: lighten(black,90);
+	padding: 0 7px;
+	@include font-size(12);
+	border: none;
+	width: 100%;
+	@include transition (background-color .1s linear 0s);
+	&:focus{
+		background-color: darken(white,10);
+	}
+	@include placeholder {
+    color: black;
+  }
+}
+textarea{
+	padding: 10px;
+	height: auto;
+	resize: none;
+}
+
+.popup-form{
+	min-width:300px;
+	h3{
+		color: black;
+	}
+	li{
+		margin-bottom: 10px;
+	}
+	input.button{
+		border:none;
+		background-color:white;
+		@include border-radius(5px);
+		height:30px;
+		line-height: 1;
+		padding: 0 10px;
+		color: white;
+		text-align: center;
+		&:hover,&:active{
+			background-color: black;
+		}
+	}
+}
+
+
+//selectbox
+
+/*
+
+
+
+//gravity forms
+
+
+*/

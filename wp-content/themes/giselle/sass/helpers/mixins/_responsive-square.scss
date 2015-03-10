@@ -1,0 +1,14 @@
+@mixin responsive-square{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    &:before{
+    	content: "";
+    	display: block;
+    	padding-top: 100%;
+	}
+    & > *{
+        @include abs-pos(0,0,0,0);
+    }
+}
+					

@@ -1,0 +1,46 @@
+%no-list{
+	list-style-type: none;
+	margin:0
+}
+%full-width{
+	display: block;
+	width: 100%;
+}
+%ir{
+	overflow: hidden;
+	text-indent: -10000px;
+}
+%reset-spacing{
+	margin:0;
+	padding:0;
+}
+%bg-cover{
+	background-position: center center;
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+%clearfix{
+	overflow:hidden;
+	zoom:1;
+}
+%align-left{
+	float:left;
+}
+%align-right{
+	float:right;
+}
+%preserve-3d{
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+%zindex-fix{
+	-webkit-transform:translateZ(1px);
+    -moz-transform:translateZ(1px);
+    -o-transform:translateZ(1px);
+    transform:translateZ(1px);
+}

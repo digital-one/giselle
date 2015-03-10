@@ -1,0 +1,9 @@
+@mixin fit-grid($direction: width){
+@if $direction == width{
+		width: 100%;
+		height:auto;
+	} @else {
+		width: auto;
+		height: 100%;
+	}
+}

@@ -1,0 +1,30 @@
+@mixin rgba-bg($r:0,$g:0,$b:0,$hex:#FFFFFF,$opacity:0.5){
+
+	$code:"19" !default;
+	@if $opacity == 0.2{
+		$code:"33"
+	} @else if $opacity == 0.3{
+		$code:"4c";
+	} @else if $opacity == 0.4{
+		$code:"66";
+	} @else if $opacity == 0.5{
+		$code:"7f";
+	} @else if $opacity == 0.6{
+		$code:"99";
+	} @else if $opacity == 0.7{
+		$code:"b2";
+	} @else if $opacity == 0.8{
+		$code:"cc";
+	} @else if $opacity == 0.9{
+		$code:"e5";
+	}
+   	background-color: rgb($r,$g,$b);
+   	background-color: transparent\9;
+    background-color:rgba($r,$g,$b,$opacity);
+  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#$code+$hex,endColorstr=#$code+$hex);
+    zoom: 1;
+    &:nth-child(n) {
+    	filter: none;
+	}
+}
+	

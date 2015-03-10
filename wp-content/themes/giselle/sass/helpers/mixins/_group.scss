@@ -1,0 +1,11 @@
+@mixin group{
+	zoom: 1;
+	position:relative;
+	&:before,&:after{
+		content: "";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
+}

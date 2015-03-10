@@ -1,0 +1,1578 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"incorr",
+				"incorrectPanel"
+			],
+			[
+				"n",
+				"n-resize"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"di",
+				"dinreg"
+			],
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"roboto",
+				"roboto-sans"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"poit",
+				"position"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"lt",
+				"lt-blue"
+			],
+			[
+				"din",
+				"dinbold"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"lie",
+				"line-height"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bordet",
+				"border-bottom"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"sec",
+				"section_no_old"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"w",
+				"widgets_btn_overview_handler"
+			],
+			[
+				"title",
+				"title_clear"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"fade-",
+				"fade-in"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"prevent",
+				"preventDefault"
+			],
+			[
+				"padding-",
+				"padding-right"
+			],
+			[
+				"scale",
+				"scaleX"
+			],
+			[
+				"fade",
+				"fade-in"
+			],
+			[
+				"touc",
+				"first_touch"
+			],
+			[
+				"show",
+				"showThreesixty"
+			],
+			[
+				"rotate",
+				"rotateZ"
+			],
+			[
+				"slide-brand",
+				"slide-brand-03"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"fist",
+				"first"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"slide-b",
+				"slide-business-06"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"slide",
+				"slide-title"
+			],
+			[
+				"slides_co",
+				"slides_count"
+			],
+			[
+				"tras",
+				"transform"
+			],
+			[
+				"po",
+				"point"
+			],
+			[
+				"b",
+				"background-attachment"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"web",
+				"webkitTransitionEnd"
+			],
+			[
+				"remv",
+				"removeClass"
+			],
+			[
+				"menu_i",
+				"menu_is_init"
+			],
+			[
+				"me",
+				"menu_show"
+			],
+			[
+				"app",
+				"app_state"
+			],
+			[
+				"set",
+				"set_app_mode"
+			],
+			[
+				"lin",
+				"link_anim_d"
+			],
+			[
+				"rota",
+				"rotateX"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"content",
+				"contents"
+			],
+			[
+				"quickmen",
+				"quickmenu_moveto"
+			],
+			[
+				"quick",
+				"quickmenu_show"
+			],
+			[
+				"quic",
+				"quickmenu_show"
+			],
+			[
+				"o",
+				"opacity"
+			],
+			[
+				"is",
+				"is_open"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/common.js",
+			"settings":
+			{
+				"buffer_size": 74321,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_products.scss",
+			"settings":
+			{
+				"buffer_size": 9072,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/index.html",
+			"settings":
+			{
+				"buffer_size": 3691,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/sass/ie8-game.scss",
+			"settings":
+			{
+				"buffer_size": 6463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/picks_view.xsl",
+			"settings":
+			{
+				"buffer_size": 8757,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 3669 files for \"competition-930\"\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/css/layout.css:\n  863  }\n  864  /* line 114, ../sass/components/_930-launch.scss */\n  865: .question-930 #competition-930 p, .question-930 #competition-930 a {\n  866    float: none;\n  867  }\n  ...\n 17234  \n 17235  /* line 97, ../sass/templates/_930-winners.scss */\n 17236: .competition-930-tandc {\n 17237    padding: 2em 0 5em;\n 17238  }\n 17239  /* line 100, ../sass/templates/_930-winners.scss */\n 17240: .competition-930-tandc h1 {\n 17241    font-size: 3em;\n 17242    margin-bottom: 1em;\n 17243  }\n 17244  /* line 105, ../sass/templates/_930-winners.scss */\n 17245: .competition-930-tandc ul {\n 17246    padding-left: 2em;\n 17247  }\n 17248  /* line 109, ../sass/templates/_930-winners.scss */\n 17249: .competition-930-tandc li {\n 17250    list-style: decimal;\n 17251    margin-bottom: 0.5em;\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/common.js:\n 2169  			$wrapper = $('.question-930-wrapper');\n 2170  			$button = $('.button-930');\n 2171: 			$form = $('#competition-930');\n 2172  			$errors = $form.find('.errors');\n 2173  			$answer = $form.find('[name=answer]').val();\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_930-launch.scss:\n  101    z-index: 99999999;\n  102  \n  103:   #competition-930 p, #competition-930 a {\n  104      float: none;\n  105    }\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_930-winners.scss:\n   95  //  TANDC\n   96  \n   97: .competition-930-tandc {\n   98    padding: 2em 0 5em;\n   99  \n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/data-sources/data.competitions_930.php:\n    5  	Class datasourcecompetitions_930 extends SectionDatasource {\n    6  \n    7: 		public $dsParamROOTELEMENT = 'competition-930';\n    8  		public $dsParamORDER = 'asc';\n    9  		public $dsParamPAGINATERESULTS = 'no';\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/events/event.competition_930.php:\n    5  	Class eventcompetition_930 extends Event{\n    6  \n    7: 		const ROOTELEMENT = 'competition-930';\n    8  \n    9  		public $eParamFILTERS = array(\n   ..\n   20  				'version' => 'Symphony 2.3.6',\n   21  				'release-date' => '2014-05-16T13:15:43+00:00',\n   22: 				'trigger-condition' => 'action[competition-930]'\n   23  			);\n   24  		}\n   ..\n   29  \n   30  		public function load(){\n   31: 			if(isset($_POST['action']['competition-930'])) return $this->__trigger();\n   32  		}\n   33  \n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/competitions_find-a-930.xsl:\n    8  \n    9    <section id=\"outer_body_container\" class=\"bg_gi01 competition winners-930\">\n   10:     <div class=\"center clearfix\" id=\"competition-930\">\n   11        <section class=\"body_container game_index_pg\">\n   12          <header class=\"page_heading p_bot common\">\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/competitions_find-a-930_930-terms-and-conditions.xsl:\n    8  \n    9    <section id=\"outer_body_container\" class=\"competition winners-930\">\n   10:     <div class=\"center clearfix\" id=\"competition-930\">\n   11:       <section class=\"body_container competition-930-tandc\">\n   12          <h1>930 Competition Terms &amp; Conditions</h1>\n   13  \n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/contact.xsl:\n   19  						<xsl:copy-of select=\"page-content/entry/content/*\"/>\n   20  						\n   21: 							<xsl:call-template name=\"competition-930\"/>\n   22  					\n   23  						<img src=\"/workspace/assets/images/contact_bg.png\"/>\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/products.xsl:\n   39  \n   40  <div id=\"content\" class=\"center\" style=\"clear:both;\">\n   41: 											<xsl:call-template name=\"competition-930\"/>\n   42  \n   43  <div id=\"grid\" class=\"isotope overview clearfix\">\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/utilities/master.xsl:\n   97          <div class=\"competition_alert\">\n   98            <xsl:attribute name=\"class\">\n   99:             <xsl:if test=\"not(//competition-930/entry)\">\n  100                competition_alert\n  101              </xsl:if>\n  102:             <xsl:if test=\"//competition-930/entry\">\n  103                competition_alert blink\n  104              </xsl:if>\n  105            </xsl:attribute>\n  106            <xsl:choose>\n  107:             <xsl:when test=\"//competition-930/entry\">\n  108                <p class=\"active\"><a href=\"/competitions/find-a-930/\">The Search is on! Find and win the hidden Lumia 930 now!</a></p>\n  109              </xsl:when>\n\n/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/utilities/promos.xsl:\n  165  </xsl:template>\n  166  \n  167: <xsl:template name=\"competition-930\">\n  168: 	<xsl:if test=\"//competition-930/entry and //competition-930/entry/eligible = 1\">\n  169  		<aside id=\"find-me\" class=\"launch-930 align-right\">\n  170  			<a href=\"#\" class=\"button-930\">\n  ...\n  176  					<header>\n  177  						<span>Answer the question for your chance to win a Nokia Lumia 930!</span>\n  178: 						<h3><xsl:value-of select=\"//competition-930/entry/final-question\" /></h3>\n  179  					</header>\n  180  					<section class=\"question-inner\">\n  181: 						<form id=\"competition-930\">\n  182: 							<input type=\"hidden\" name=\"action[competition-930]\" value=\"new\"/>\n  183: 							<input type=\"hidden\" name=\"hash\" value=\"{//competition-930/entry/id}\" />\n  184  							<p>\n  185  								<input name=\"answer\" id=\"answer1\" type=\"radio\" value=\"a\" />\n  186: 								<label for=\"answer1\"><xsl:value-of select=\"//competition-930/entry/final-answer-1\" /></label>\n  187  							</p>\n  188  							<p>\n  189  								<input name=\"answer\" id=\"answer2\" type=\"radio\" value=\"b\" />\n  190: 								<label for=\"answer2\"><xsl:value-of select=\"//competition-930/entry/final-answer-2\" /></label>\n  191  							</p>\n  192  							<p>\n  193  								<input name=\"answer\" id=\"answer3\" type=\"radio\" value=\"c\" />\n  194: 								<label for=\"answer3\"><xsl:value-of select=\"//competition-930/entry/final-answer-3\" /></label>\n  195  							</p>\n  196  							<div>\n\n32 matches across 12 files\n",
+			"settings":
+			{
+				"buffer_size": 6265,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/msft-reps.xsl",
+			"settings":
+			{
+				"buffer_size": 1354,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/contact.xsl",
+			"settings":
+			{
+				"buffer_size": 815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/accreditation_view.xsl",
+			"settings":
+			{
+				"buffer_size": 11143,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/sections/blog.xsl",
+			"settings":
+			{
+				"buffer_size": 7804,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_old-styling.scss",
+			"settings":
+			{
+				"buffer_size": 161355,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_930-launch.scss",
+			"settings":
+			{
+				"buffer_size": 3972,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "git ftp init -u justdriv -p - ftp://92.60.114.159/public_html",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Unix",
+				"name": "git ftp init -u justdriv -p - ftp://92.60.114.159/"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 111.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/products.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/utilities/master.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_media_queries.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/competitions_find-a-930.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_promos.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_930-launch.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/contact.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/competitions_find-a-930_930-terms-and-conditions.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/common.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/picks_view.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_products.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_header.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/classes/_clearfix.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/helpers/classes/_all.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/crossdomain.xml",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/games_view.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/index.php",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_font-size.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_typography.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_container.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/templates/_home.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/_base.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_footer.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/index.php",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_global.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_centered-menu.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_all.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/bourbon/_bourbon.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/layout.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_forms.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_gradients.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_text-shadow.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/_variables.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/_all.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_all.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_box-shadow.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/_placeholders.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/_helpers.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_navigation.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_competitions.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_box-sizing.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/components/_header.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_wp-current-page-links.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/css/layout.css",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/utilities/members-forms/members.form-register-full.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/jquery.iframe-transport.js",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_border-radius.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/templates/_all.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/_settings.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_opacity.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_rounded-corners.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_animation.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_transition.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_scale.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_rotate.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_inner-shadow.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_drop-shadow.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_clearfix.scss",
+		"/Applications/MAMP/htdocs/pitter-patter-parcels/sass/helpers/mixins/_abs-pos.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/helpers/classes/_clearfix.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/modules/_all.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_old-styling.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/competitions_view.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_home.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/slider.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/competitions.xsl",
+		"/Applications/MAMP/htdocs/gratterpalm/send.php",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/index.html",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_games.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/utilities/promos.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/287239/index.html",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/Capfile",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_profile-page.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/js/lib/game/views/main.coffee",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/js/ie8_game.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/msft-reps.xsl",
+		"/Applications/MAMP/htdocs/corporate_resolve/wp-content/themes/corporateresolve/sass/all.scss",
+		"/Applications/MAMP/htdocs/corporate_resolve/wp-content/themes/corporateresolve/sass/_layout.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/sass/ie8-game.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_all.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_forms.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_typography.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/css/layout.css",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_search.scss",
+		"/Users/neilmills/Downloads/ie8-game.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/html5game.html",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/126823/common.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/index.html",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/layout.scss",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_variables.scss",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/index.php",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/games_view_questions.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/_products.xsl",
+		"/Applications/MAMP/htdocs/Backups/titan ip/titanip.sql",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/js/placeholders.js",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_typography.scss",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/css/layout.css",
+		"/Users/neilmills/Library/Caches/Cleanup At Startup/Transmit/C92A8F85-9BB6-4788-A9C3-2607B4959241/header.php",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/home.xsl",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_normalize.scss",
+		"/Applications/MAMP/htdocs/pitter_patter_parcels/sass/_settings.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/layout.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/ms-ft-reps.xsl",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/bower_components/jasmine/spec/support/dev_boot.js",
+		"/Applications/MAMP/htdocs/corporate_resolve/sass/_media_queries.scss",
+		"/Applications/MAMP/htdocs/corporate_resolve/sass/_grid_12col.scss",
+		"/Applications/MAMP/htdocs/corporate_resolve/sass/_layout.scss",
+		"/Applications/MAMP/htdocs/corporate_resolve/archive-news.php",
+		"/Applications/MAMP/htdocs/corporate_resolve/header.php",
+		"/Applications/MAMP/htdocs/corporate_resolve/js/modernizr.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/modernizr.js",
+		"/Applications/MAMP/htdocs/corporate_resolve/footer.php",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/sass/game.scss",
+		"/Applications/MAMP/htdocs/corporate_resolve/index.php",
+		"/Applications/MAMP/htdocs/corporate_resolve/header-home.php",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/sass/_media_queries.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/css/ie.css",
+		"/Applications/MAMP/htdocs/corporate_resolve/sass/all.scss",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/js/lib/game/views/main.js",
+		"/Applications/MAMP/htdocs/juggle/wp-admin/js/edit-comments.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/bower_components/jquery/src/manipulation/support.js",
+		"/Applications/MAMP/htdocs/juggle/wp-admin/js/common.js",
+		"/Applications/MAMP/htdocs/corporate_resolve/js/placeholder.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/278329/bower_components/jasmine/spec/core/integration/CustomMatchersSpec.js",
+		"/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/extensions/markdown/lib/htmlpurifier-4.5.0-standalone/standalone/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt",
+		"/Applications/MAMP/htdocs/juggle/wp-includes/js/customize-models.js",
+		"/Applications/MAMP/htdocs/corporate_resolve/news-archive.php",
+		"/Applications/MAMP/htdocs/corporate_resolve/services.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"930",
+			"gif",
+			"#howItWorks_sec",
+			"930",
+			"how",
+			"works",
+			"930",
+			"520",
+			".question-930",
+			"comments_container",
+			"question-930",
+			".button-930",
+			"360",
+			"competition-930",
+			"930",
+			"button",
+			"console",
+			"coming-soon",
+			"coming",
+			"fancybox",
+			"overlay",
+			"child",
+			"438",
+			"494",
+			"480px",
+			"480",
+			"ccc",
+			"480",
+			"ccc",
+			"480px",
+			"480",
+			"figure",
+			"50%",
+			"494",
+			".no-touch",
+			"no-touch",
+			"yes",
+			"variable",
+			"fancybox",
+			"500",
+			"123",
+			"staff-pick",
+			"123",
+			"staff",
+			"rank",
+			"#outer_header",
+			"h3",
+			"#account",
+			".grid-item-child",
+			".grid-item .grid-item-child",
+			".grid-item img",
+			"height: 100%",
+			"button",
+			"spec",
+			"test=",
+			"test",
+			"counter-container",
+			"counter_container",
+			"ie8",
+			"console",
+			"owl",
+			"current",
+			"btn",
+			"_btn",
+			"server-errors",
+			"Email is already taken\n",
+			"	\n",
+			"Email is already taken.",
+			"Entry encountered errors when saving",
+			"ul,",
+			"ul",
+			"your_points",
+			".header_content",
+			"counter_container",
+			"btn_text",
+			"sticker h4",
+			".btn_text",
+			".header-account-wrapper",
+			".sticker06",
+			"=",
+			".sticker06",
+			".sticker",
+			".gold",
+			".bronze .main_pannel",
+			"span.bronze",
+			".bronze",
+			"tabs",
+			".grad",
+			"pink",
+			"h2",
+			".bronze",
+			"sticker",
+			"bronze",
+			"heading",
+			"sticker",
+			"enter-competition",
+			"body_container",
+			"list",
+			"filter_content",
+			"list",
+			"filter_content",
+			"Quizzes",
+			"swf",
+			"carousel_sec",
+			"</xsl:template>",
+			"play",
+			".your_points",
+			"#account_details .your_points",
+			"counter",
+			".header-account-wrapper",
+			".spiral_home",
+			".home-slider-wrapper",
+			"rgba",
+			"slider_amount",
+			"number",
+			"numbers",
+			"slider",
+			"points_slider",
+			"rgba",
+			"owl",
+			"class",
+			"for-each",
+			"owl",
+			"sticker02",
+			"sticker",
+			"16px",
+			".sticker",
+			"25px"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"slide_old",
+			"slide_new",
+			"title_hide",
+			"title_show",
+			"header_show",
+			"console.log",
+			"quickmenu",
+			"end",
+			"---------------------",
+			"",
+			"s07_05",
+			"present",
+			"s09_06",
+			"s09_05",
+			"s09_04",
+			"s09_03",
+			"s09_02",
+			"promo-01",
+			"s09_01",
+			"promo-01",
+			"promo-0",
+			"promot-01",
+			"09_06",
+			"09_05",
+			"09_04",
+			"09_03",
+			"09_02",
+			"permanent-02",
+			"row_05",
+			"row_04",
+			"row_03",
+			"row_02",
+			"s07_04",
+			", ",
+			"s06_03",
+			"s06_02",
+			"},this));",
+			"},this);",
+			"s05_03",
+			"promo",
+			"permanent",
+			"promo",
+			"permanent",
+			"instore",
+			"lineup",
+			"lazyfade",
+			"fragrance-03",
+			"s05_03",
+			"s05_02",
+			"s05_01",
+			"fragrance-01",
+			"s05",
+			"fragrance",
+			"brand",
+			"14",
+			"_11",
+			"-11",
+			"11",
+			"10",
+			"08",
+			"09",
+			"-09",
+			"-05",
+			"-03",
+			"hilite-colour",
+			"s01_08",
+			"s01_07",
+			"",
+			"s01_05",
+			"fragrance",
+			"brand",
+			".slide-title",
+			"#title",
+			"header",
+			"d",
+			"' + t + '",
+			"quickmenu",
+			"z-below",
+			"z-above",
+			"z-bottom",
+			"t_1500",
+			"t_500",
+			"",
+			"translateX(75px) ",
+			"",
+			"transform",
+			"t_1000",
+			"",
+			",",
+			"",
+			"hilite-colour",
+			"quickmenu",
+			"this.config.testing.debug",
+			"helvetica_neue_normal",
+			"helvetica_neue_bold",
+			"helvetica_neue_heavy",
+			"helvetica_neue_blk",
+			"helvetica_neue_bld",
+			"helvetica_neue_bd",
+			"helvetica_neue_med",
+			"helvetica_neue_lt_Md",
+			"helvetica_neue_lt",
+			"helvetica_neue_lt_xBlk",
+			"../",
+			"menu-container",
+			"'home'",
+			"widgets_btn_home_handler",
+			"	border-bottom: 2px solid #e20044;\nwidgets_btn_home_handler",
+			"#menu-container",
+			"if (ev.gesture)",
+			"cubeface tiled",
+			"logo_live_cube",
+			"menu_show",
+			"videointro_show",
+			"logointro_show",
+			"this.log",
+			"testing.",
+			"app_init",
+			"logointro",
+			"logo-intro",
+			"logointro",
+			"logo-intro",
+			"logo_intro",
+			"logo_intro_show",
+			"logo_intro",
+			"logo_intro_show",
+			"t_",
+			"duration"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/js/common.js",
+					"settings":
+					{
+						"buffer_size": 74321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62131,
+								62131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 32614.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_products.scss",
+					"settings":
+					{
+						"buffer_size": 9072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8904,
+								8904
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5805.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/index.html",
+					"settings":
+					{
+						"buffer_size": 3691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1587,
+								1587
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 193.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/games/ie8_game/sass/ie8-game.scss",
+					"settings":
+					{
+						"buffer_size": 6463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2666,
+								2666
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 827.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/picks_view.xsl",
+					"settings":
+					{
+						"buffer_size": 8757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4747,
+								4747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XSL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1687.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 6265,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										225,
+										240
+									],
+									[
+										259,
+										274
+									],
+									[
+										393,
+										408
+									],
+									[
+										526,
+										541
+									],
+									[
+										688,
+										703
+									],
+									[
+										823,
+										838
+									],
+									[
+										1112,
+										1127
+									],
+									[
+										1385,
+										1400
+									],
+									[
+										1405,
+										1420
+									],
+									[
+										1603,
+										1618
+									],
+									[
+										1889,
+										1904
+									],
+									[
+										2185,
+										2200
+									],
+									[
+										2399,
+										2414
+									],
+									[
+										2525,
+										2540
+									],
+									[
+										2832,
+										2847
+									],
+									[
+										3226,
+										3241
+									],
+									[
+										3288,
+										3303
+									],
+									[
+										3590,
+										3605
+									],
+									[
+										3889,
+										3904
+									],
+									[
+										4196,
+										4211
+									],
+									[
+										4324,
+										4339
+									],
+									[
+										4523,
+										4538
+									],
+									[
+										4867,
+										4882
+									],
+									[
+										4909,
+										4924
+									],
+									[
+										4937,
+										4952
+									],
+									[
+										5233,
+										5248
+									],
+									[
+										5369,
+										5384
+									],
+									[
+										5435,
+										5450
+									],
+									[
+										5524,
+										5539
+									],
+									[
+										5707,
+										5722
+									],
+									[
+										5928,
+										5943
+									],
+									[
+										6149,
+										6164
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								4787,
+								4808
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1595.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/msft-reps.xsl",
+					"settings":
+					{
+						"buffer_size": 1354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1302,
+								1302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XSL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/contact.xsl",
+					"settings":
+					{
+						"buffer_size": 815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								738,
+								738
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XSL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/pages/accreditation_view.xsl",
+					"settings":
+					{
+						"buffer_size": 11143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10611,
+								10611
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XSL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3600.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/sections/blog.xsl",
+					"settings":
+					{
+						"buffer_size": 7804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3175,
+								3175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XSL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/templates/_old-styling.scss",
+					"settings":
+					{
+						"buffer_size": 161355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112329,
+								112329
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 80629.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Applications/MAMP/htdocs/bolser/nokia-the-connection/www/workspace/assets/sass/components/_930-launch.scss",
+					"settings":
+					{
+						"buffer_size": 3972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3823,
+								3823
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2550.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "git ftp init -u justdriv -p - ftp://92.60.114.159/",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 63.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"competitions-",
+				"www/workspace/pages/competitions_find-a-930_930-terms-and-conditions.xsl"
+			],
+			[
+				"competitons-930",
+				"www/workspace/pages/competitions_find-a-930.xsl"
+			],
+			[
+				"gameviw",
+				"nokia-the-connection/www/workspace/pages/games_view.xsl"
+			],
+			[
+				"commons",
+				"nokia-the-connection/www/workspace/assets/js/common.js"
+			],
+			[
+				"commonjs",
+				"nokia-the-connection/www/workspace/games/126823/common.js"
+			],
+			[
+				"maincoff",
+				"nokia-the-connection/www/workspace/games/278329/js/lib/game/views/main.coffee"
+			],
+			[
+				"comm",
+				"nokia-the-connection/www/workspace/games/126823/common.js"
+			],
+			[
+				"gameques",
+				"nokia-the-connection/www/workspace/pages/games_view_questions.xsl"
+			],
+			[
+				"gameq",
+				"nokia-the-connection/www/workspace/pages/games_view_questions.xsl"
+			],
+			[
+				"common",
+				"juggle/wp-admin/js/common.js"
+			],
+			[
+				"commsjs",
+				"nokia-the-connection/www/workspace/games/278329/bower_components/jquery/src/manipulation/support.js"
+			],
+			[
+				"comms",
+				"nokia-the-connection/www/extensions/markdown/lib/htmlpurifier-4.5.0-standalone/standalone/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt"
+			],
+			[
+				"gamequestions",
+				"nokia-the-connection/www/workspace/pages/games_view_questions.xsl"
+			],
+			[
+				"vagra",
+				"nokia-the-connection/Vagrantfile"
+			],
+			[
+				".ht",
+				"nokia-the-connection/www/.htaccess"
+			],
+			[
+				"bran",
+				"StartInitiativePC_Data/Mono/etc/mono/browscap.ini"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/MAMP/htdocs/pitter-patter-parcels/pitterpatterparcels.sublime-project"
+			]
+		],
+		"width": 823.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 324.0,
+	"status_bar_visible": true
+}

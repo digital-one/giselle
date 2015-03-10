@@ -1,0 +1,6 @@
+figure,ul,li,p,blockquote{
+	@extend %reset-spacing;
+}
+ul{
+	list-style-type:none;
+}

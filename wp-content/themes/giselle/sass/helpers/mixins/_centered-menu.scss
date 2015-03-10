@@ -1,0 +1,18 @@
+@mixin centered-menu{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	ul{
+		clear: left;
+		float: left;
+		position: relative;
+		left: 50%;
+		text-align: center;
+		li{
+			display: block;
+			float: left;
+			position: relative;
+			right: 50%;
+		}
+	}
+}

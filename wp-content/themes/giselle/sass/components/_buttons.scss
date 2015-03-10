@@ -1,0 +1,13 @@
+.button{
+	display:inline-block;
+	height:50px;
+	line-height:50px;
+	font-family:$brandongrotesque-bold;
+	letter-spacing:4px;
+	@include font-size(16);
+	color: $dark-grey;
+	text-align:center;
+	border:1px solid $dark-grey;
+	padding:0 20px;
+	text-transform:uppercase;
+}

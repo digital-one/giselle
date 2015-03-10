@@ -1,0 +1,14 @@
+@mixin vertical-centre-child(){
+	&:before{
+     	content:"";
+		display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -1%; /* Adjusts for spacing */
+	}
+	> {
+		display: inline-block;
+		vertical-align: middle;
+		width:99%;
+	}
+}

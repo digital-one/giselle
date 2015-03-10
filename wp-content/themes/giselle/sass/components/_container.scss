@@ -1,0 +1,33 @@
+.container{
+	@include outer-container;
+	position: relative;
+}
+#main{
+	margin: 50% 0 0;
+	background-color:white;
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-align:center;
+	a.handle{
+		content:"";
+		width:120px;
+		height:50px;
+		background-color: white;
+		@include abs-pos(-50px,auto,auto,50%);
+		margin-left:-60px;
+		display: block;
+		background-image:url('../images/down-arrow.svg');
+		background-position: center center;
+		background-repeat:no-repeat;
+		background-size:24px auto;
+		cursor:pointer;
+		@extend %ir;
+	}
+}
+#home{
+	width:100%;
+	height:100%;
+	display:block;
+	background-color:#ccc;
+}

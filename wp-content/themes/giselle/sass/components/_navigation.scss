@@ -1,0 +1,7 @@
+nav#nav{
+	display:block;
+	@include abs-pos(0,0,auto,auto);
+	@include wp-current-page-links{
+		background-color: transparent;
+	}
+}
