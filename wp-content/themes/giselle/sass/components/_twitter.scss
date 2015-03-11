@@ -20,6 +20,7 @@
 	}
 	.tweet{
 		@include font-size(20);
+		line-height:140%;
 		a{
 			&:link,&:visited{
 				font-family: $brandongrotesque-bold;

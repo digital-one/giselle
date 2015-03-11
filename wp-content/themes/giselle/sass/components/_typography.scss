@@ -15,6 +15,7 @@ h1,h2,h3,h4,h5{
 	}
 }
 a{
+	@include transition(all 0.4s ease);
 	&:link,&:visited{
 		text-decoration: none;
 		color: $dark-grey;
@@ -27,10 +28,25 @@ p{
 		line-height: 150%;
 		letter-spacing: 0.5px;
 		word-spacing: 1.5px;
+		margin-bottom:36px;
 		i{
 			font-family: $freight-book-italic;
 			font-style: normal;
 		}
 	}
+	a{
+		&:link,&:visited{
+			border-bottom: 1px dotted $dark-grey;
+		}
+		&:hover,&:active{
+			border-bottom: 1px solid $dark-grey;
+		}
+	}
+}
+address{
+	font-style: normal;
+}
+small{
+	@include font-size(11);
 }
 

@@ -1,0 +1,56 @@
+#footer{
+	z-index:2;
+	background-color: $light-grey;  
+	position: relative;
+	text-align:center;
+	padding: 86px 0 40px;
+	@include font-size(12);
+	text-transform: uppercase;
+	h3{
+		display:block;
+		width:200px;
+		height:18px;
+		margin:0 auto 40px;
+		background-image:url('../images/giselle.svg');
+		background-position: left top;
+		background-repeat: no-repeat;
+		background-size:100% auto;
+		@extend %ir;
+		.ie8 &{
+			background-image:url('../images/giselle.png');
+		}
+	}
+	address{
+		font-family: $brandongrotesque-regular;
+		@include font-size(16);
+		text-transform: uppercase;
+		line-height: 140%;
+		letter-spacing: 1px;
+		margin-bottom: 55px;
+	}
+	nav.social{
+		@include centered-menu;
+		margin-bottom: 55px;
+		li{
+			margin: 0 5px;
+			a{
+				display: block;
+				width:32px;
+				height:32px;
+				@extend %ir;
+				background-image:url('../images/twitter.svg');
+				background-position: left top;
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				@include opacity(.4);
+				@include transition(opacity .5s ease);
+				&.facebook{
+					background-image:url('../images/facebook.svg');
+				}
+				&:hover,&:active{
+					@include opacity(.8);
+				}
+			}
+		}
+	}
+}

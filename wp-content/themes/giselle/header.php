@@ -24,14 +24,15 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrap">
+<div id="wrap" class="expanded">
 <!--header-->
 <header id="header">
 <h1 id="home-link">Giselle Ladieswear</h1>
-<a id="menu-toggle">MENU</a>
+<a id="menu-toggle"><span>MENU</span></a>
 </header>
 <!--/header-->
 <nav id="nav">
+<span>MENU</span>
 <?php wp_nav_menu( array( 'menu' => 'Main Menu', 'menu_class' => '' ) ); ?>
 </nav>
 

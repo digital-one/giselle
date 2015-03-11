@@ -1,20 +1,28 @@
 <?php get_header() ?>
 
-<section id="slider" class="slick-slider">
-	<div class="slick-list">
-		<div class="slick-track">
+<section id="slider" class="slider-outer">
+  <div id="slick" class="slick-slider">
+	<!--<div class="slick-list">
+		<div class="slick-track">-->
 <div class="slick-slide slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
-</div>
-</div>
+<div class="slick-slide slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
+<!--</div>
+</div>-->
+<?php /*
 <div class="slick-dots-wrap">
 	<div class="inner">
-		<div><ul class="slick-dots"><li class=""><button type="button" data-role="none">1</button></li><li class="slick-active"><button type="button" data-role="none">2</button></li><li class=""><button type="button" data-role="none">3</button></li><li class=""><button type="button" data-role="none">4</button></li><li class=""><button type="button" data-role="none">5</button></li><li class=""><button type="button" data-role="none">6</button></li><li class=""><button type="button" data-role="none">7</button></li></ul></div>
-
+		<div>
+    <ul class="slick-dots"><li class=""><button type="button" data-role="none">1</button></li><li class="slick-active"><button type="button" data-role="none">2</button></li><li class=""><button type="button" data-role="none">3</button></li><li class=""><button type="button" data-role="none">4</button></li><li class=""><button type="button" data-role="none">5</button></li><li class=""><button type="button" data-role="none">6</button></li><li class=""><button type="button" data-role="none">7</button></li></ul>
+    </div>
 </div>
+</div>
+*/ ?>
+<!--</div>
+</div>-->
 </div>
 </section>
 <main id="main">
-<a class="handle">Scroll Down</a>
+<div class="handle"><a>Scroll Down</a></div>
 <section id="signposts">
 <header><h2>SPRING/SUMMER COLLECTIONS IN STORE NOW</h2></header>
 <div class="posts">
@@ -45,16 +53,18 @@
 
 
 </div>
-<footer class="posts-footer"><a href="" title="More">MORE</a></footer>
+<footer class="posts-footer"><a href="" title="More" class="ul-button">MORE</a></footer>
 </section>
 <section id="about">
 	<div class="container">
 <h2>WELCOME TO GISELLE, YORK</h2>
 <p class="intro">Serving customers around Yorkshire, Teeside, Tyne &amp; Wear and the Midlands, Giselle specialise in <i>Mother of the Bride, Wedding Outfits</i> and <i>Special Occasion Wear</i> as well as leading the way in contemporary fashion including <i>Marccain</i>, <i>Riani</i> and so many more.</p>
-<figure></figure>
+<div class="underline"><span></span></div>
+<figure><img src="<?php echo get_template_directory_uri(); ?>/images/shop-front.jpg" /></figure>
 </div>
 	</section>
 	<section id="newsletter-signup">
+    <h2>SIGN UP FOR OUR NEWSLETTER</h2>
 		<div class="container">
 <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_1"><a id="gf_1" name="gf_1" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_1" id="gform_1" action="/facebook-mailing-list-signup/#gf_1">
                         <div class="gform_body"><ul id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below"><li id="field_1_1" class="gfield gfield_contains_required field_sublabel_below field_description_below"><label class="gfield_label" for="input_1_1">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_1_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li><li id="field_1_2" class="gfield gfield_contains_required field_sublabel_below field_description_below"><label class="gfield_label" for="input_1_2">Email Address<span class="gfield_required">*</span></label><div class="ginput_container">

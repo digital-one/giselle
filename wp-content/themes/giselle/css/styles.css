@@ -447,6 +447,11 @@ ul {
   list-style-type: none;
 }
 
+/* line 7, ../sass/_reset.scss */
+button:focus, a:focus {
+  outline: 0;
+}
+
 @font-face {
   font-family: 'BrandonGrotesque-Light_gdi';
   src: url("../fonts/BrandonGrotesque-Light_gdi.eot");
@@ -863,7 +868,7 @@ header#header:after,
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
 /* line 9, ../sass/helpers/_placeholders.scss */
-#main a.handle, header#header #home-link, .slick-slider ul.slick-dots li button, #facebook-signup h1, #facebook-signup h2 {
+header#header #home-link, #footer h3, #footer nav.social li a, .slick-slider ul.slick-dots li button, .handle a, #facebook-signup h1, #facebook-signup h2 {
   overflow: hidden;
   text-indent: -10000px;
 }
@@ -891,20 +896,21 @@ header#header {
 /* line 1, ../sass/_base.scss */
 html, body {
   width: 100%;
-  height: 100%;
 }
 
-/* line 5, ../sass/_base.scss */
+/* line 4, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 8, ../sass/_base.scss */
+/* line 7, ../sass/_base.scss */
 body {
   font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 130%;
+  height: 100%;
+  background-color: #e9f0ed;
   /*
   @media screen and (max-width: $break-xlarge){
   	@include font-size(15);
@@ -932,35 +938,49 @@ body {
 }
 
 /* line 5, ../sass/components/_container.scss */
+#wrap {
+  position: relative;
+  right: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.2);
+}
+/* line 9, ../sass/components/_container.scss */
+.csstransitions #wrap {
+  -webkit-transition: right 0.5s ease;
+  -moz-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
+/* line 13, ../sass/components/_container.scss */
+.csstransitions #wrap #header, .csstransitions #wrap #slider {
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+/* line 17, ../sass/components/_container.scss */
+.expanded #wrap {
+  right: 250px;
+}
+/* line 19, ../sass/components/_container.scss */
+.expanded #wrap #header {
+  left: -250px;
+}
+/* line 22, ../sass/components/_container.scss */
+.expanded #wrap #slider {
+  left: -250px;
+}
+
+/* line 27, ../sass/components/_container.scss */
 #main {
-  margin: 50% 0 0;
+  margin: 80% 0 0;
   background-color: white;
   display: block;
   position: relative;
   z-index: 2;
   text-align: center;
 }
-/* line 12, ../sass/components/_container.scss */
-#main a.handle {
-  content: "";
-  width: 120px;
-  height: 50px;
-  background-color: white;
-  top: -50px;
-  right: auto;
-  bottom: auto;
-  left: 50%;
-  position: absolute;
-  margin-left: -60px;
-  display: block;
-  background-image: url("../images/down-arrow.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 24px auto;
-  cursor: pointer;
-}
 
-/* line 28, ../sass/components/_container.scss */
+/* line 35, ../sass/components/_container.scss */
 #home {
   width: 100%;
   height: 100%;
@@ -980,7 +1000,13 @@ header#header {
   height: 120px;
   overflow: visible;
 }
-/* line 13, ../sass/components/_header.scss */
+/* line 2, ../sass/components/_header.scss */
+.csstransitions header#header {
+  -webkit-transition: right 0.5s ease;
+  -moz-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+}
+/* line 16, ../sass/components/_header.scss */
 header#header #home-link {
   width: 250px;
   height: 22px;
@@ -991,11 +1017,11 @@ header#header #home-link {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-/* line 23, ../sass/components/_header.scss */
+/* line 26, ../sass/components/_header.scss */
 .ie8 header#header #home-link {
   background-image: url("../images/giselle.png");
 }
-/* line 27, ../sass/components/_header.scss */
+/* line 30, ../sass/components/_header.scss */
 header#header a#menu-toggle {
   height: 38px;
   display: inline-block;
@@ -1006,7 +1032,7 @@ header#header a#menu-toggle {
   position: absolute;
   margin: 40px 0;
   float: right;
-  padding: 0 60px 0 0;
+  padding: 0 50px 0 0;
   font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
@@ -1015,7 +1041,7 @@ header#header a#menu-toggle {
   letter-spacing: 4px;
   cursor: pointer;
 }
-/* line 40, ../sass/components/_header.scss */
+/* line 43, ../sass/components/_header.scss */
 header#header a#menu-toggle:after {
   content: "";
   width: 38px;
@@ -1026,21 +1052,220 @@ header#header a#menu-toggle:after {
   left: auto;
   position: absolute;
   background-color: black;
-  background: black url("../images/menu.svg") center center no-repeat;
+  background-image: url("../images/menu.svg");
+  background-position: center center;
+  background-size: 18px auto;
+  background-repeat: no-repeat;
+}
+/* line 53, ../sass/components/_header.scss */
+.ie8 header#header a#menu-toggle:after {
+  background-image: url("../images/menu.png");
+}
+/* line 57, ../sass/components/_header.scss */
+header#header a#menu-toggle span {
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  height: 38px;
+  line-height: 38px;
+  display: block;
+}
+/* line 64, ../sass/components/_header.scss */
+header#header a#menu-toggle.open:after {
+  background-image: url("../images/close.svg");
+  background-size: 14px auto;
+}
+/* line 67, ../sass/components/_header.scss */
+.ie8 header#header a#menu-toggle.open:after {
+  background-image: url("../images/close.png");
+}
+/* line 71, ../sass/components/_header.scss */
+header#header a#menu-toggle.open span {
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 /* line 1, ../sass/components/_navigation.scss */
 nav#nav {
+  width: 250px;
+  padding: 0 15px;
   display: block;
-  top: 0;
+  position: fixed;
   right: 0;
-  bottom: auto;
-  left: auto;
-  position: absolute;
+  top: 0;
 }
 /* line 5, ../sass/helpers/mixins/_wp-current-page-links.scss */
 nav#nav li.current-menu-item a:link, nav#nav li.current-menu-item a:visited, nav#nav li.current-page-ancestor a:link, nav#nav li.current-page-ancestor a:visited, nav#nav li.hover a:link, nav#nav li.hover a:visited {
-  background-color: transparent;
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 11, ../sass/components/_navigation.scss */
+nav#nav span {
+  height: 38px;
+  line-height: 38px;
+  display: block;
+  font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+/* line 23, ../sass/components/_navigation.scss */
+nav#nav ul {
+  border-bottom: 1px solid #b7bcba;
+}
+/* line 26, ../sass/components/_navigation.scss */
+nav#nav li {
+  padding: 15px 0;
+  display: block;
+  border-top: 1px solid #b7bcba;
+  line-height: 100%;
+}
+/* line 31, ../sass/components/_navigation.scss */
+nav#nav li ul.sub-menu {
+  padding: 0 0 0 20px;
+  border: none;
+}
+/* line 34, ../sass/components/_navigation.scss */
+nav#nav li ul.sub-menu li {
+  text-indent: -7px;
+  border: none;
+}
+/* line 37, ../sass/components/_navigation.scss */
+nav#nav li ul.sub-menu li:before {
+  content: "-";
+  position: relative;
+  left: -10px;
+}
+/* line 42, ../sass/components/_navigation.scss */
+nav#nav li ul.sub-menu li:last-child {
+  padding-bottom: 0;
+}
+/* line 46, ../sass/components/_navigation.scss */
+nav#nav li ul.sub-menu a {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "BrandonGrotesque-Medium_gdi", sans-serif;
+  padding: 0;
+}
+/* line 54, ../sass/components/_navigation.scss */
+nav#nav a:link, nav#nav a:visited {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 100%;
+  padding: 0 4px;
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+/* line 63, ../sass/components/_navigation.scss */
+nav#nav a:hover, nav#nav a:active {
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* line 1, ../sass/components/_footer.scss */
+#footer {
+  z-index: 2;
+  background-color: #e9f0ed;
+  position: relative;
+  text-align: center;
+  padding: 86px 0 40px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+/* line 9, ../sass/components/_footer.scss */
+#footer h3 {
+  display: block;
+  width: 200px;
+  height: 18px;
+  margin: 0 auto 40px;
+  background-image: url("../images/giselle.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+/* line 19, ../sass/components/_footer.scss */
+.ie8 #footer h3 {
+  background-image: url("../images/giselle.png");
+}
+/* line 23, ../sass/components/_footer.scss */
+#footer address {
+  font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 140%;
+  letter-spacing: 1px;
+  margin-bottom: 55px;
+}
+/* line 31, ../sass/components/_footer.scss */
+#footer nav.social {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 55px;
+}
+/* line 5, ../sass/helpers/mixins/_centered-menu.scss */
+#footer nav.social ul {
+  clear: left;
+  float: left;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+/* line 11, ../sass/helpers/mixins/_centered-menu.scss */
+#footer nav.social ul li {
+  display: block;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+/* line 34, ../sass/components/_footer.scss */
+#footer nav.social li {
+  margin: 0 5px;
+}
+/* line 36, ../sass/components/_footer.scss */
+#footer nav.social li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../images/twitter.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+/* line 47, ../sass/components/_footer.scss */
+#footer nav.social li a.facebook {
+  background-image: url("../images/facebook.svg");
+}
+/* line 50, ../sass/components/_footer.scss */
+#footer nav.social li a:hover, #footer nav.social li a:active {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
 /* line 1, ../sass/components/_typography.scss */
@@ -1055,13 +1280,19 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 30px;
 }
 
-/* line 18, ../sass/components/_typography.scss */
+/* line 17, ../sass/components/_typography.scss */
+a {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 19, ../sass/components/_typography.scss */
 a:link, a:visited {
   text-decoration: none;
   color: #1d1d1d;
 }
 
-/* line 24, ../sass/components/_typography.scss */
+/* line 25, ../sass/components/_typography.scss */
 p.intro {
   font-family: "Freight-BigBook_gdi", sans-serif;
   font-size: 25px;
@@ -1069,11 +1300,51 @@ p.intro {
   line-height: 150%;
   letter-spacing: 0.5px;
   word-spacing: 1.5px;
+  margin-bottom: 36px;
 }
-/* line 30, ../sass/components/_typography.scss */
+/* line 32, ../sass/components/_typography.scss */
 p.intro i {
   font-family: "Freight-BigBookItalic_gdi", sans-serif;
   font-style: normal;
+}
+/* line 38, ../sass/components/_typography.scss */
+p a:link, p a:visited {
+  border-bottom: 1px dotted #1d1d1d;
+}
+/* line 41, ../sass/components/_typography.scss */
+p a:hover, p a:active {
+  border-bottom: 1px solid #1d1d1d;
+}
+
+/* line 46, ../sass/components/_typography.scss */
+address {
+  font-style: normal;
+}
+
+/* line 49, ../sass/components/_typography.scss */
+small {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+/* line 1, ../sass/components/_global.scss */
+.underline {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 0 0 48px;
+}
+/* line 8, ../sass/components/_global.scss */
+.underline span {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 100%;
+  height: 1px;
+  background-color: #1d1d1d;
+  line-height: 100%;
 }
 
 /* line 1, ../sass/components/_forms.scss */
@@ -1207,25 +1478,29 @@ textarea {
 .gform_wrapper {
   margin: 0 0 40px;
 }
-/* line 6, ../sass/components/_gravity-forms.scss */
+/* line 3, ../sass/components/_gravity-forms.scss */
+#newsletter-signup .gform_wrapper {
+  margin: 0;
+}
+/* line 9, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .gform_footer {
   text-align: center;
   margin: 20px 0 0;
 }
-/* line 10, ../sass/components/_gravity-forms.scss */
+/* line 13, ../sass/components/_gravity-forms.scss */
 .gform_wrapper li {
   margin-bottom: 15px;
 }
-/* line 13, ../sass/components/_gravity-forms.scss */
+/* line 16, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .gfield_label {
   display: none;
 }
-/* line 15, ../sass/components/_gravity-forms.scss */
+/* line 18, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .gfield_label .gfield_required {
   color: black;
   padding-left: 4px;
 }
-/* line 20, ../sass/components/_gravity-forms.scss */
+/* line 23, ../sass/components/_gravity-forms.scss */
 .gform_wrapper input.medium {
   height: 35px;
   line-height: 1;
@@ -1274,27 +1549,78 @@ textarea {
   -khtml-opacity: 0.5;
   filter: alpha(opacity=50);
 }
-/* line 33, ../sass/components/_gravity-forms.scss */
+/* line 36, ../sass/components/_gravity-forms.scss */
 .gform_wrapper input.medium:focus {
   border: none;
   background-color: #4d4d4d;
   outline: none;
 }
-/* line 39, ../sass/components/_gravity-forms.scss */
+/* line 41, ../sass/components/_gravity-forms.scss */
+#newsletter-signup .gform_wrapper input.medium {
+  width: 500px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #e9f0ed;
+  color: #1d1d1d;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1;
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#newsletter-signup .gform_wrapper input.medium::-webkit-input-placeholder {
+  color: #1d1d1d;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#newsletter-signup .gform_wrapper input.medium::-moz-placeholder {
+  color: #1d1d1d;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#newsletter-signup .gform_wrapper input.medium:-moz-placeholder {
+  color: #1d1d1d;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#newsletter-signup .gform_wrapper input.medium:-ms-input-placeholder {
+  color: #1d1d1d;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* line 55, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .button.gform_button {
   font-size: 19px;
   font-size: 1.9rem;
   color: black;
   background-color: white;
-  letter-spacing: 2px;
-  font-family: "BrandonGrotesque-Medium_gdi", sans-serif;
+  letter-spacing: 4px;
+  font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
   padding: 0 20px;
   height: 35px;
   line-height: 35px;
   border: none;
   text-transform: uppercase;
 }
-/* line 51, ../sass/components/_gravity-forms.scss */
+/* line 66, ../sass/components/_gravity-forms.scss */
+#newsletter-signup .gform_wrapper .button.gform_button {
+  font-size: 16px;
+  font-size: 1.6rem;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #1d1d1d;
+}
+/* line 73, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .validation_error, .gform_wrapper .validation_message {
   color: red !important;
   font-family: "BrandonGrotesque-Medium_gdi", sans-serif;
@@ -1302,40 +1628,55 @@ textarea {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
-/* line 57, ../sass/components/_gravity-forms.scss */
+/* line 79, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .validation_message {
   margin: 3px 0 0;
 }
 
-/* line 61, ../sass/components/_gravity-forms.scss */
+/* line 83, ../sass/components/_gravity-forms.scss */
 .gform_confirmation_message {
   margin-bottom: 40px;
 }
 
 /* line 1, ../sass/components/_slick-slider.scss */
+#slider {
+  width: 100%;
+  height: 100%;
+  padding: 118px 15px 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  background-color: white;
+}
+
+/* line 12, ../sass/components/_slick-slider.scss */
 .slick-slider {
   width: 100%;
   height: 100%;
   display: block;
-  padding: 118px 15px 15px;
+  position: relative;
+  /*padding: 118px 15px 15px;
   position: fixed;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
+  background-color: white;
+  */
 }
-/* line 9, ../sass/components/_slick-slider.scss */
+/* line 23, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list, .slick-slider .slick-track {
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 14, ../sass/components/_slick-slider.scss */
+/* line 28, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list {
   position: relative;
   overflow: hidden;
   display: block;
   padding: 0;
 }
-/* line 19, ../sass/components/_slick-slider.scss */
+/* line 33, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track {
   position: relative;
   left: 0;
@@ -1343,52 +1684,55 @@ textarea {
   display: block;
   width: 3000px;
 }
-/* line 25, ../sass/components/_slick-slider.scss */
+/* line 39, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide {
-  width: 1920px;
+  width: 100%;
+  max-width: 1800px;
   float: left;
   height: 100%;
   position: relative;
   display: block;
-  background-color: red;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center top;
 }
-/* line 39, ../sass/components/_slick-slider.scss */
+/* line 54, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap {
   width: auto;
   background-color: transparent;
   position: relative;
-  top: 120px;
+  z-index: 9999;
+  top: 0;
   right: 0;
-  bottom: 15px;
+  bottom: 0;
   left: auto;
   position: absolute;
   display: inline-block;
+  height: 100%;
 }
-/* line 45, ../sass/components/_slick-slider.scss */
+/* line 62, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner {
   height: 100%;
   position: relative;
 }
-/* line 48, ../sass/components/_slick-slider.scss */
+/* line 65, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 54, ../sass/components/_slick-slider.scss */
+/* line 71, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner div {
   vertical-align: middle;
   display: inline-block;
   color: white;
 }
-/* line 61, ../sass/components/_slick-slider.scss */
+/* line 78, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots {
   background-color: white;
   position: relative;
@@ -1396,12 +1740,12 @@ textarea {
   vertical-align: middle;
   padding: 15px 0;
 }
-/* line 67, ../sass/components/_slick-slider.scss */
+/* line 84, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li {
   padding: 10px 15px;
   display: block;
 }
-/* line 70, ../sass/components/_slick-slider.scss */
+/* line 87, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li button {
   display: block;
   border: none;
@@ -1415,7 +1759,7 @@ textarea {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-/* line 80, ../sass/components/_slick-slider.scss */
+/* line 97, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li.slick-active button {
   background-color: black;
 }
@@ -1449,16 +1793,17 @@ textarea {
 .twitter-feed .tweet {
   font-size: 20px;
   font-size: 2rem;
+  line-height: 140%;
 }
-/* line 24, ../sass/components/_twitter.scss */
+/* line 25, ../sass/components/_twitter.scss */
 .twitter-feed .tweet a:link, .twitter-feed .tweet a:visited {
   font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
 }
-/* line 29, ../sass/components/_twitter.scss */
+/* line 30, ../sass/components/_twitter.scss */
 .twitter-feed .timePosted, .twitter-feed .interact {
   display: none;
 }
-/* line 32, ../sass/components/_twitter.scss */
+/* line 33, ../sass/components/_twitter.scss */
 .twitter-feed footer {
   top: auto;
   right: 0;
@@ -1469,7 +1814,7 @@ textarea {
 }
 
 /* line 1, ../sass/components/_buttons.scss */
-.button {
+.button, .ul-button {
   display: inline-block;
   height: 50px;
   line-height: 50px;
@@ -1479,11 +1824,140 @@ textarea {
   font-size: 1.6rem;
   color: #1d1d1d;
   text-align: center;
+  position: relative;
+}
+
+/* line 12, ../sass/components/_buttons.scss */
+.button {
   border: 1px solid #1d1d1d;
   padding: 0 20px;
   text-transform: uppercase;
 }
 
+@-webkit-keyframes drawline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@-moz-keyframes drawline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes drawline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+/* line 26, ../sass/components/_buttons.scss */
+.ul-button:after {
+  content: "";
+  display: block;
+  width: 100%;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  line-height: 100%;
+  background-color: #1d1d1d;
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  -ms-transform-origin: center top;
+  -o-transform-origin: center top;
+  transform-origin: center top;
+}
+/* line 38, ../sass/components/_buttons.scss */
+.ul-button:hover:after {
+  -webkit-animation: drawline 0.4s ease;
+  -moz-animation: drawline 0.4s ease;
+  animation: drawline 0.4s ease;
+}
+
+/* line 43, ../sass/components/_buttons.scss */
+.handle {
+  width: 120px;
+  height: 50px;
+  top: -50px;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  position: absolute;
+  margin-left: -60px;
+  display: block;
+  overflow: hidden;
+}
+/* line 50, ../sass/components/_buttons.scss */
+.handle a {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  position: absolute;
+  background-color: white;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-image: url("../images/down-arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 24px auto;
+  cursor: pointer;
+  -webkit-transition: top 0.3s ease;
+  -moz-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+  -webkit-animation: pulse 0.6s ease infinite;
+  -moz-animation: pulse 0.6s ease infinite;
+  animation: pulse 0.6s ease infinite;
+}
+/* line 64, ../sass/components/_buttons.scss */
+.handle a.hide {
+  top: 50px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-position: center center;
+  }
+  80% {
+    background-position: center 25px;
+  }
+  100% {
+    background-position: center center;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    background-position: center center;
+  }
+  80% {
+    background-position: center 25px;
+  }
+  100% {
+    background-position: center center;
+  }
+}
+@keyframes pulse {
+  0% {
+    background-position: center center;
+  }
+  80% {
+    background-position: center 25px;
+  }
+  100% {
+    background-position: center center;
+  }
+}
 /* line 1, ../sass/templates/_home.scss */
 #signposts {
   padding: 0 5px 120px;
@@ -1606,6 +2080,28 @@ textarea {
 #signposts .signpost .content .logo .img-wrap.portrait img {
   width: auto;
   height: 100%;
+}
+
+/* line 87, ../sass/templates/_home.scss */
+#newsletter-signup {
+  padding-bottom: 86px;
+}
+
+/* line 90, ../sass/templates/_home.scss */
+#about {
+  padding: 0 30% 86px;
+}
+/* line 92, ../sass/templates/_home.scss */
+#about figure {
+  width: 332px;
+  height: auto;
+  margin: 0 auto;
+  display: inline-block;
+}
+/* line 97, ../sass/templates/_home.scss */
+#about figure img {
+  width: 100%;
+  height: auto;
 }
 
 /* line 1, ../sass/templates/_facebook-signup.scss */

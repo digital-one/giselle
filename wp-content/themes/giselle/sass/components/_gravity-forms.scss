@@ -1,5 +1,8 @@
 .gform_wrapper{
 	margin:0 0 40px;
+	#newsletter-signup &{
+		margin:0;
+	}
 	.gform_body{
 		@extend %clearfix;
 	}
@@ -35,18 +38,37 @@
    		 	background-color: darken(white,70);
    		 	outline:none;
    		 }
+   		#newsletter-signup &{
+   			width:500px;
+   			height:50px;
+   			line-height: 50px;
+   			background-color: $light-grey;
+   			color: $dark-grey;
+   			@include font-size(20);
+   			line-height:1;
+   			@include placeholder{
+   				color:$dark-grey;
+   				@include opacity(.4);
+   			}
+   		}
 	}
 	.button.gform_button{
 		@include font-size(19);
 		color: black;
 		background-color: white;
-		letter-spacing: 2px;
-		font-family: $brandongrotesque-medium;
+		letter-spacing: 4px;
+		font-family: $brandongrotesque-bold;
 		padding:0 20px;
 		height:35px;
 		line-height: 35px;
 		border:none;
 		text-transform: uppercase;
+		#newsletter-signup &{
+			@include font-size(16);
+			height:50px;
+			line-height: 50px;
+			border: 1px solid $dark-grey;
+		}
 	}
 	.validation_error,.validation_message{
 		color: red !important;

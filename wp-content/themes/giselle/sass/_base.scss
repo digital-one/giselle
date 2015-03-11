@@ -1,14 +1,15 @@
 html,body{
 	width:100%;
-	height:100%;
 }
 html{
 	font-size: 62.5%;
 }
 body{
 	font-family: $brandongrotesque-regular;
-	@include font-size(22);
+	@include font-size(16);
 	line-height:130%;
+	height:100%;
+	background-color: $light-grey;
 	/*
 	@media screen and (max-width: $break-xlarge){
 		@include font-size(15);
