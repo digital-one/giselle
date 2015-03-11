@@ -5,6 +5,9 @@
 #wrap{
 	position:relative;
 	right:0;
+	.page-template-template-brand &{
+		height:100%;
+	}
 	@include box-shadow;
 	.csstransitions &{
 		@include transition(right 0.5s ease);
@@ -25,12 +28,18 @@
 	}
 }
 #main{
-	margin: 80% 0 0;
+	@extend .clearfix;
 	background-color:white;
 	display: block;
 	position: relative;
 	z-index: 2;
 	text-align:center;
+	.home &{
+		margin: 80% 0 0;
+	}
+	.page-template-template-brand &{
+		height:100%;
+	}
 }
 #home{
 	width:100%;

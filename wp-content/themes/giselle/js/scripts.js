@@ -47,10 +47,12 @@ $('.handle').on('click',function(e){
 
 
 reposition = function(){
+	if($('.home').length){
 	var _windowHeight = $(window).height()-15;
-	$('#main').css({
+	$('.home #main').css({
 		marginTop: _windowHeight+'px'
 	})
+	}
 }
 
 $(window).on('resize',function(){

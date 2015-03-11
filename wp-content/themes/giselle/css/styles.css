@@ -839,8 +839,9 @@ button:focus, a:focus {
  *    `:before` to contain the top-margins of child elements.
  */
 /* line 11, ../sass/helpers/classes/_clearfix.scss */
-.clearfix:before, header#header:before, #signposts:before, #signposts .posts:before,
+.clearfix:before, #main:before, header#header:before, #signposts:before, #signposts .posts:before,
 .clearfix:after,
+#main:after,
 header#header:after,
 #signposts:after,
 #signposts .posts:after {
@@ -851,7 +852,7 @@ header#header:after,
 }
 
 /* line 16, ../sass/helpers/classes/_clearfix.scss */
-.clearfix:after, header#header:after, #signposts:after, #signposts .posts:after {
+.clearfix:after, #main:after, header#header:after, #signposts:after, #signposts .posts:after {
   clear: both;
 }
 
@@ -860,7 +861,7 @@ header#header:after,
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 23, ../sass/helpers/classes/_clearfix.scss */
-.clearfix, header#header, #signposts, #signposts .posts {
+.clearfix, #main, header#header, #signposts, #signposts .posts {
   *zoom: 1;
 }
 
@@ -880,7 +881,7 @@ figure, ul, li, p, blockquote {
 }
 
 /* line 25, ../sass/helpers/_placeholders.scss */
-.gform_wrapper .gform_body {
+.gform_wrapper .gform_body, .section, .section-inner {
   overflow: hidden;
   zoom: 1;
 }
@@ -896,14 +897,15 @@ header#header {
 /* line 1, ../sass/_base.scss */
 html, body {
   width: 100%;
+  height: 100%;
 }
 
-/* line 4, ../sass/_base.scss */
+/* line 5, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 7, ../sass/_base.scss */
+/* line 8, ../sass/_base.scss */
 body {
   font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
   font-size: 16px;
@@ -945,42 +947,53 @@ body {
   -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.2);
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.2);
 }
-/* line 9, ../sass/components/_container.scss */
+/* line 8, ../sass/components/_container.scss */
+.page-template-template-brand #wrap {
+  height: 100%;
+}
+/* line 12, ../sass/components/_container.scss */
 .csstransitions #wrap {
   -webkit-transition: right 0.5s ease;
   -moz-transition: right 0.5s ease;
   transition: right 0.5s ease;
 }
-/* line 13, ../sass/components/_container.scss */
+/* line 16, ../sass/components/_container.scss */
 .csstransitions #wrap #header, .csstransitions #wrap #slider {
   -webkit-transition: left 0.5s ease;
   -moz-transition: left 0.5s ease;
   transition: left 0.5s ease;
 }
-/* line 17, ../sass/components/_container.scss */
+/* line 20, ../sass/components/_container.scss */
 .expanded #wrap {
   right: 250px;
 }
-/* line 19, ../sass/components/_container.scss */
+/* line 22, ../sass/components/_container.scss */
 .expanded #wrap #header {
   left: -250px;
 }
-/* line 22, ../sass/components/_container.scss */
+/* line 25, ../sass/components/_container.scss */
 .expanded #wrap #slider {
   left: -250px;
 }
 
-/* line 27, ../sass/components/_container.scss */
+/* line 30, ../sass/components/_container.scss */
 #main {
-  margin: 80% 0 0;
   background-color: white;
   display: block;
   position: relative;
   z-index: 2;
   text-align: center;
 }
+/* line 37, ../sass/components/_container.scss */
+.home #main {
+  margin: 80% 0 0;
+}
+/* line 40, ../sass/components/_container.scss */
+.page-template-template-brand #main {
+  height: 100%;
+}
 
-/* line 35, ../sass/components/_container.scss */
+/* line 44, ../sass/components/_container.scss */
 #home {
   width: 100%;
   height: 100%;
@@ -2102,6 +2115,122 @@ textarea {
 #about figure img {
   width: 100%;
   height: auto;
+}
+
+/* line 1, ../sass/templates/_brand.scss */
+.section {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 8, ../sass/templates/_brand.scss */
+.section-inner {
+  display: block;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 118px 5px 15px;
+}
+/* line 16, ../sass/templates/_brand.scss */
+.section-inner .column {
+  width: 50%;
+  height: 100%;
+  display: block;
+  padding: 0 10px;
+  position: relative;
+  float: left;
+}
+/* line 23, ../sass/templates/_brand.scss */
+.section-inner .column.full-width {
+  width: 100%;
+}
+/* line 26, ../sass/templates/_brand.scss */
+.section-inner .column .row {
+  width: 100%;
+  display: block;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 33, ../sass/templates/_brand.scss */
+.section-inner .column .row .content {
+  display: block;
+  background-color: #e9f0ed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+/* line 39, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .text {
+  height: 100%;
+  width: 100%;
+  padding: 0 40px;
+  display: block;
+}
+/* line 44, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .text:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 50, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .text div {
+  vertical-align: middle;
+  display: inline-block;
+  width: 99%;
+}
+/* line 55, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .text p {
+  font-family: "Freight-BigBook_gdi", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 140%;
+}
+/* line 64, ../sass/templates/_brand.scss */
+.section-inner .column .row.top {
+  padding-bottom: 10px;
+}
+/* line 66, ../sass/templates/_brand.scss */
+.section-inner .column .row.top .content {
+  top: 0;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  position: absolute;
+}
+/* line 70, ../sass/templates/_brand.scss */
+.section-inner .column .row.bottom {
+  padding-top: 10px;
+}
+/* line 72, ../sass/templates/_brand.scss */
+.section-inner .column .row.bottom .content {
+  top: 10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+/* line 76, ../sass/templates/_brand.scss */
+.section-inner .column .row.height-55-pct {
+  height: 55%;
+}
+/* line 79, ../sass/templates/_brand.scss */
+.section-inner .column .row.height-45-pct {
+  height: 45%;
 }
 
 /* line 1, ../sass/templates/_facebook-signup.scss */

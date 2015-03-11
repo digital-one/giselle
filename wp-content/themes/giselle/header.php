@@ -24,7 +24,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrap" class="expanded">
+<div id="wrap">
 <!--header-->
 <header id="header">
 <h1 id="home-link">Giselle Ladieswear</h1>

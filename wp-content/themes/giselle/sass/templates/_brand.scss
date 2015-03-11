@@ -1,0 +1,84 @@
+.section{
+	display: block;
+	width:100%;
+	height:100%;
+	position: relative;
+	@extend %clearfix;
+}
+.section-inner{
+	display:block;
+	position:relative;
+	background-color: white;
+	width:100%;
+	height:100%;
+	padding:118px 5px 15px;
+	@extend %clearfix;
+	.column{
+		width:50%;
+		height:100%;
+		display: block;
+		padding: 0 10px;
+		position:relative;
+		float:left;
+		&.full-width{
+			width:100%;
+		}
+		.row{
+			width:100%;
+			display: block;
+			height: 100%;
+			position: relative;
+			background-color:white;
+			@include bg-cover;
+			.content{
+				display: block;
+				background-color: $light-grey;
+				//height:100%;
+				@include abs-pos(0,0,0,0);
+				//position: relative;
+				.text{
+					height:100%;
+					width:100%;
+					padding:0 40px;
+					display:block;
+					&:before{
+						content:"";
+						display: inline-block;
+						height:100%;
+						vertical-align: middle;
+					}
+					div{
+						vertical-align: middle;
+          				display: inline-block;
+          				width: 99%;
+					}
+					p{
+						font-family: $freight-book;
+						letter-spacing:1px;
+						word-spacing: 1px;
+						@include font-size(20);
+						line-height: 140%;
+					}
+				}
+			}
+			&.top{
+				padding-bottom:10px;
+				.content{
+					@include abs-pos(0,0,10px,0);
+				}
+			}
+			&.bottom{
+				padding-top:10px;
+				.content{
+					@include abs-pos(10px,0,0,0);
+				}
+			}
+			&.height-55-pct{
+				height: 55%;
+			}
+			&.height-45-pct{
+				height: 45%;
+			}
+		}
+	}
+}
