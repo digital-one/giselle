@@ -1,0 +1,50 @@
+#location-map{
+	width:100%;
+	display:block;
+	margin-bottom:50px;
+	overflow:hidden;
+	position:relative;
+	background-color:white;
+	&:before{
+		content:"";
+		padding-top:30%;
+		display: inline-block;
+	}
+	#map{
+		@include abs-pos(0,0,0,0);
+		background-color:white;
+	}
+}
+#opening-hours{
+	background-color:$light-grey;
+	padding:50px 0;
+	ul{
+		width:410px;
+		margin:0 auto;
+		border-top: 1px solid $grey;
+		li{
+			display: block;
+			width: 100%;
+			@extend %clearfix;
+			@include font-size(16);
+			text-transform: uppercase;
+			height:50px;
+			border-bottom: 1px solid $grey;
+			span{
+				display: inline-block;
+				float:left;
+				height:50px;
+				line-height:50px;
+				text-align: left;
+				&.days{
+					width:60%;
+				}
+				&.times{
+					width:40%;
+					text-align: right;
+				}
+			}
+		}
+	}
+
+}

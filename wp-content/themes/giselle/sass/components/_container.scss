@@ -5,7 +5,7 @@
 #wrap{
 	position:relative;
 	right:0;
-	.page-template-template-brand &{
+	.page-template-template-brand &,.page-template-template-product &{
 		height:100%;
 	}
 	@include box-shadow;
@@ -30,15 +30,24 @@
 #main{
 	@extend .clearfix;
 	background-color:white;
+	padding: 150px 0 0;
 	display: block;
 	position: relative;
 	z-index: 2;
 	text-align:center;
 	.home &{
 		margin: 80% 0 0;
+		padding:0;
 	}
-	.page-template-template-brand &{
+	.page-template-template-brand &, .page-template-template-product &{
 		height:100%;
+		padding:0;
+	}
+	.page-template-template-about &{
+		padding:113px 0 0;
+		@media screen and (max-width: $break-small){
+			padding:94px 0 0;
+		}
 	}
 }
 #home{

@@ -1,94 +1,11 @@
-#signposts{
-	@extend .clearfix;
-	padding:0 5px 120px;
-	header{
-		padding: 45px 0 35px;
-		display: block;
-		text-align: center;
-		h2{
-			margin-bottom: 0;
-		}
-	}
-	.posts{
-		@extend .clearfix;
-	}
-	.posts-footer{
-		width: 100%;
-		display: block;
-		padding: 20px 0;
-	}
-	.signpost{
-		width:25%;
-		background-color: white;
-		display: block;
-		overflow:hidden;
-		position:relative;
-		float:left;
-		&:before{
-			content: "";
-    		display: block;
-    		padding-top: 100%;
-		}
-		.content{
-			@include abs-pos(10px,10px,10px,10px);
-			background-color: $light-grey;
-			@include transition(background-color 0.5s ease); 
-			figure{
-				@include abs-pos(0,0,0,0);
-				overflow:hidden;
-				.bg{
-					@include abs-pos(-1px,-1px,-1px,-1px);
-					@include transition(transform 2s ease);
-					z-index: 1;
-					@include bg-cover;
-					background-color:red;
-				}
-			}
-			&:hover{
-				background-color: darken($light-grey,5);
-				.bg{
-					@include transform(scale(1.05));
-				}
-			}
-			.logo{
-				width:100%;
-				height:100%;
-				position: relative;
-				&:before {
-            		content: "";
-            		display: inline-block;
-            		height: 100%;
-            		vertical-align: middle;
-     			}
-     			.img-wrap{
-     				width:70%;
-     				display: inline-block;
-            		vertical-align: middle;
-            		text-align: center;
-            		img{
-            			width:100%;
-            			height:auto;
-            			margin:0 auto;
-            			display: inline-block;
-            		}
-            		&.portrait{
-            			height:40%;
-            			img{
-            				width:auto;
-            				height:100%;
-            			}
-            		}
-  
-     			}
-			}
-		}
-	}
-}
 #newsletter-signup{
-	padding-bottom: 86px;
+	padding: 86px 0;
+	background-color: white;
+	@media screen and (max-width: $break-small){
+		padding: 86px 20px;
+	}
 }
 #about{
-	padding: 0 30% 86px;
 	figure{
 		width:332px;
 		height:auto;
@@ -97,6 +14,10 @@
 		img{
 			width:100%;
 			height: auto;
+		}
+		@media screen and (max-width: $break-small){
+			width:70%;
+			max-width: 250px;
 		}
 	}
 }

@@ -3,7 +3,7 @@
 	background-color: $light-grey;  
 	position: relative;
 	text-align:center;
-	padding: 86px 0 40px;
+	padding: 40px 0 40px;
 	@include font-size(12);
 	text-transform: uppercase;
 	h3{
@@ -20,13 +20,11 @@
 			background-image:url('../images/giselle.png');
 		}
 	}
-	address{
-		font-family: $brandongrotesque-regular;
-		@include font-size(16);
-		text-transform: uppercase;
-		line-height: 140%;
-		letter-spacing: 1px;
-		margin-bottom: 55px;
+	p{
+		margin-bottom: 20px;
+		&.vcard{
+			margin-bottom: 50px;
+		}
 	}
 	nav.social{
 		@include centered-menu;

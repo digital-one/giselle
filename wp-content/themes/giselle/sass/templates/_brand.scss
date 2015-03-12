@@ -4,6 +4,9 @@
 	height:100%;
 	position: relative;
 	@extend %clearfix;
+	&.last{
+		height:auto;
+	}
 }
 .section-inner{
 	display:block;
@@ -13,6 +16,21 @@
 	height:100%;
 	padding:118px 5px 15px;
 	@extend %clearfix;
+	a.close{
+		@include abs-pos(0,15px,auto,auto);
+		width:22px;
+		height:22px;
+		display: block;
+		background-image:url('../images/close-black.svg');
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:100% auto;
+		@extend %ir;
+		z-index: 9999;
+		.ie8 &{
+			background-image:url('../images/close-black.png');
+		}
+	}
 	.column{
 		width:50%;
 		height:100%;
@@ -29,18 +47,19 @@
 			height: 100%;
 			position: relative;
 			background-color:white;
-			@include bg-cover;
 			.content{
 				display: block;
 				background-color: $light-grey;
 				//height:100%;
 				@include abs-pos(0,0,0,0);
 				//position: relative;
+				@include bg-cover;
 				.text{
 					height:100%;
 					width:100%;
 					padding:0 40px;
 					display:block;
+					background-color: white;
 					&:before{
 						content:"";
 						display: inline-block;
@@ -52,9 +71,28 @@
           				display: inline-block;
           				width: 99%;
 					}
+					.logo{
+						width:60%;
+						height:auto;
+						text-align: center;
+						margin-bottom: 50px;
+						img{
+							width: 100%;
+							height: auto;
+							display: inline-block;
+							margin:0 auto;
+						}
+						&.portrait{
+							height:170px;
+							img{
+								width:auto;
+								height: 100%;
+							}
+						}
+					}
 					p{
 						font-family: $freight-book;
-						letter-spacing:1px;
+						letter-spacing:0.7px;
 						word-spacing: 1px;
 						@include font-size(20);
 						line-height: 140%;

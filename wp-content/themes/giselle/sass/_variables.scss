@@ -1,5 +1,5 @@
 //neat overrides
-$max-width: 1920px; //overide neat outer container width
+$max-width: 1100px; //overide neat outer container width
 $visual-grid: false; 
 
 //colours
@@ -155,7 +155,8 @@ $freight-book: "Freight-BigBook_gdi", sans-serif;
 $freight-book-italic: "Freight-BigBookItalic_gdi", sans-serif;
 
 //break points
+$break-xsmall: 380px; //mobile
 $break-small: 660px; //mobile
 $break-medium: 768px; //ipad 
-$break-large: 1020px; //desktop
+$break-large: 1024px; //desktop
 $break-xlarge: 1450px; //hi res desktop

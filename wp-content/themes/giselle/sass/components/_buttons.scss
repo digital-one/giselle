@@ -8,11 +8,26 @@
 	color: $dark-grey;
 	text-align:center;
 	position:relative;
+	@media screen and (max-width: $break-xlarge){
+		height:30px;
+		line-height: 30px;
+		@include font-size(12);
+		letter-spacing:2px;
+	}
 }
 .button{
 	border:1px solid $dark-grey;
 	padding:0 20px;
 	text-transform:uppercase;
+	@include transition(color 0.3s ease, border-color 0.3s ease);
+	&:hover,&:active{
+		color: lighten($dark-grey,30);
+		border-color: lighten($dark-grey,30);
+	}
+	@media screen and (max-width: $break-xlarge){
+		padding:0 10px;
+	}
+
 }
 @include keyframes(drawline) {
   from {
@@ -64,6 +79,13 @@
 		&.hide{
 			top:50px;
 		}
+	}
+	.section &{
+		@include abs-pos(auto,auto,10px,50%);
+		z-index: 9999;
+	}
+	@media only screen  and (max-width : 768px) and (orientation : portrait) {
+		display: none;
 	}
 }
 @include keyframes(pulse) {

@@ -1,0 +1,41 @@
+#image-banner{
+	display:block;
+	width:100%;
+	padding: 0 5px;
+	@extend %clearfix;	
+	margin-bottom:60px;
+	background-color:white;
+	@media screen and (max-width: $break-small){
+		margin-bottom:30px;
+	}
+	.image-wrap{
+		width:50%;
+		padding:0 10px;
+		position:relative;
+		float:left;
+		@media screen and (max-width: $break-small){
+			width:100%;
+			padding: 0 5px 10px;
+			&.right{
+				display: none;
+			}
+		}
+		&:before{
+			content:"";
+			padding-top:60%;
+			display: inline-block;
+		}
+
+		div{
+			@include abs-pos(0,10px,0,10px);
+			@include bg-cover;
+			background-color: $light-grey;
+			@media screen and (max-width: $break-small){
+				@include abs-pos(0,5px,10px,5px);
+			}
+		}
+	}
+}
+#intro{
+	padding-bottom:40px;
+}

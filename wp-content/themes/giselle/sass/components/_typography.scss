@@ -4,13 +4,15 @@ h1,h2,h3,h4,h5{
 	color: $dark-grey;
 	font-weight:normal;
 	line-height:100%;
-	letter-spacing:5px;
+	letter-spacing:4px;
+	text-transform:uppercase;
 	margin: 0 0 30px;
 	@media screen and (max-width: $break-xlarge){
-	//	@include font-size(35);
+		@include font-size(18);
 	}
 	@media screen and (max-width: $break-small){
-		//@include font-size(26);
+		@include font-size(16);
+		line-height: 130%;
 		//margin-bottom: 7px;
 	}
 }
@@ -22,25 +24,54 @@ a{
 	}
 }
 p{
+	font-family: $freight-book;
+	letter-spacing:0.7px;
+	word-spacing: 1px;
+	@include font-size(22);
+	line-height: 140%;
+	margin-bottom: 40px;
 	&.intro{
-		font-family: $freight-book;
 		@include font-size(25);
-		line-height: 150%;
-		letter-spacing: 0.5px;
-		word-spacing: 1.5px;
-		margin-bottom:36px;
-		i{
-			font-family: $freight-book-italic;
-			font-style: normal;
+		display: block;
+		@media screen and (max-width: $break-small){
+			@include font-size(22);
 		}
+	}
+	i{
+		font-family: $freight-book-italic;
+		font-style: normal;
 	}
 	a{
 		&:link,&:visited{
-			border-bottom: 1px dotted $dark-grey;
+			border-bottom: 1px dotted $grey;
 		}
 		&:hover,&:active{
-			border-bottom: 1px solid $dark-grey;
+			border-bottom: 1px solid $grey;
 		}
+	}
+	&.vcard{
+		font-family: $brandongrotesque-regular;
+		@include font-size(14);
+		text-transform: uppercase;
+		line-height: 140%;
+		letter-spacing: 1px;
+		margin-bottom: 55px;
+		span{
+			display: block;
+			margin-bottom: 10px;
+			&:last-child{
+				margin:0;
+			}
+		}
+		a{
+			text-transform: none;
+		}
+	}
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(20);
+	}
+	@media screen and (max-width: $break-small){
+		@include font-size(18);
 	}
 }
 address{
@@ -48,5 +79,10 @@ address{
 }
 small{
 	@include font-size(11);
+	font-family: $brandongrotesque-regular;
+	display: block;
+	line-height: 140%;
+	word-spacing:normal;
+	letter-spacing:0.5px;
 }
 

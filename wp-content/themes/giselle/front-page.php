@@ -30,8 +30,8 @@
 <div class="signpost"><a href="" class="content">Content</a></div>
 <div class="signpost"><a href="" class="content"><div class="logo"><div class="img-wrap"><img src="<?php echo get_template_directory_uri(); ?>/images/marccain.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/images/marccain.png'" /></div></div></a></div>
 <div class="signpost"><div class="content">Content</div></div>
-<div class="signpost"><div class="content">Content</div></div>
-<div class="signpost"><div class="content"><div class="twitter-feed"><div class="user">
+
+<div class="signpost twitter"><div class="content"><div class="twitter-feed"><div class="user">
   <a href="https://twitter.com/fastforwardbook" aria-label="FastForwardBook (screen name: fastforwardbook)" data-scribe="element:user_link">
     <img alt="" src="https://pbs.twimg.com/profile_images/517313342382170112/23Gk_gc7_normal.jpeg" data-src-2x="https://pbs.twimg.com/profile_images/517313342382170112/23Gk_gc7_bigger.jpeg" data-scribe="element:avatar">
     <span>
@@ -46,16 +46,35 @@
 
 </div></div>
 <div class="signpost"><div class="content">Content</div></div>
+<div class="signpost"><div class="content">Content</div></div>
 <div class="signpost"><a href="" class="content"><div class="logo"><div class="img-wrap portrait"><img src="<?php echo get_template_directory_uri(); ?>/images/riani.png" /></div></div></a></div>
+<div class="signpost"><div class="content">Content</div></div>
+<div class="signpost twitter"><div class="content"><div class="twitter-feed"><div class="user">
+  <a href="https://twitter.com/fastforwardbook" aria-label="FastForwardBook (screen name: fastforwardbook)" data-scribe="element:user_link">
+    <img alt="" src="https://pbs.twimg.com/profile_images/517313342382170112/23Gk_gc7_normal.jpeg" data-src-2x="https://pbs.twimg.com/profile_images/517313342382170112/23Gk_gc7_bigger.jpeg" data-scribe="element:avatar">
+    <span>
+      <span data-scribe="element:name">FastForwardBook</span>
+    </span>
+    <span data-scribe="element:screen_name">@fastforwardbook</span>
 
+  </a>
+</div><p class="tweet">BBC News - Solar plane journey's first leg ends <a href="http://t.co/i3ttC5si4V" data-expanded-url="http://ow.ly/K6ZoE" target="_blank" title="http://ow.ly/K6ZoE" data-scribe="element:url"><span>http://</span><span>ow.ly/K6ZoE</span><span></span><span><span>&nbsp;</span></span></a></p><p class="timePosted">Posted on 09 Mar</p><p class="interact"><a href="https://twitter.com/intent/tweet?in_reply_to=574975280042917888" class="twitter_reply_icon">Reply</a><a href="https://twitter.com/intent/retweet?tweet_id=574975280042917888" class="twitter_retweet_icon">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=574975280042917888" class="twitter_fav_icon">Favorite</a></p>
+<footer><a href="" class="button">Follow Us</a></footer>
+</div>
+
+</div></div>
+<div class="signpost"><div class="content">Content</div></div>
+
+<div class="signpost"><div class="content">Content</div></div>
 
 
 
 
 </div>
-<footer class="posts-footer"><a href="" title="More" class="ul-button">MORE</a></footer>
+<!--<footer class="posts-footer"><a href="" title="More" class="ul-button">MORE</a></footer>
+<footer class="posts-footer"><span class="loader">Loading More</span></footer>-->
 </section>
-<section id="about">
+<section id="about" class="gutter">
 	<div class="container">
 <h2>WELCOME TO GISELLE, YORK</h2>
 <p class="intro">Serving customers around Yorkshire, Teeside, Tyne &amp; Wear and the Midlands, Giselle specialise in <i>Mother of the Bride, Wedding Outfits</i> and <i>Special Occasion Wear</i> as well as leading the way in contemporary fashion including <i>Marccain</i>, <i>Riani</i> and so many more.</p>

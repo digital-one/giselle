@@ -1,0 +1,86 @@
+#archive{
+	margin-bottom: 80px;
+	.posts{
+		@extend .clearfix;
+		margin-bottom: 30px;
+	}
+	article{
+		width:33.3%;
+		padding:0 10px 20px;
+		background-color: white;
+		display: block;
+		float:left; 
+		.inner{
+			background-color: $light-grey;
+			width:100%;
+			display:block;
+		}
+		figure{
+			display: block;
+			width: 100%;
+			background-color:red;
+			position: relative;
+			overflow:hidden;
+			img{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+		.content{
+			display: block;
+			width: 100%;
+			padding: 25px 20px 1px;
+		}
+		header{
+			margin-bottom: 20px;
+		}
+		h3{
+			font-family: $brandongrotesque-medium;
+			letter-spacing: 1px;
+			margin-bottom: 10px;
+		}
+		time{
+			@include font-size(12);
+			text-transform: uppercase;
+		}
+		p{
+			font-family: $brandongrotesque-regular;
+			@include font-size(18);
+			line-height: 130%;
+			letter-spacing: normal;
+			margin-bottom: 30px;
+			text-align: left;
+		}
+	}
+}
+.posts-footer{
+	text-align:center;
+	width:100%;
+	display: block;
+	span.loader{
+		display: inline-block;
+		margin:0 auto;
+		font-family: $brandongrotesque-bold;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		height:32px;
+		line-height: 32px;
+		padding:0 45px 0 0;
+		position: relative;
+		&:after{
+			content:"";
+			display: block;
+			width: 32px;
+			height: 32px;
+			background-image:url('../images/spin.gif');
+			background-position:center center;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			@include abs-pos(0,0,auto,auto);
+			.svg &{
+				background-image:url('../images/spin.svg');
+			}
+		}
+	}
+}
