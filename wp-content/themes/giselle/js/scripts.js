@@ -28,7 +28,9 @@ $('#carousel').slick({
   		dots: false,
   		arrows: true,
   		infinite: true,
-  		speed: 300,
+  		autoplay: true,
+  		 autoplaySpeed: 4000,
+  		speed: 600,
   		slidesToShow: 3,
   		slidesToScroll: 1,
   		responsive: [

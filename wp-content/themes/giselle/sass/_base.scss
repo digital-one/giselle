@@ -1,6 +1,6 @@
 html,body{
 	width:100%;
-	//height:100%;
+	height:100%;
 }
 html{
 	font-size: 62.5%;
@@ -11,10 +11,10 @@ body{
 	line-height:130%;
 	height:100%;
 	background-color: $light-grey;
+	/*
 	@media only screen  and (max-width : 768px) and (orientation : portrait) {
 		height:auto;
 	}
-	/*
 	@media screen and (max-width: $break-xlarge){
 		@include font-size(15);
 	}

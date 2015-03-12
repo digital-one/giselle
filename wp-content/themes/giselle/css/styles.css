@@ -898,6 +898,7 @@ header#header {
 /* line 1, ../sass/_base.scss */
 html, body {
   width: 100%;
+  height: 100%;
 }
 
 /* line 5, ../sass/_base.scss */
@@ -914,6 +915,9 @@ body {
   height: 100%;
   background-color: #e9f0ed;
   /*
+  @media only screen  and (max-width : 768px) and (orientation : portrait) {
+  	height:auto;
+  }
   @media screen and (max-width: $break-xlarge){
   	@include font-size(15);
   }
@@ -923,12 +927,6 @@ body {
   */
   color: #1d1d1d;
   overflow-x: hidden;
-}
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-  /* line 8, ../sass/_base.scss */
-  body {
-    height: auto;
-  }
 }
 
 /* line 1, ../sass/components/_container.scss */
@@ -2096,8 +2094,8 @@ textarea {
 }
 /* line 34, ../sass/components/_twitter.scss */
 .twitter-feed .tweet {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 140%;
   font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
   letter-spacing: 0;
@@ -2132,10 +2130,19 @@ textarea {
   bottom: 0;
   left: 0;
   position: absolute;
-  padding: 0 0 30px;
+  padding: 0 0 20px;
+}
+/* line 58, ../sass/components/_twitter.scss */
+.twitter-feed footer .button {
+  height: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding: 0 15px;
 }
 @media screen and (max-width: 767px) {
-  /* line 59, ../sass/components/_twitter.scss */
+  /* line 66, ../sass/components/_twitter.scss */
   #signposts .twitter-feed footer {
     position: relative;
     padding: 0 0 20px;
@@ -2581,7 +2588,7 @@ textarea {
   background-color: white;
   width: 100%;
   height: 100%;
-  padding: 118px 5px 15px;
+  padding: 98px 5px 15px;
 }
 /* line 19, ../sass/templates/_brand.scss */
 .section-inner a.close {
@@ -2693,11 +2700,15 @@ textarea {
   font-size: 2rem;
   line-height: 140%;
 }
-/* line 102, ../sass/templates/_brand.scss */
+/* line 99, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .text p:last-child {
+  margin: 0;
+}
+/* line 105, ../sass/templates/_brand.scss */
 .section-inner .column .row.top {
   padding-bottom: 10px;
 }
-/* line 104, ../sass/templates/_brand.scss */
+/* line 107, ../sass/templates/_brand.scss */
 .section-inner .column .row.top .content {
   top: 0;
   right: 0;
@@ -2705,11 +2716,11 @@ textarea {
   left: 0;
   position: absolute;
 }
-/* line 108, ../sass/templates/_brand.scss */
+/* line 111, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom {
   padding-top: 10px;
 }
-/* line 110, ../sass/templates/_brand.scss */
+/* line 113, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom .content {
   top: 10px;
   right: 0;
@@ -2717,11 +2728,11 @@ textarea {
   left: 0;
   position: absolute;
 }
-/* line 114, ../sass/templates/_brand.scss */
+/* line 117, ../sass/templates/_brand.scss */
 .section-inner .column .row.height-55-pct {
   height: 55%;
 }
-/* line 117, ../sass/templates/_brand.scss */
+/* line 120, ../sass/templates/_brand.scss */
 .section-inner .column .row.height-45-pct {
   height: 45%;
 }
