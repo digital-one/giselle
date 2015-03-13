@@ -7,6 +7,12 @@
 	&.last{
 		height:auto;
 	}
+	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+		height:50%;
+	}
+	@media only screen  and (max-width : $break-small){
+		height:auto;
+	}
 }
 .section-inner{
 	display:block;
@@ -14,7 +20,13 @@
 	background-color: white;
 	width:100%;
 	height:100%;
-	padding:98px 5px 15px;
+	padding:98px 7px 14px;
+	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+		padding:0 7px 14px;
+	}
+	@media only screen  and (max-width : $break-small) {
+		padding:0 7px 0;
+	}
 	@extend %clearfix;
 	a.close{
 		@include abs-pos(0,15px,auto,auto);
@@ -35,11 +47,31 @@
 		width:50%;
 		height:100%;
 		display: block;
-		padding: 0 10px;
+		padding: 0 7px;
 		position:relative;
 		float:left;
 		&.full-width{
 			width:100%;
+			@media only screen  and (max-width : $break-small){
+				&:before{
+					content:"";
+					padding-top:80%;
+					display: inline-block;
+				}
+
+			}
+		}
+		@media only screen  and (max-width : $break-small){
+			&.half{
+				overflow: hidden;
+				width:100%;
+				position: relaive;
+				&:before{
+					content:"";
+					padding-top:130%;
+					display: inline-block;
+				}
+			}
 		}
 		.row{
 			width:100%;
@@ -47,6 +79,11 @@
 			height: 100%;
 			position: relative;
 			background-color:white;
+			@media only screen  and (max-width : $break-small){
+				@include abs-pos(7px,7px,7px,7px);
+				width:auto;
+				height:auto;
+			}
 			.content{
 				display: block;
 				background-color: $light-grey;
@@ -54,10 +91,14 @@
 				@include abs-pos(0,0,0,0);
 				//position: relative;
 				@include bg-cover;
+				
 				.text{
 					height:100%;
 					width:100%;
 					padding:0 40px;
+					@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+						padding: 0 10px;
+					}
 					display:block;
 					background-color: white;
 					&:before{
@@ -90,11 +131,20 @@
 							}
 						}
 					}
+					h2,h3{
+						@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+							@include font-size(14);
+							margin-bottom: 10px;
+						}
+					}
 					p{
 						font-family: $freight-book;
 						letter-spacing:0.7px;
 						word-spacing: 1px;
 						@include font-size(20);
+						@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+							@include font-size(16);
+						}
 						line-height: 140%;
 						&:last-child{
 							margin:0;
@@ -104,21 +154,37 @@
 			}
 			&.top{
 				padding-bottom:10px;
+				@media only screen  and (max-width : $break-small){
+					padding-bottom:0;
+					@include abs-pos(0,7px,7px,7px);
+				}
 				.content{
-					@include abs-pos(0,0,10px,0);
+					@include abs-pos(0,0,7px,0);
+					@media only screen  and (max-width : $break-small){
+						@include abs-pos(0,0,0,0);
+					}
 				}
 			}
 			&.bottom{
 				padding-top:10px;
+				@media only screen  and (max-width : $break-small){
+					@include abs-pos(auto,7px,7px,7px);
+				}
 				.content{
-					@include abs-pos(10px,0,0,0);
+					@include abs-pos(7px,0,0,0);
 				}
 			}
 			&.height-55-pct{
 				height: 55%;
+				@media only screen  and (max-width : $break-small){
+					height:50%;
+				}
 			}
 			&.height-45-pct{
 				height: 45%;
+				@media only screen  and (max-width : $break-small){
+					height:50%;
+				}
 			}
 		}
 	}

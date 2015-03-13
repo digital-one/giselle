@@ -1,6 +1,6 @@
 #signposts{
 	@extend .clearfix;
-	padding:0 5px 80px;
+	padding:0 7px 80px;
 	@media screen and (max-width: $break-small){
 		padding-bottom:50px;
 	}
@@ -87,7 +87,7 @@
     	padding-top: 100%;
 	}
 	.content{
-		@include abs-pos(10px,10px,10px,10px);
+		@include abs-pos(7px,7px,7px,7px);
 		@media screen and (max-width: $break-small){
 			@include abs-pos(5px,5px,5px,5px);
 		}

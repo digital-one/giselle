@@ -49,6 +49,11 @@
 			padding:94px 0 0;
 		}
 	}
+	.page-template-template-brand &{
+		@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+			padding: 98px 0 0;
+		}
+	}
 }
 #home{
 	width:100%;

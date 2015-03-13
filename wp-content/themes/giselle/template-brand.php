@@ -12,13 +12,13 @@
 <!--section-->
 <section class="section">
 <div class="section-inner">
-<div class="column"><div class="row"><div class="content" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-pop-art-1.jpg');">image</div></div></div>
-<div class="column">
+<div class="column half"><div class="row"><div class="content" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-pop-art-1.jpg');">image</div></div></div>
+<div class="column half">
 <div class="row height-45-pct top">
 <div class="content"><div class="text"><div><h2>POP ART</h2>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p></div></div></div>
 </div>
-<div class="row height-55-pct bottom"><div class="content">image</div></div>
+<div class="row height-55-pct bottom"><div class="content"   style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg');">image</div></div>
 </div>
 </div>
 </section>
@@ -26,35 +26,35 @@
 <!--section-->
 <section class="section">
 <div class="section-inner">
-<div class="column full-width"><div class="row"><div class="content">image</div></div></div>
+<div class="column full-width"><div class="row"><div class="content"  style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg');">image</div></div></div>
 </div>
 </section>
 <!--/section-->
 <!--section-->
 <section class="section">
 <div class="section-inner">
-  <div class="column">
+  <div class="column half">
 <div class="row height-45-pct top">
-<div class="content"><div class="text"><div><h2>POP ART</h2>
+<div class="content"><div class="text"><div><h2>EXPRESS YOURSELF</h2>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p></div></div></div>
 </div>
-<div class="row height-55-pct bottom"><div class="content">image</div></div>
+<div class="row height-55-pct bottom"><div class="content"  style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg');">image</div></div>
 </div>
-<div class="column"><div class="row"><div class="content">image</div></div></div>
+<div class="column half"><div class="row"><div class="content"  style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg');">image</div></div></div>
 </div>
 </section>
 <!--/section-->
 <!--section-->
 <section class="section last">
 <div class="section-inner">
-  <div class="column">
+  <div class="column half">
 <div class="row">
-<div class="content">image</div>
+<div class="content"   style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg');">image</div>
 </div>
 </div>
-  <div class="column">
+  <div class="column half">
 <div class="row">
-<div class="content">image</div>
+<div class="content"   style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg');">image</div>
 </div>
 </div>
 </div>
