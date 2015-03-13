@@ -39,6 +39,9 @@
 		margin: 80% 0 0;
 		padding:0;
 	}
+	.page-template-template-contact &{
+		padding-top:94px;
+	}
 	.page-template-template-brand &, .page-template-template-product &{
 		height:100%;
 		padding:0;
@@ -49,7 +52,7 @@
 			padding:94px 0 0;
 		}
 	}
-	.page-template-template-brand &{
+	.page-template-template-brand &, .page-template-template-product &{
 		@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
 			padding: 98px 0 0;
 		}

@@ -3,7 +3,7 @@
 	background-color: $light-grey;  
 	position: relative;
 	text-align:center;
-	padding: 40px 0 40px;
+	padding: 40px 0 10px;
 	@include font-size(12);
 	text-transform: uppercase;
 	h3{
@@ -24,6 +24,7 @@
 		margin-bottom: 20px;
 		&.vcard{
 			margin-bottom: 50px;
+			@include font-size(13);
 		}
 	}
 	nav.social{

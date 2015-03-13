@@ -4,7 +4,7 @@
 	height:100%;
 	.slick-prev,.slick-next{
 		@include transition(opacity 0.5s ease);
-		@include opacity(0);
+		//@include opacity(0);
 		width:40px;
 		height:60px;
 		background-color: white;
@@ -13,6 +13,7 @@
 		background-position:center center;
 		background-size: 14px auto;
 		@include abs-pos(50%,auto,auto,0);
+		margin-top:-30px;
 		@extend %ir;
 		.ie8 &{
 			background-image:url('../images/carousel-prev.png');

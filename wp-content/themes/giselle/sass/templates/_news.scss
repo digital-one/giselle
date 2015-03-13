@@ -1,12 +1,18 @@
 #archive{
-	margin-bottom: 80px;
+	margin: 0 7px 80px;
 	.posts{
 		@extend .clearfix;
 		margin-bottom: 30px;
 	}
 	article{
 		width:33.3%;
-		padding:0 10px 20px;
+		@media screen and (max-width: $break-medium){
+			width:50%;
+		}
+		@media screen and (max-width: $break-small){
+			width:100%;
+		}
+		padding:0 7px 14px;
 		background-color: white;
 		display: block;
 		float:left; 

@@ -4,8 +4,8 @@
 <!--section-->
 <section class="section">
 <div class="section-inner">
-
-<div class="column">
+    <a class="close">Close</a>
+<div class="column half left">
   <div class="row">
     <div class="content">
       <div id="gallery" class="slick-slider">
@@ -20,8 +20,8 @@
       </div>
 </div>
 </div></div>
- <div class="column">
-    <a class="close">Close</a>
+ <div class="column half right">
+
 <div class="row">
 <div class="content"><div class="text"><div><div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/marccain.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/images/marccain.png'" /></div><h2>EXPRESS YOURSELF</h2>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p><a href="" class="button">VIEW MORE</a></div></div></div>

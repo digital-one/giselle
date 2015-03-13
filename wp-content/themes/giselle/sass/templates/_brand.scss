@@ -13,6 +13,11 @@
 	@media only screen  and (max-width : $break-small){
 		height:auto;
 	}
+	.page-template-template-product &{
+		@media only screen and(max-width: $break-medium){
+			height:auto;
+		}
+	}
 }
 .section-inner{
 	display:block;
@@ -27,9 +32,14 @@
 	@media only screen  and (max-width : $break-small) {
 		padding:0 7px 0;
 	}
+	.page-template-template-product &{
+	 	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+	 		padding:40px 7px 0;
+	 	}
+	 }
 	@extend %clearfix;
 	a.close{
-		@include abs-pos(0,15px,auto,auto);
+		@include abs-pos(120px,15px,auto,auto);
 		width:22px;
 		height:22px;
 		display: block;
@@ -39,9 +49,15 @@
 		background-size:100% auto;
 		@extend %ir;
 		z-index: 9999;
+		cursor: pointer;
 		.ie8 &{
 			background-image:url('../images/close-black.png');
 		}
+		.page-template-template-product &{
+	 		@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+	 			top: 10px;
+	 		}
+	 	}
 	}
 	.column{
 		width:50%;
@@ -58,18 +74,59 @@
 					padding-top:80%;
 					display: inline-block;
 				}
-
 			}
 		}
-		@media only screen  and (max-width : $break-small){
-			&.half{
+		&.half{
+			@media only screen  and (max-width : $break-small){
 				overflow: hidden;
 				width:100%;
-				position: relaive;
+				position: relative;
 				&:before{
 					content:"";
 					padding-top:130%;
 					display: inline-block;
+				}
+			}
+			&.left{
+				.page-template-template-product &{
+					@media only screen and(max-width: $break-medium){
+						overflow: hidden;
+						width:100%;
+						height:auto;
+						position: relaive;
+						&:before{
+							content:"";
+							padding-top:100%;
+							display: inline-block;
+						}
+					}
+					@media only screen and(max-width: $break-small){
+						&:before{
+							padding-top:120%;
+						}
+					}
+				}
+			}
+			&.right{
+				.page-template-template-product &{
+					@media only screen and(max-width: $break-medium){
+						height:auto;
+						width:100%;
+						&:before{
+							content:"";
+							padding-top:60%;
+							display: inline-block;
+						}
+					}
+					@media only screen and(max-width: $break-small){
+						height:auto;
+						width:100%;
+						&:before{
+							content:"";
+							padding-top:120%;
+							display: inline-block;
+						}
+					}
 				}
 			}
 		}
@@ -83,6 +140,13 @@
 				@include abs-pos(7px,7px,7px,7px);
 				width:auto;
 				height:auto;
+			}
+			.page-template-template-product &{
+				@media only screen and(max-width: $break-medium){
+					@include abs-pos(7px,7px,7px,7px);
+					width:auto;
+					height:auto;
+				}
 			}
 			.content{
 				display: block;
@@ -98,6 +162,14 @@
 					padding:0 40px;
 					@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
 						padding: 0 10px;
+					}
+					.page-template-template-product &{
+						@media only screen and(max-width: $break-medium){
+							padding: 0 15%;
+						}
+						@media only screen and(max-width: $break-small){
+							padding: 0 10px;
+						}
 					}
 					display:block;
 					background-color: white;
