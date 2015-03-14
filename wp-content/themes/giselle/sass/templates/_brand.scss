@@ -1,3 +1,8 @@
+#fullpage{
+	@media only screen and(max-width: $break-medium){
+		height:100%;
+	}
+}
 .section{
 	display: block;
 	width:100%;
@@ -7,7 +12,7 @@
 	&.last{
 		height:auto;
 	}
-	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+	@media only screen  and (max-width : $break-medium) {
 		height:50%;
 	}
 	@media only screen  and (max-width : $break-small){
@@ -26,14 +31,16 @@
 	width:100%;
 	height:100%;
 	padding:98px 7px 14px;
+	/*
 	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
 		padding:0 7px 14px;
 	}
-	@media only screen  and (max-width : $break-small) {
+	*/
+	@media only screen  and (max-width : $break-medium) {
 		padding:0 7px 0;
 	}
 	.page-template-template-product &{
-	 	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+	 	@media only screen  and (max-width : $break-medium){
 	 		padding:40px 7px 0;
 	 	}
 	 }
@@ -54,7 +61,7 @@
 			background-image:url('../images/close-black.png');
 		}
 		.page-template-template-product &{
-	 		@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+	 		@media only screen  and (max-width : $break-medium) {
 	 			top: 10px;
 	 		}
 	 	}
@@ -89,7 +96,7 @@
 			}
 			&.left{
 				.page-template-template-product &{
-					@media only screen and(max-width: $break-medium){
+					@media only screen and(max-width: $break-small){
 						overflow: hidden;
 						width:100%;
 						height:auto;
@@ -109,7 +116,7 @@
 			}
 			&.right{
 				.page-template-template-product &{
-					@media only screen and(max-width: $break-medium){
+					@media only screen and(max-width: $break-small){
 						height:auto;
 						width:100%;
 						&:before{
@@ -136,13 +143,13 @@
 			height: 100%;
 			position: relative;
 			background-color:white;
-			@media only screen  and (max-width : $break-small){
+			@media only screen  and (max-width : $break-medium){
 				@include abs-pos(7px,7px,7px,7px);
 				width:auto;
 				height:auto;
 			}
 			.page-template-template-product &{
-				@media only screen and(max-width: $break-medium){
+				@media only screen and(max-width: $break-small){
 					@include abs-pos(7px,7px,7px,7px);
 					width:auto;
 					height:auto;
@@ -160,17 +167,13 @@
 					height:100%;
 					width:100%;
 					padding:0 40px;
-					@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
-						padding: 0 10px;
-					}
-					.page-template-template-product &{
-						@media only screen and(max-width: $break-medium){
+				//	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+						@media only screen  and (max-width : $break-medium){
 							padding: 0 15%;
 						}
-						@media only screen and(max-width: $break-small){
+						@media only screen and(max-width: $break-medium){
 							padding: 0 10px;
 						}
-					}
 					display:block;
 					background-color: white;
 					&:before{
@@ -204,7 +207,7 @@
 						}
 					}
 					h2,h3{
-						@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+						@media only screen  and (max-width : $break-medium) {
 							@include font-size(14);
 							margin-bottom: 10px;
 						}
@@ -214,7 +217,7 @@
 						letter-spacing:0.7px;
 						word-spacing: 1px;
 						@include font-size(20);
-						@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+						@media only screen  and (max-width : $break-medium){
 							@include font-size(16);
 						}
 						line-height: 140%;
@@ -226,20 +229,20 @@
 			}
 			&.top{
 				padding-bottom:10px;
-				@media only screen  and (max-width : $break-small){
+				@media only screen  and (max-width : $break-medium){
 					padding-bottom:0;
 					@include abs-pos(0,7px,7px,7px);
 				}
 				.content{
 					@include abs-pos(0,0,7px,0);
-					@media only screen  and (max-width : $break-small){
+					@media only screen  and (max-width : $break-medium){
 						@include abs-pos(0,0,0,0);
 					}
 				}
 			}
 			&.bottom{
 				padding-top:10px;
-				@media only screen  and (max-width : $break-small){
+				@media only screen  and (max-width : $break-medium){
 					@include abs-pos(auto,7px,7px,7px);
 				}
 				.content{
@@ -248,13 +251,13 @@
 			}
 			&.height-55-pct{
 				height: 55%;
-				@media only screen  and (max-width : $break-small){
+				@media only screen  and (max-width : $break-medium){
 					height:50%;
 				}
 			}
 			&.height-45-pct{
 				height: 45%;
-				@media only screen  and (max-width : $break-small){
+				@media only screen  and (max-width : $break-medium){
 					height:50%;
 				}
 			}

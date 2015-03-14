@@ -35,6 +35,8 @@
 	position: relative;
 	z-index: 2;
 	text-align:center;
+	@include opacity(0);
+	@include transition(opacity 1s ease);
 	.home &{
 		margin: 80% 0 0;
 		padding:0;
@@ -54,7 +56,7 @@
 	}
 	.page-template-template-brand &, .page-template-template-product &{
 		@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
-			padding: 98px 0 0;
+			padding: 87px 0 0;
 		}
 	}
 }

@@ -1,0 +1,66 @@
+#fp-nav {
+    position: fixed;
+    z-index: 9999;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    display: none;
+    -webkit-transform: translate3d(0,0,0);
+    background-color: white;
+    right:0;
+    ul{
+    	 margin: 0;
+ 		 padding: 10px 0;
+    	li{
+    		display: block;
+   			width: 10px;
+    		height: 10px;
+    		margin: 10px 15px;
+    		position:relative;
+            .fp-tooltip {
+                position: absolute;
+                top: -2px;
+                color: #fff;
+                font-size: 14px;
+                font-family: arial, helvetica, sans-serif;
+                white-space: nowrap;
+                max-width: 220px;
+                overflow: hidden;
+                display: block;
+                opacity: 0;
+                width: 0;
+                &.right{
+                    right:20px;
+                }
+                &.left{
+                    left:20px;
+                }
+            }
+            &:hover{
+
+            }
+    		a{
+    			display: block;
+   				position: relative;
+   	 			z-index: 1;
+    			width: 100%;
+    			height: 100%;
+                @include border-radius(50%);
+                background-color: $light-grey;
+    			cursor: pointer;
+    			text-decoration: none;
+                &.active{
+                    background-color: $dark-grey;
+                }
+    		}
+    	} 
+    }
+    &.fp-show-active {
+        a.active + .fp-tooltip {
+            -webkit-transition: opacity 0.2s ease-in;
+            transition: opacity 0.2s ease-in;
+            width: auto;
+            opacity: 1;
+        }
+    }
+}
