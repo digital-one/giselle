@@ -4,8 +4,8 @@
   <div id="slick" class="slick-slider">
 	<!--<div class="slick-list">
 		<div class="slick-track">-->
-<div class="slick-slide slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
-<div class="slick-slide slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
+<div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
+<div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
 <!--</div>
 </div>-->
 <?php /*

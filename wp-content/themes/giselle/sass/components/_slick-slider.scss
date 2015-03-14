@@ -5,6 +5,7 @@
 	position:fixed;
 	left:0;
 	top:0;
+	@include opacity(0);
 	display: block;
 	background-color:white;
 	@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
@@ -42,6 +43,13 @@
   			width:100%;
 			.slick-slide{
 				width:100%;
+				/*
+				@include opacity(0);
+				@include transition(opacity 0.5s ease);
+				.loaded &{
+					@include opacity(1);
+				}
+				*/
 				max-width:1800px;
 				float:left;
 				height:100%;

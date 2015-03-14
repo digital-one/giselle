@@ -5,7 +5,15 @@
 	text-align:center;
 	padding: 40px 0 10px;
 	@include font-size(12);
+	@include opacity(0);
 	text-transform: uppercase;
+	/*
+	
+	@include transition(opacity 1s ease);
+	.loaded &{
+		@include opacity(1);
+	}
+	*/
 	h3{
 		display:block;
 		width:200px;

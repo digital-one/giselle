@@ -998,42 +998,46 @@ body {
   -moz-opacity: 0;
   -khtml-opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  /*
+  
+  @include transition(opacity 1s ease);
+  .loaded &{
+  	@include opacity(1);
+  }
+  */
 }
-/* line 40, ../sass/components/_container.scss */
+/* line 46, ../sass/components/_container.scss */
 .home #main {
   margin: 80% 0 0;
   padding: 0;
 }
-/* line 44, ../sass/components/_container.scss */
+/* line 50, ../sass/components/_container.scss */
 .page-template-template-contact #main {
   padding-top: 94px;
 }
-/* line 47, ../sass/components/_container.scss */
+/* line 53, ../sass/components/_container.scss */
 .page-template-template-brand #main, .page-template-template-product #main {
   height: 100%;
   padding: 0;
 }
-/* line 51, ../sass/components/_container.scss */
+/* line 57, ../sass/components/_container.scss */
 .page-template-template-about #main {
   padding: 113px 0 0;
 }
 @media screen and (max-width: 660px) {
-  /* line 51, ../sass/components/_container.scss */
+  /* line 57, ../sass/components/_container.scss */
   .page-template-template-about #main {
     padding: 94px 0 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 57, ../sass/components/_container.scss */
+  /* line 63, ../sass/components/_container.scss */
   .page-template-template-brand #main, .page-template-template-product #main {
     padding: 87px 0 0;
   }
 }
 
-/* line 63, ../sass/components/_container.scss */
+/* line 69, ../sass/components/_container.scss */
 #home {
   width: 100%;
   height: 100%;
@@ -1306,9 +1310,20 @@ nav#nav a:hover, nav#nav a:active {
   padding: 40px 0 10px;
   font-size: 12px;
   font-size: 1.2rem;
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  filter: alpha(opacity=0);
   text-transform: uppercase;
+  /*
+  
+  @include transition(opacity 1s ease);
+  .loaded &{
+  	@include opacity(1);
+  }
+  */
 }
-/* line 9, ../sass/components/_footer.scss */
+/* line 17, ../sass/components/_footer.scss */
 #footer h3 {
   display: block;
   width: 200px;
@@ -1319,21 +1334,21 @@ nav#nav a:hover, nav#nav a:active {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-/* line 19, ../sass/components/_footer.scss */
+/* line 27, ../sass/components/_footer.scss */
 .ie8 #footer h3 {
   background-image: url("../images/giselle.png");
 }
-/* line 23, ../sass/components/_footer.scss */
+/* line 31, ../sass/components/_footer.scss */
 #footer p {
   margin-bottom: 20px;
 }
-/* line 25, ../sass/components/_footer.scss */
+/* line 33, ../sass/components/_footer.scss */
 #footer p.vcard {
   margin-bottom: 50px;
   font-size: 13px;
   font-size: 1.3rem;
 }
-/* line 30, ../sass/components/_footer.scss */
+/* line 38, ../sass/components/_footer.scss */
 #footer nav.social {
   width: 100%;
   position: relative;
@@ -1355,11 +1370,11 @@ nav#nav a:hover, nav#nav a:active {
   position: relative;
   right: 50%;
 }
-/* line 33, ../sass/components/_footer.scss */
+/* line 41, ../sass/components/_footer.scss */
 #footer nav.social li {
   margin: 0 5px;
 }
-/* line 35, ../sass/components/_footer.scss */
+/* line 43, ../sass/components/_footer.scss */
 #footer nav.social li a {
   display: block;
   width: 32px;
@@ -1376,11 +1391,11 @@ nav#nav a:hover, nav#nav a:active {
   -moz-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
-/* line 46, ../sass/components/_footer.scss */
+/* line 54, ../sass/components/_footer.scss */
 #footer nav.social li a.facebook {
   background-image: url("../images/facebook.svg");
 }
-/* line 49, ../sass/components/_footer.scss */
+/* line 57, ../sass/components/_footer.scss */
 #footer nav.social li a:hover, #footer nav.social li a:active {
   opacity: 0.8;
   -moz-opacity: 0.8;
@@ -1855,6 +1870,10 @@ textarea {
   position: fixed;
   left: 0;
   top: 0;
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  filter: alpha(opacity=0);
   display: block;
   background-color: white;
 }
@@ -1878,27 +1897,27 @@ textarea {
   }
 }
 
-/* line 22, ../sass/components/_slick-slider.scss */
+/* line 23, ../sass/components/_slick-slider.scss */
 .slick-slider {
   width: 100%;
   height: 100%;
   display: block;
   position: relative;
 }
-/* line 27, ../sass/components/_slick-slider.scss */
+/* line 28, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list, .slick-slider .slick-track {
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 32, ../sass/components/_slick-slider.scss */
+/* line 33, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list {
   position: relative;
   overflow: hidden;
   display: block;
   padding: 0;
 }
-/* line 37, ../sass/components/_slick-slider.scss */
+/* line 38, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track {
   position: relative;
   left: 0;
@@ -1906,9 +1925,16 @@ textarea {
   display: block;
   width: 100%;
 }
-/* line 43, ../sass/components/_slick-slider.scss */
+/* line 44, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide {
   width: 100%;
+  /*
+  @include opacity(0);
+  @include transition(opacity 0.5s ease);
+  .loaded &{
+  	@include opacity(1);
+  }
+  */
   max-width: 1800px;
   float: left;
   height: 100%;
@@ -1922,11 +1948,11 @@ textarea {
   background-size: cover;
   background-position: center top;
 }
-/* line 55, ../sass/components/_slick-slider.scss */
+/* line 63, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel {
   padding: 0 40px;
 }
-/* line 60, ../sass/components/_slick-slider.scss */
+/* line 68, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel .slick-prev, .slick-slider#carousel .slick-next {
   width: 14px;
   height: 24px;
@@ -1943,7 +1969,7 @@ textarea {
   margin-top: -12px;
   z-index: 9999;
 }
-/* line 72, ../sass/components/_slick-slider.scss */
+/* line 80, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel .slick-next {
   top: 50%;
   right: 15px;
@@ -1952,12 +1978,12 @@ textarea {
   position: absolute;
   background-image: url("../images/carousel-next.svg");
 }
-/* line 77, ../sass/components/_slick-slider.scss */
+/* line 85, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-prev, .slick-slider .slick-next {
   background-color: transparent;
   border: none;
 }
-/* line 82, ../sass/components/_slick-slider.scss */
+/* line 90, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap {
   width: auto;
   background-color: transparent;
@@ -1972,7 +1998,7 @@ textarea {
   height: 100%;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 82, ../sass/components/_slick-slider.scss */
+  /* line 90, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap {
     top: auto;
     right: auto;
@@ -1983,33 +2009,33 @@ textarea {
     width: 100%;
   }
 }
-/* line 95, ../sass/components/_slick-slider.scss */
+/* line 103, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner {
   height: 100%;
   position: relative;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 95, ../sass/components/_slick-slider.scss */
+  /* line 103, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap .inner {
     width: 100%;
     height: auto;
   }
 }
-/* line 102, ../sass/components/_slick-slider.scss */
+/* line 110, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 108, ../sass/components/_slick-slider.scss */
+/* line 116, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner div {
   vertical-align: middle;
   display: inline-block;
   color: white;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 108, ../sass/components/_slick-slider.scss */
+  /* line 116, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap .inner div {
     width: 100%;
     width: 100%;
@@ -2032,7 +2058,7 @@ textarea {
     right: 50%;
   }
 }
-/* line 119, ../sass/components/_slick-slider.scss */
+/* line 127, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots {
   background-color: white;
   position: relative;
@@ -2041,24 +2067,24 @@ textarea {
   padding: 15px 0;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 119, ../sass/components/_slick-slider.scss */
+  /* line 127, ../sass/components/_slick-slider.scss */
   .slick-slider ul.slick-dots {
     background-color: transparent;
     padding: 0;
   }
 }
-/* line 129, ../sass/components/_slick-slider.scss */
+/* line 137, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li {
   padding: 10px 15px;
   display: block;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 129, ../sass/components/_slick-slider.scss */
+  /* line 137, ../sass/components/_slick-slider.scss */
   .slick-slider ul.slick-dots li {
     padding: 0 5px;
   }
 }
-/* line 135, ../sass/components/_slick-slider.scss */
+/* line 143, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li button {
   display: block;
   border: none;
@@ -2072,7 +2098,7 @@ textarea {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-/* line 145, ../sass/components/_slick-slider.scss */
+/* line 153, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li.slick-active button {
   background-color: black;
 }

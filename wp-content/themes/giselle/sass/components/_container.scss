@@ -36,7 +36,13 @@
 	z-index: 2;
 	text-align:center;
 	@include opacity(0);
+	/*
+	
 	@include transition(opacity 1s ease);
+	.loaded &{
+		@include opacity(1);
+	}
+	*/
 	.home &{
 		margin: 80% 0 0;
 		padding:0;

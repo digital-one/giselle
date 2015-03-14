@@ -281,11 +281,14 @@ var _images = [],
 }
 
 show_content = function(){
-	$('#main').animate({
+	$('body').addClass('loaded');
+	
+	$('#slider,#main,#footer').animate({
 		'opacity':1
 	},500,'easeInOutExpo',function(){
 		//done;	
 	})
+
 }
 
 function remove_style(all) {
