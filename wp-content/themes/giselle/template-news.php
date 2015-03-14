@@ -9,16 +9,26 @@ from Giselle Ladieswear...</p>
 <section id="archive">
   <div class="container">
     <div class="posts">
-<article class="post"><div class="inner"><figure><img src="<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
+<article class="post"><div class="inner"><figure><img class="preload" src="<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
 consetetur sadipscing elitr</h3><time datetime="">21st April 2015</time></header><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div></div></article>
 
-<article class="post"><div class="inner"><figure><img src="<?php echo get_template_directory_uri(); ?>/images/marccain-pop-art-1.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
+<article class="post"><div class="inner"><figure><img class="preload" src="<?php echo get_template_directory_uri(); ?>/images/marccain-pop-art-1.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
 consetetur sadipscing elitr</h3><time datetime="">21st April 2015</time></header><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div></div></article>
 
-<article class="post"><div class="inner"><figure><img src="<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
+<article class="post"><div class="inner"><figure><img class="preload" src="<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
+consetetur sadipscing elitr</h3><time datetime="">21st April 2015</time></header><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div></div></article>
+<article class="post"><div class="inner"><figure><img class="preload" src="<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
+consetetur sadipscing elitr</h3><time datetime="">21st April 2015</time></header><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div></div></article>
+
+<article class="post"><div class="inner"><figure><img class="preload" src="<?php echo get_template_directory_uri(); ?>/images/marccain-pop-art-1.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
+consetetur sadipscing elitr</h3><time datetime="">21st April 2015</time></header><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div></div></article>
+
+<article class="post"><div class="inner"><figure><img class="preload" src="<?php echo get_template_directory_uri(); ?>/images/marccain-brand-main.jpg" /></figure><div class="content"><header><h3>Lorem ipsum dolor sit amet
 consetetur sadipscing elitr</h3><time datetime="">21st April 2015</time></header><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div></div></article>
 </div>
-<footer class="posts-footer"><span class="loader">Loading More</span></footer>
+<footer class="posts-footer">
+     <a href="/news/archive/pge/2/" class="load-posts">Load More</a>
+</footer>
 </div>
 
 

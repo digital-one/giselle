@@ -64,7 +64,7 @@
 	text-align:center;
 	width:100%;
 	display: block;
-	span.loader{
+	a{
 		display: inline-block;
 		margin:0 auto;
 		font-family: $brandongrotesque-bold;
@@ -72,20 +72,23 @@
 		text-transform: uppercase;
 		height:32px;
 		line-height: 32px;
-		padding:0 45px 0 0;
+		padding:0;
 		position: relative;
-		&:after{
-			content:"";
-			display: block;
-			width: 32px;
-			height: 32px;
-			background-image:url('../images/spin.gif');
-			background-position:center center;
-			background-repeat: no-repeat;
-			background-size: 100% auto;
-			@include abs-pos(0,0,auto,auto);
-			.svg &{
-				background-image:url('../images/spin.svg');
+		&.loading{
+			padding:0 45px 0 0;
+			&:after{
+				content:"";
+				display: block;
+				width: 32px;
+				height: 32px;
+				background-image:url('../images/spin.gif');
+				background-position:center center;
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				@include abs-pos(0,0,auto,auto);
+				.svg &{
+					background-image:url('../images/spin.svg');
+				}
 			}
 		}
 	}

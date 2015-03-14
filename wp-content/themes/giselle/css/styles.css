@@ -3452,7 +3452,7 @@ body.page-template-template-facebook {
   display: block;
 }
 /* line 67, ../sass/templates/_news.scss */
-.posts-footer span.loader {
+.posts-footer a {
   display: inline-block;
   margin: 0 auto;
   font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
@@ -3460,11 +3460,15 @@ body.page-template-template-facebook {
   text-transform: uppercase;
   height: 32px;
   line-height: 32px;
-  padding: 0 45px 0 0;
+  padding: 0;
   position: relative;
 }
 /* line 77, ../sass/templates/_news.scss */
-.posts-footer span.loader:after {
+.posts-footer a.loading {
+  padding: 0 45px 0 0;
+}
+/* line 79, ../sass/templates/_news.scss */
+.posts-footer a.loading:after {
   content: "";
   display: block;
   width: 32px;
@@ -3479,7 +3483,7 @@ body.page-template-template-facebook {
   left: auto;
   position: absolute;
 }
-/* line 87, ../sass/templates/_news.scss */
-.svg .posts-footer span.loader:after {
+/* line 89, ../sass/templates/_news.scss */
+.svg .posts-footer a.loading:after {
   background-image: url("../images/spin.svg");
 }

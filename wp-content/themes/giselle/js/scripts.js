@@ -27,7 +27,9 @@ var _handleShown = true,
 	_fullpageActive = false,
 	_isTablet,
 	_isMobile,
-	_isDesktop;
+	_isDesktop,
+	_container,
+	_scrollDirection;
 
 //Homepage slider
 
@@ -173,6 +175,58 @@ reposition = function(){
 	}
 }
 
+init_masonry = function(){
+
+$('a.load-posts').on('click',load_posts_click);
+	//$('.scroll-area').on('scroll',loadNewPosts);
+	if($('.posts').length){
+ 	_container = $('.posts');
+    
+    _container.masonry({
+        itemSelector: 'article'//,
+        //columnWidth: 100
+      });
+  }
+
+}
+
+load_posts = function(){
+
+var _windowMiddle = $(window).height()/2,
+	_offset = $('.posts').offset(),
+	_postsHeight = $('.posts').height(),
+	_scrollTop = $(window).scrollTop(),
+	_postsBottom = _offset.top + _postsHeight,
+	_scrollAmount  = _postsBottom - _windowMiddle;
+if(_scrollTop > _scrollAmount && _scrollDirection=='down'){
+	$('a.load-posts').trigger('click');
+}
+}
+
+load_posts_click = function(e){
+	e.preventDefault();
+	var _this = e.currentTarget,
+		_url = $(_this).attr('href'),
+		_loadElement =  '.posts',
+		_btnElement = 'a.load-posts';
+	$(_this).data("label",$(_this).text());
+	$(window).off('scroll',load_posts); //stop the scroll action
+	$('a.load-posts').off('click', load_posts_click); //stop the click action
+	$(_this).addClass('loading');
+
+	$.get($url).done(function(data){
+	$('a.load-posts').on('click', load_posts_click);	
+	$(window).on('scroll',load_posts);
+	$('a.load-posts').removeClass('loading');
+	var _obj = $(data).find(_loadElement),
+	 	_btn = $(data).find(_btnElement);
+	 	_items = _obj.children();
+	$(_this).attr('href',_btn.attr('href')); //update the paging link
+	_container.append(_items).masonry('appended',_items);
+	});
+}
+
+
 init_fullpage = function(){
 
 	if($('.fullpage').length){
@@ -269,6 +323,10 @@ var _images = [],
 		}
 	});
 	_imageTotal = _images.length;
+	if(_imageTotal==0){
+		_callback();
+		return;
+	}
 	for (var i = 0; i < _imageTotal; i++) {
 		var _image = new Image();
 		_image.onload = function(){ 
@@ -288,64 +346,19 @@ show_content = function(){
 	},500,'easeInOutExpo',function(){
 		//done;	
 	})
-
+	init_masonry();
+	load_posts();
 }
 
-function remove_style(all) {
-  var i = all.length;
-  var j, is_hidden;
-
-  // Presentational attributes.
-  var attr = [
-    'align',
-    'background',
-    'bgcolor',
-    'border',
-    'cellpadding',
-    'cellspacing',
-    'color',
-    'face',
-    'height',
-    'hspace',
-    'marginheight',
-    'marginwidth',
-    'noshade',
-    'nowrap',
-    'valign',
-    'vspace',
-    'width',
-    'vlink',
-    'alink',
-    'text',
-    'link',
-    'frame',
-    'frameborder',
-    'clear',
-    'scrolling',
-    'style'
-  ];
-
-  var attr_len = attr.length;
-
-  while (i--) {
-    is_hidden = (all[i].style.display === 'none');
-
-    j = attr_len;
-
-    while (j--) {
-      all[i].removeAttribute(attr[j]);
-    }
-
-    // Re-hide display:none elements,
-    // so they can be toggled via JS.
-    if (is_hidden) {
-      all[i].style.display = 'none';
-      is_hidden = false;
-    }
+$(window).on( 'DOMMouseScroll mousewheel', function ( event ) {
+  if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { 
+    //scroll down
+    _scrollDirection = 'down';
+  } else {
+    //scroll up
+   	_scrollDirection = 'up';
   }
-}
-
-
+});
 
 
 $(window).on('resize',function(){
@@ -354,6 +367,8 @@ $(window).on('resize',function(){
 	if(_fullpageActive) $.fn.fullpage.setScrollingSpeed(0); //set fullpage animation speed to zero
 	init_map();
 })
+
+$(window).on('scroll',load_posts);
 
 $(window).on('scroll',function(){
 	var _scroll = $(this).scrollTop();
