@@ -900,13 +900,19 @@ html, body {
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 768px) {
+  /* line 1, ../sass/_base.scss */
+  html, body {
+    height: 100% !important;
+  }
+}
 
-/* line 5, ../sass/_base.scss */
+/* line 8, ../sass/_base.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 8, ../sass/_base.scss */
+/* line 13, ../sass/_base.scss */
 body {
   font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
   font-size: 16px;
@@ -1020,7 +1026,7 @@ body {
     padding: 94px 0 0;
   }
 }
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) {
   /* line 57, ../sass/components/_container.scss */
   .page-template-template-brand #main, .page-template-template-product #main {
     padding: 87px 0 0;
@@ -2692,23 +2698,31 @@ textarea {
 @media only screen and (max-width: 768px) {
   /* line 6, ../sass/templates/_brand.scss */
   .section {
-    height: 50%;
+    height: 50% !important;
+  }
+  /* line 17, ../sass/templates/_brand.scss */
+  .section.last {
+    height: auto !important;
   }
 }
 @media only screen and (max-width: 660px) {
   /* line 6, ../sass/templates/_brand.scss */
   .section {
-    height: auto;
+    height: auto !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 21, ../sass/templates/_brand.scss */
+  /* line 25, ../sass/templates/_brand.scss */
   .page-template-template-product .section {
     height: auto;
   }
 }
+/* line 30, ../sass/templates/_brand.scss */
+.section.non-fullpage {
+  height: 50%;
+}
 
-/* line 27, ../sass/templates/_brand.scss */
+/* line 34, ../sass/templates/_brand.scss */
 .section-inner {
   display: block;
   position: relative;
@@ -2723,18 +2737,18 @@ textarea {
   */
 }
 @media only screen and (max-width: 768px) {
-  /* line 27, ../sass/templates/_brand.scss */
+  /* line 34, ../sass/templates/_brand.scss */
   .section-inner {
     padding: 0 7px 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 42, ../sass/templates/_brand.scss */
+  /* line 49, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner {
     padding: 40px 7px 0;
   }
 }
-/* line 48, ../sass/templates/_brand.scss */
+/* line 55, ../sass/templates/_brand.scss */
 .section-inner a.close {
   top: 120px;
   right: 15px;
@@ -2751,17 +2765,17 @@ textarea {
   z-index: 9999;
   cursor: pointer;
 }
-/* line 60, ../sass/templates/_brand.scss */
+/* line 67, ../sass/templates/_brand.scss */
 .ie8 .section-inner a.close {
   background-image: url("../images/close-black.png");
 }
 @media only screen and (max-width: 768px) {
-  /* line 63, ../sass/templates/_brand.scss */
+  /* line 70, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner a.close {
     top: 10px;
   }
 }
-/* line 69, ../sass/templates/_brand.scss */
+/* line 76, ../sass/templates/_brand.scss */
 .section-inner .column {
   width: 50%;
   height: 100%;
@@ -2770,12 +2784,12 @@ textarea {
   position: relative;
   float: left;
 }
-/* line 76, ../sass/templates/_brand.scss */
+/* line 83, ../sass/templates/_brand.scss */
 .section-inner .column.full-width {
   width: 100%;
 }
 @media only screen and (max-width: 660px) {
-  /* line 79, ../sass/templates/_brand.scss */
+  /* line 86, ../sass/templates/_brand.scss */
   .section-inner .column.full-width:before {
     content: "";
     padding-top: 80%;
@@ -2783,13 +2797,13 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 86, ../sass/templates/_brand.scss */
+  /* line 93, ../sass/templates/_brand.scss */
   .section-inner .column.half {
     overflow: hidden;
     width: 100%;
     position: relative;
   }
-  /* line 91, ../sass/templates/_brand.scss */
+  /* line 98, ../sass/templates/_brand.scss */
   .section-inner .column.half:before {
     content: "";
     padding-top: 130%;
@@ -2797,14 +2811,14 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 98, ../sass/templates/_brand.scss */
+  /* line 105, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.left {
     overflow: hidden;
     width: 100%;
     height: auto;
     position: relaive;
   }
-  /* line 104, ../sass/templates/_brand.scss */
+  /* line 111, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.left:before {
     content: "";
     padding-top: 100%;
@@ -2812,18 +2826,18 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 111, ../sass/templates/_brand.scss */
+  /* line 118, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.left:before {
     padding-top: 120%;
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 118, ../sass/templates/_brand.scss */
+  /* line 125, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right {
     height: auto;
     width: 100%;
   }
-  /* line 122, ../sass/templates/_brand.scss */
+  /* line 129, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right:before {
     content: "";
     padding-top: 60%;
@@ -2831,28 +2845,42 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 118, ../sass/templates/_brand.scss */
+  /* line 125, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right {
     height: auto;
     width: 100%;
   }
-  /* line 131, ../sass/templates/_brand.scss */
+  /* line 138, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right:before {
     content: "";
     padding-top: 120%;
     display: inline-block;
   }
 }
-/* line 140, ../sass/templates/_brand.scss */
+/* line 147, ../sass/templates/_brand.scss */
 .section-inner .column .row {
   width: 100%;
   display: block;
   height: 100%;
   position: relative;
   background-color: white;
+  /*
+  &.height-55-pct{
+  	height: 55%;
+  	@media only screen  and (max-width : $break-medium){
+  		height:50%;
+  	}
+  }
+  &.height-45-pct{
+  	height: 45%;
+  	@media only screen  and (max-width : $break-medium){
+  		height:50%;
+  	}
+  }
+  */
 }
 @media only screen and (max-width: 768px) {
-  /* line 140, ../sass/templates/_brand.scss */
+  /* line 147, ../sass/templates/_brand.scss */
   .section-inner .column .row {
     top: 7px;
     right: 7px;
@@ -2864,7 +2892,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 151, ../sass/templates/_brand.scss */
+  /* line 158, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column .row {
     top: 7px;
     right: 7px;
@@ -2875,7 +2903,7 @@ textarea {
     height: auto;
   }
 }
-/* line 158, ../sass/templates/_brand.scss */
+/* line 165, ../sass/templates/_brand.scss */
 .section-inner .column .row .content {
   display: block;
   background-color: #e9f0ed;
@@ -2891,7 +2919,7 @@ textarea {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 166, ../sass/templates/_brand.scss */
+/* line 173, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text {
   height: 100%;
   width: 100%;
@@ -2900,62 +2928,62 @@ textarea {
   background-color: white;
 }
 @media only screen and (max-width: 768px) {
-  /* line 166, ../sass/templates/_brand.scss */
+  /* line 173, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text {
     padding: 0 15%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 166, ../sass/templates/_brand.scss */
+  /* line 173, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text {
     padding: 0 10px;
   }
 }
-/* line 179, ../sass/templates/_brand.scss */
+/* line 186, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 185, ../sass/templates/_brand.scss */
+/* line 192, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text div {
   vertical-align: middle;
   display: inline-block;
   width: 99%;
 }
-/* line 190, ../sass/templates/_brand.scss */
+/* line 197, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo {
   width: 60%;
   height: auto;
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 195, ../sass/templates/_brand.scss */
+/* line 202, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo img {
   width: 100%;
   height: auto;
   display: inline-block;
   margin: 0 auto;
 }
-/* line 201, ../sass/templates/_brand.scss */
+/* line 208, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo.portrait {
   height: 170px;
 }
-/* line 203, ../sass/templates/_brand.scss */
+/* line 210, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo.portrait img {
   width: auto;
   height: 100%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 209, ../sass/templates/_brand.scss */
+  /* line 216, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text h2, .section-inner .column .row .content .text h3 {
     font-size: 14px;
     font-size: 1.4rem;
     margin-bottom: 10px;
   }
 }
-/* line 215, ../sass/templates/_brand.scss */
+/* line 222, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text p {
   font-family: "Freight-BigBook_gdi", sans-serif;
   letter-spacing: 0.7px;
@@ -2965,24 +2993,25 @@ textarea {
   line-height: 140%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 215, ../sass/templates/_brand.scss */
+  /* line 222, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text p {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
-/* line 224, ../sass/templates/_brand.scss */
+/* line 231, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text p:last-child {
   margin: 0;
 }
-/* line 230, ../sass/templates/_brand.scss */
+/* line 237, ../sass/templates/_brand.scss */
 .section-inner .column .row.top {
+  height: 45%;
   padding-bottom: 10px;
 }
-@media only screen and (max-width: 768px) {
-  /* line 230, ../sass/templates/_brand.scss */
+@media only screen and (min-width: 661px) and (max-width: 768px) {
+  /* line 237, ../sass/templates/_brand.scss */
   .section-inner .column .row.top {
-    padding-bottom: 0;
+    height: 100%;
     top: 0;
     right: 7px;
     bottom: 7px;
@@ -2990,7 +3019,19 @@ textarea {
     position: absolute;
   }
 }
-/* line 236, ../sass/templates/_brand.scss */
+@media only screen and (max-width: 660px) {
+  /* line 237, ../sass/templates/_brand.scss */
+  .section-inner .column .row.top {
+    padding-bottom: 0;
+    top: 0;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    position: absolute;
+    height: 50%;
+  }
+}
+/* line 249, ../sass/templates/_brand.scss */
 .section-inner .column .row.top .content {
   top: 0;
   right: 0;
@@ -2999,7 +3040,7 @@ textarea {
   position: absolute;
 }
 @media only screen and (max-width: 768px) {
-  /* line 236, ../sass/templates/_brand.scss */
+  /* line 249, ../sass/templates/_brand.scss */
   .section-inner .column .row.top .content {
     top: 0;
     right: 0;
@@ -3008,47 +3049,35 @@ textarea {
     position: absolute;
   }
 }
-/* line 243, ../sass/templates/_brand.scss */
+/* line 256, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom {
+  height: 55%;
   padding-top: 10px;
 }
-@media only screen and (max-width: 768px) {
-  /* line 243, ../sass/templates/_brand.scss */
+@media only screen and (min-width: 661px) and (max-width: 768px) {
+  /* line 256, ../sass/templates/_brand.scss */
+  .section-inner .column .row.bottom {
+    display: none;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* line 256, ../sass/templates/_brand.scss */
   .section-inner .column .row.bottom {
     top: auto;
     right: 7px;
     bottom: 7px;
     left: 7px;
     position: absolute;
+    height: 50%;
   }
 }
-/* line 248, ../sass/templates/_brand.scss */
+/* line 266, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom .content {
   top: 7px;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
-}
-/* line 252, ../sass/templates/_brand.scss */
-.section-inner .column .row.height-55-pct {
-  height: 55%;
-}
-@media only screen and (max-width: 768px) {
-  /* line 252, ../sass/templates/_brand.scss */
-  .section-inner .column .row.height-55-pct {
-    height: 50%;
-  }
-}
-/* line 258, ../sass/templates/_brand.scss */
-.section-inner .column .row.height-45-pct {
-  height: 45%;
-}
-@media only screen and (max-width: 768px) {
-  /* line 258, ../sass/templates/_brand.scss */
-  .section-inner .column .row.height-45-pct {
-    height: 50%;
-  }
 }
 
 /* line 1, ../sass/templates/_facebook-signup.scss */

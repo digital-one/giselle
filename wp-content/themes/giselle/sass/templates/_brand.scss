@@ -13,15 +13,22 @@
 		height:auto;
 	}
 	@media only screen  and (max-width : $break-medium) {
-		height:50%;
+		height:50% !important;
+		&.last{
+			height:auto !important;
+		}
+
 	}
 	@media only screen  and (max-width : $break-small){
-		height:auto;
+		height:auto !important;
 	}
 	.page-template-template-product &{
 		@media only screen and(max-width: $break-medium){
 			height:auto;
 		}
+	}
+	&.non-fullpage{
+		height:50%;
 	}
 }
 .section-inner{
@@ -228,10 +235,16 @@
 				}
 			}
 			&.top{
+				height:45%;
 				padding-bottom:10px;
-				@media only screen  and (max-width : $break-medium){
+				@media only screen  and (min-width: $break-small+1) and (max-width : $break-medium){
+					height:100%;
+					@include abs-pos(0,7px,7px,7px);
+				}
+				@media only screen  and (max-width : $break-small){
 					padding-bottom:0;
 					@include abs-pos(0,7px,7px,7px);
+					height:50%;
 				}
 				.content{
 					@include abs-pos(0,0,7px,0);
@@ -241,14 +254,20 @@
 				}
 			}
 			&.bottom{
+				height:55%;
 				padding-top:10px;
-				@media only screen  and (max-width : $break-medium){
+				@media only screen  and (min-width: $break-small+1) and (max-width : $break-medium){
+					display: none;
+				}
+				@media only screen  and (max-width : $break-small){
 					@include abs-pos(auto,7px,7px,7px);
+					height:50%;
 				}
 				.content{
 					@include abs-pos(7px,0,0,0);
 				}
 			}
+			/*
 			&.height-55-pct{
 				height: 55%;
 				@media only screen  and (max-width : $break-medium){
@@ -261,6 +280,7 @@
 					height:50%;
 				}
 			}
+			*/
 		}
 	}
 }

@@ -19,7 +19,7 @@ function init_scripts_styles() {
 	//	wp_enqueue_style( 'fullpage_css' );
 	  wp_register_script( 'slimscroll', get_stylesheet_directory_uri() . '/js/jquery.slimscroll.min.js', array(), null, true );
 		wp_enqueue_script( 'slimscroll' );
-		wp_register_script( 'fullpage', get_stylesheet_directory_uri() . '/js/jquery.fullPage.min.js', array(), null, true );
+		wp_register_script( 'fullpage', get_stylesheet_directory_uri() . '/js/jquery.fullPage.js', array(), null, true );
 		wp_enqueue_script( 'fullpage' );
 		
 	  //easing

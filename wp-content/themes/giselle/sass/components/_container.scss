@@ -55,7 +55,7 @@
 		}
 	}
 	.page-template-template-brand &, .page-template-template-product &{
-		@media only screen  and (max-width : $break-medium) and (orientation : portrait) {
+		@media only screen  and (max-width : $break-medium) {
 			padding: 87px 0 0;
 		}
 	}

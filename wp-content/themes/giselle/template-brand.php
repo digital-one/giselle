@@ -1,7 +1,7 @@
 <?php /* Template Name: Brand */ ?>
 <?php get_header() ?>
-<main id="main">
-  <div id="fullpage">
+<main id="main" class="fullpage">
+  <!--<div id="fullpage">-->
 <!--section-->
 <section class="section">
   <div class="handle"><a>Scroll Down</a></div>
@@ -84,5 +84,5 @@
 <?php get_footer() ?>
 </section>
 <!--/section-->
-</div>
+<!--</div>-->
 </main>

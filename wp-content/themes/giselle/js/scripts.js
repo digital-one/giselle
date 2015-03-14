@@ -175,7 +175,7 @@ reposition = function(){
 
 init_fullpage = function(){
 
-	if($('#fullpage').length){
+	if($('.fullpage').length){
 	
 		_fullpageActive = true;
 		set_image_height();
@@ -188,7 +188,7 @@ init_fullpage = function(){
 			_tooltips.push('Page '+i);
 		}
 
-		$('#fullpage').fullpage({
+		$('.fullpage').fullpage({
 			verticalCentered: false,
 			resize : false,
 			scrollingSpeed: 900,
@@ -239,6 +239,9 @@ refresh_page = function(){
 
 destroy_fullpage = function(){
 	if(_fullpageActive){
+		
+		//$(".slimScrollDiv").slimscroll({destroy: true});
+		$(".fp-scrollable").slimscroll("destroy");
 		$.fn.fullpage.destroy('all');
 		_fullpageActive=false;
 		set_image_height();
@@ -284,6 +287,62 @@ show_content = function(){
 		//done;	
 	})
 }
+
+function remove_style(all) {
+  var i = all.length;
+  var j, is_hidden;
+
+  // Presentational attributes.
+  var attr = [
+    'align',
+    'background',
+    'bgcolor',
+    'border',
+    'cellpadding',
+    'cellspacing',
+    'color',
+    'face',
+    'height',
+    'hspace',
+    'marginheight',
+    'marginwidth',
+    'noshade',
+    'nowrap',
+    'valign',
+    'vspace',
+    'width',
+    'vlink',
+    'alink',
+    'text',
+    'link',
+    'frame',
+    'frameborder',
+    'clear',
+    'scrolling',
+    'style'
+  ];
+
+  var attr_len = attr.length;
+
+  while (i--) {
+    is_hidden = (all[i].style.display === 'none');
+
+    j = attr_len;
+
+    while (j--) {
+      all[i].removeAttribute(attr[j]);
+    }
+
+    // Re-hide display:none elements,
+    // so they can be toggled via JS.
+    if (is_hidden) {
+      all[i].style.display = 'none';
+      is_hidden = false;
+    }
+  }
+}
+
+
 
 
 $(window).on('resize',function(){
