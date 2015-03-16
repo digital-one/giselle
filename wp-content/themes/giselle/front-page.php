@@ -5,10 +5,34 @@
 	<!--<div class="slick-list">
 		<div class="slick-track">-->
 
-      
-<div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"><div class="vcenter"><div class="caption"><div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/marccain.svg" /></div><h3>New Spring/Summer Collections</h3><h4>available in store now</h4><a href="#" class="button">View more</a></div></div></div>
+  <?php
+if(get_field('slider',$post->ID)):
+while(the_repeater_field('slider')): 
+list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('slide_image'), 'slider');
+       $link="";
+       $is_brand = false;
+       $class="";
+       $sub_head = get_sub_field('slide_sub_heading');
+       $button = get_sub_field('slide_button_label');
+       switch(get_sub_field('slide_type')){
+        case 'brand':
+        $brand = get_sub_field('slide_brand');
+        $is_brand = true;
+       list($svg,$w,$h) = wp_get_attachment_image_src(get_field('brand_logo_svg',$brand->ID), 'full');
+       list($png,$w,$h) = wp_get_attachment_image_src(get_field('brand_logo_png',$brand->ID), 'full');
+       $class=  $h > $w ? ' portrait' : '';
+       $logo_src = !empty($svg) ? $svg : $png;
+       $link = get_permalink($brand->ID);
+        break;
+        case 'page':
+        $link = get_sub_field('slide_page');
+        break;
+       }
+?>    
+<div class="slick-slide slide preload" style="background-image:url('<?php echo $src ?>');"><?php if(!empty($link)):?><a href="<?php echo $link ?>"><div class="vcenter"><div class="caption"><?php if($is_brand):?><div class="logo<?php echo $class ?>"><img src="<?php echo $logo_src ?>" /></div><?php endif ?><h3><?php echo get_sub_field('slide_heading')?></h3><?php if(!empty($sub_head)):?><h4><?php echo $sub_head ?></h4><?php endif ?><?php if(!empty($button)):?><a href="#" class="button"><?php echo $button ?></a><?php endif?></div></div><?php if(!empty($link)):?></a><?php endif ?></div>
+<?php /*
 <div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"><div class="vcenter"><div class="caption">Caption</div></div></div>
-
+*/ ?>
 <!--</div>
 </div>-->
 <?php /*
