@@ -882,7 +882,7 @@ figure, ul, li, p, blockquote {
 }
 
 /* line 25, ../sass/helpers/_placeholders.scss */
-.gform_wrapper .gform_body, .section, .section-inner, #image-banner, #opening-hours ul li {
+.gform_wrapper .gform_body, .gform_wrapper li, .section, .section-inner, #image-banner, #opening-hours ul li {
   overflow: hidden;
   zoom: 1;
 }
@@ -1240,39 +1240,41 @@ nav#nav li {
 }
 /* line 36, ../sass/components/_navigation.scss */
 nav#nav li ul.sub-menu {
-  padding: 0 0 0 20px;
+  padding: 8px 0 0 20px;
   border: none;
 }
 /* line 39, ../sass/components/_navigation.scss */
 nav#nav li ul.sub-menu li {
   text-indent: -7px;
   border: none;
+  padding: 5px 0;
 }
-/* line 42, ../sass/components/_navigation.scss */
+/* line 43, ../sass/components/_navigation.scss */
 nav#nav li ul.sub-menu li:before {
   content: "-";
   position: relative;
   left: -10px;
 }
-/* line 47, ../sass/components/_navigation.scss */
+/* line 48, ../sass/components/_navigation.scss */
 nav#nav li ul.sub-menu li:last-child {
   padding-bottom: 0;
 }
-/* line 51, ../sass/components/_navigation.scss */
+/* line 52, ../sass/components/_navigation.scss */
 nav#nav li ul.sub-menu a {
   font-size: 14px;
   font-size: 1.4rem;
   font-family: "BrandonGrotesque-Medium_gdi", sans-serif;
   padding: 0;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 1450px) {
-  /* line 51, ../sass/components/_navigation.scss */
+  /* line 52, ../sass/components/_navigation.scss */
   nav#nav li ul.sub-menu a {
     font-size: 12px;
     font-size: 1.2rem;
   }
 }
-/* line 62, ../sass/components/_navigation.scss */
+/* line 64, ../sass/components/_navigation.scss */
 nav#nav a:link, nav#nav a:visited {
   font-size: 18px;
   font-size: 1.8rem;
@@ -1287,13 +1289,13 @@ nav#nav a:link, nav#nav a:visited {
   filter: alpha(opacity=70);
 }
 @media screen and (max-width: 1450px) {
-  /* line 62, ../sass/components/_navigation.scss */
+  /* line 64, ../sass/components/_navigation.scss */
   nav#nav a:link, nav#nav a:visited {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
-/* line 74, ../sass/components/_navigation.scss */
+/* line 76, ../sass/components/_navigation.scss */
 nav#nav a:hover, nav#nav a:active {
   opacity: 1;
   -moz-opacity: 1;
@@ -1345,8 +1347,8 @@ nav#nav a:hover, nav#nav a:active {
 /* line 33, ../sass/components/_footer.scss */
 #footer p.vcard {
   margin-bottom: 50px;
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 /* line 38, ../sass/components/_footer.scss */
 #footer nav.social {
@@ -1442,8 +1444,12 @@ a:link, a:visited {
   text-decoration: none;
   color: #1d1d1d;
 }
+/* line 25, ../sass/components/_typography.scss */
+a:focus {
+  outline: none !important;
+}
 
-/* line 26, ../sass/components/_typography.scss */
+/* line 29, ../sass/components/_typography.scss */
 p {
   font-family: "Freight-BigBook_gdi", sans-serif;
   letter-spacing: 0.7px;
@@ -1453,33 +1459,33 @@ p {
   line-height: 140%;
   margin-bottom: 40px;
 }
-/* line 33, ../sass/components/_typography.scss */
+/* line 36, ../sass/components/_typography.scss */
 p.intro {
   font-size: 25px;
   font-size: 2.5rem;
   display: block;
 }
 @media screen and (max-width: 660px) {
-  /* line 33, ../sass/components/_typography.scss */
+  /* line 36, ../sass/components/_typography.scss */
   p.intro {
     font-size: 22px;
     font-size: 2.2rem;
   }
 }
-/* line 40, ../sass/components/_typography.scss */
+/* line 43, ../sass/components/_typography.scss */
 p i {
   font-family: "Freight-BigBookItalic_gdi", sans-serif;
   font-style: normal;
 }
-/* line 45, ../sass/components/_typography.scss */
+/* line 48, ../sass/components/_typography.scss */
 p a:link, p a:visited {
   border-bottom: 1px dotted #b7bcba;
 }
-/* line 48, ../sass/components/_typography.scss */
+/* line 51, ../sass/components/_typography.scss */
 p a:hover, p a:active {
   border-bottom: 1px solid #b7bcba;
 }
-/* line 52, ../sass/components/_typography.scss */
+/* line 55, ../sass/components/_typography.scss */
 p.vcard {
   font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
   font-size: 16px;
@@ -1490,46 +1496,46 @@ p.vcard {
   margin-bottom: 55px;
 }
 @media screen and (max-width: 660px) {
-  /* line 52, ../sass/components/_typography.scss */
+  /* line 55, ../sass/components/_typography.scss */
   p.vcard {
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
-/* line 62, ../sass/components/_typography.scss */
+/* line 65, ../sass/components/_typography.scss */
 p.vcard span {
   display: block;
   margin-bottom: 10px;
 }
-/* line 65, ../sass/components/_typography.scss */
+/* line 68, ../sass/components/_typography.scss */
 p.vcard span:last-child {
   margin: 0;
 }
-/* line 69, ../sass/components/_typography.scss */
+/* line 72, ../sass/components/_typography.scss */
 p.vcard a {
   text-transform: none;
 }
 @media screen and (max-width: 1450px) {
-  /* line 26, ../sass/components/_typography.scss */
+  /* line 29, ../sass/components/_typography.scss */
   p {
     font-size: 20px;
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 26, ../sass/components/_typography.scss */
+  /* line 29, ../sass/components/_typography.scss */
   p {
     font-size: 18px;
     font-size: 1.8rem;
   }
 }
 
-/* line 80, ../sass/components/_typography.scss */
+/* line 83, ../sass/components/_typography.scss */
 address {
   font-style: normal;
 }
 
-/* line 83, ../sass/components/_typography.scss */
+/* line 86, ../sass/components/_typography.scss */
 small {
   font-size: 10px;
   font-size: 1rem;
@@ -1562,7 +1568,13 @@ small {
 
 /* line 18, ../sass/components/_global.scss */
 .gutter {
-  padding: 0 15%;
+  padding: 0 22%;
+}
+@media screen and (max-width: 1200px) {
+  /* line 18, ../sass/components/_global.scss */
+  .gutter {
+    padding: 0 10%;
+  }
 }
 @media screen and (max-width: 660px) {
   /* line 18, ../sass/components/_global.scss */
@@ -1700,31 +1712,40 @@ textarea {
 */
 /* line 1, ../sass/components/_gravity-forms.scss */
 .gform_wrapper {
-  margin: 0 0 40px;
+  margin: 0 auto 40px;
 }
 /* line 3, ../sass/components/_gravity-forms.scss */
 #newsletter-signup .gform_wrapper {
-  margin: 0;
+  margin: 0 auto;
+  width: 500px;
 }
-/* line 9, ../sass/components/_gravity-forms.scss */
+@media only screen and (max-width: 768px) {
+  /* line 3, ../sass/components/_gravity-forms.scss */
+  #newsletter-signup .gform_wrapper {
+    width: 80%;
+  }
+}
+/* line 13, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .gform_footer {
   text-align: center;
   margin: 20px 0 0;
+  margin: 0;
+  position: relative;
 }
-/* line 13, ../sass/components/_gravity-forms.scss */
+/* line 19, ../sass/components/_gravity-forms.scss */
 .gform_wrapper li {
   margin-bottom: 15px;
 }
-/* line 16, ../sass/components/_gravity-forms.scss */
+/* line 23, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .gfield_label {
   display: none;
 }
-/* line 18, ../sass/components/_gravity-forms.scss */
+/* line 25, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .gfield_label .gfield_required {
   color: black;
   padding-left: 4px;
 }
-/* line 23, ../sass/components/_gravity-forms.scss */
+/* line 30, ../sass/components/_gravity-forms.scss */
 .gform_wrapper input.medium {
   height: 35px;
   line-height: 1;
@@ -1773,16 +1794,17 @@ textarea {
   -khtml-opacity: 0.5;
   filter: alpha(opacity=50);
 }
-/* line 36, ../sass/components/_gravity-forms.scss */
+/* line 43, ../sass/components/_gravity-forms.scss */
 .gform_wrapper input.medium:focus {
   border: none;
   background-color: #4d4d4d;
   outline: none;
 }
-/* line 41, ../sass/components/_gravity-forms.scss */
+/* line 48, ../sass/components/_gravity-forms.scss */
 #newsletter-signup .gform_wrapper input.medium {
   width: 500px;
   height: 50px;
+  margin: 0 auto;
   line-height: 50px;
   background-color: #e9f0ed;
   color: #1d1d1d;
@@ -1822,7 +1844,7 @@ textarea {
   -khtml-opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 55, ../sass/components/_gravity-forms.scss */
+/* line 63, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .button.gform_button {
   font-size: 19px;
   font-size: 1.9rem;
@@ -1834,9 +1856,10 @@ textarea {
   height: 35px;
   line-height: 35px;
   border: none;
+  display: inline-block;
   text-transform: uppercase;
 }
-/* line 66, ../sass/components/_gravity-forms.scss */
+/* line 75, ../sass/components/_gravity-forms.scss */
 #newsletter-signup .gform_wrapper .button.gform_button {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1844,7 +1867,11 @@ textarea {
   line-height: 50px;
   border: 1px solid #1d1d1d;
 }
-/* line 73, ../sass/components/_gravity-forms.scss */
+/* line 81, ../sass/components/_gravity-forms.scss */
+.gform_wrapper .button.gform_button:focus {
+  outline: none;
+}
+/* line 85, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .validation_error, .gform_wrapper .validation_message {
   color: red !important;
   font-family: "BrandonGrotesque-Medium_gdi", sans-serif;
@@ -1852,14 +1879,25 @@ textarea {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
-/* line 79, ../sass/components/_gravity-forms.scss */
+/* line 91, ../sass/components/_gravity-forms.scss */
 .gform_wrapper .validation_message {
   margin: 3px 0 0;
 }
+/* line 94, ../sass/components/_gravity-forms.scss */
+.gform_wrapper .gform_ajax_spinner {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+}
 
-/* line 83, ../sass/components/_gravity-forms.scss */
+/* line 98, ../sass/components/_gravity-forms.scss */
 .gform_confirmation_message {
   margin-bottom: 40px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 140%;
 }
 
 /* line 1, ../sass/components/_slick-slider.scss */
@@ -1948,11 +1986,162 @@ textarea {
   background-size: cover;
   background-position: center top;
 }
-/* line 63, ../sass/components/_slick-slider.scss */
+/* line 60, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 66, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .vcenter {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 999;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+}
+/* line 77, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption {
+  margin: 100px auto 0;
+  width: 40%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 77, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* line 77, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption {
+    margin: 0 auto 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+  }
+}
+/* line 93, ../sass/components/_slick-slider.scss */
+.csstransitions .slick-slider .slick-list .slick-track .slick-slide .caption {
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: margin 0.3s ease, opacity 0.3s ease-in;
+  -moz-transition: margin 0.3s ease, opacity 0.3s ease-in;
+  transition: margin 0.3s ease, opacity 0.3s ease-in;
+}
+/* line 97, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption .button {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 15px;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 660px) {
+  /* line 97, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption .button {
+    display: none;
+  }
+}
+/* line 106, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption.move {
+  margin: 80px auto 0;
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  filter: alpha(opacity=100);
+}
+@media only screen and (max-width: 660px) {
+  /* line 106, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption.move {
+    margin: 0 auto;
+  }
+}
+/* line 113, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption h3 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  line-height: 130%;
+}
+@media only screen and (max-width: 660px) {
+  /* line 113, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption h3 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+/* line 122, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption h3:after {
+  content: "";
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #1d1d1d;
+  margin-left: -30px;
+}
+/* line 131, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption h4 {
+  font-family: "Freight-BigBook_gdi", sans-serif;
+  text-transform: none;
+  font-size: 22px;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 131, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption h4 {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* line 131, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption h4 {
+    margin-bottom: 0px;
+  }
+}
+/* line 143, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption .logo {
+  width: 60%;
+  display: inline-block;
+  margin: 0 auto 25px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 143, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption .logo {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* line 143, ../sass/components/_slick-slider.scss */
+  .slick-slider .slick-list .slick-track .slick-slide .caption .logo {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+/* line 154, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .caption .logo img {
+  width: 100%;
+  height: auto;
+}
+/* line 163, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel {
   padding: 0 40px;
 }
-/* line 68, ../sass/components/_slick-slider.scss */
+/* line 168, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel .slick-prev, .slick-slider#carousel .slick-next {
   width: 14px;
   height: 24px;
@@ -1969,7 +2158,7 @@ textarea {
   margin-top: -12px;
   z-index: 9999;
 }
-/* line 80, ../sass/components/_slick-slider.scss */
+/* line 180, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel .slick-next {
   top: 50%;
   right: 15px;
@@ -1978,12 +2167,12 @@ textarea {
   position: absolute;
   background-image: url("../images/carousel-next.svg");
 }
-/* line 85, ../sass/components/_slick-slider.scss */
+/* line 185, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-prev, .slick-slider .slick-next {
   background-color: transparent;
   border: none;
 }
-/* line 90, ../sass/components/_slick-slider.scss */
+/* line 190, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap {
   width: auto;
   background-color: transparent;
@@ -1998,7 +2187,7 @@ textarea {
   height: 100%;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 90, ../sass/components/_slick-slider.scss */
+  /* line 190, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap {
     top: auto;
     right: auto;
@@ -2009,33 +2198,33 @@ textarea {
     width: 100%;
   }
 }
-/* line 103, ../sass/components/_slick-slider.scss */
+/* line 203, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner {
   height: 100%;
   position: relative;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 103, ../sass/components/_slick-slider.scss */
+  /* line 203, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap .inner {
     width: 100%;
     height: auto;
   }
 }
-/* line 110, ../sass/components/_slick-slider.scss */
+/* line 210, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 116, ../sass/components/_slick-slider.scss */
+/* line 216, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner div {
   vertical-align: middle;
   display: inline-block;
   color: white;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 116, ../sass/components/_slick-slider.scss */
+  /* line 216, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap .inner div {
     width: 100%;
     width: 100%;
@@ -2058,7 +2247,7 @@ textarea {
     right: 50%;
   }
 }
-/* line 127, ../sass/components/_slick-slider.scss */
+/* line 227, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots {
   background-color: white;
   position: relative;
@@ -2067,24 +2256,24 @@ textarea {
   padding: 15px 0;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 127, ../sass/components/_slick-slider.scss */
+  /* line 227, ../sass/components/_slick-slider.scss */
   .slick-slider ul.slick-dots {
     background-color: transparent;
     padding: 0;
   }
 }
-/* line 137, ../sass/components/_slick-slider.scss */
+/* line 237, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li {
   padding: 10px 15px;
   display: block;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 137, ../sass/components/_slick-slider.scss */
+  /* line 237, ../sass/components/_slick-slider.scss */
   .slick-slider ul.slick-dots li {
     padding: 0 5px;
   }
 }
-/* line 143, ../sass/components/_slick-slider.scss */
+/* line 243, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li button {
   display: block;
   border: none;
@@ -2098,7 +2287,7 @@ textarea {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-/* line 153, ../sass/components/_slick-slider.scss */
+/* line 253, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li.slick-active button {
   background-color: black;
 }
@@ -2119,13 +2308,23 @@ textarea {
     padding: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  /* line 1, ../sass/components/_twitter.scss */
+  .twitter-feed {
+    padding: 70px 0 90px;
+  }
+}
 @media screen and (max-width: 660px) {
   /* line 1, ../sass/components/_twitter.scss */
   .twitter-feed {
     margin: -40px 0 0;
   }
 }
-/* line 15, ../sass/components/_twitter.scss */
+/* line 18, ../sass/components/_twitter.scss */
+.twitter-feed a {
+  display: inline-block !important;
+}
+/* line 21, ../sass/components/_twitter.scss */
 .twitter-feed .user {
   width: 38px;
   height: 31px;
@@ -2134,54 +2333,76 @@ textarea {
   background-size: 100% auto;
   margin: 0 auto 20px;
 }
-/* line 22, ../sass/components/_twitter.scss */
+/* line 28, ../sass/components/_twitter.scss */
 .twitter-feed .user img, .twitter-feed .user span {
   display: none;
 }
-/* line 25, ../sass/components/_twitter.scss */
+/* line 31, ../sass/components/_twitter.scss */
 .ie8 .twitter-feed .user {
   background: url("../images/twitter-feed.png") left top no-repeat;
 }
 @media screen and (max-width: 1450px) {
-  /* line 15, ../sass/components/_twitter.scss */
+  /* line 21, ../sass/components/_twitter.scss */
   .twitter-feed .user {
     width: 28px;
     height: 23px;
     margin-bottom: 15px;
   }
 }
-/* line 34, ../sass/components/_twitter.scss */
+/* line 40, ../sass/components/_twitter.scss */
 .twitter-feed .tweet {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 140%;
   font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
   letter-spacing: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
-/* line 41, ../sass/components/_twitter.scss */
+/* line 47, ../sass/components/_twitter.scss */
 .twitter-feed .tweet a:link, .twitter-feed .tweet a:visited {
   font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
 }
-@media screen and (max-width: 768px) {
-  /* line 34, ../sass/components/_twitter.scss */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  /* line 40, ../sass/components/_twitter.scss */
+  .twitter-feed .tweet {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px -1) {
+  /* line 40, ../sass/components/_twitter.scss */
   .twitter-feed .tweet {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 34, ../sass/components/_twitter.scss */
+  /* line 40, ../sass/components/_twitter.scss */
   .twitter-feed .tweet {
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
-/* line 52, ../sass/components/_twitter.scss */
-.twitter-feed .timePosted, .twitter-feed .interact {
+/* line 61, ../sass/components/_twitter.scss */
+.twitter-feed .timePosted {
+  font-size: 12px;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
+  margin: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1450px) {
+  /* line 61, ../sass/components/_twitter.scss */
+  .twitter-feed .timePosted {
+    display: none;
+  }
+}
+/* line 71, ../sass/components/_twitter.scss */
+.twitter-feed .interact {
   display: none;
 }
-/* line 55, ../sass/components/_twitter.scss */
+/* line 74, ../sass/components/_twitter.scss */
 .twitter-feed footer {
   top: auto;
   right: 0;
@@ -2190,7 +2411,7 @@ textarea {
   position: absolute;
   padding: 0 0 20px;
 }
-/* line 58, ../sass/components/_twitter.scss */
+/* line 77, ../sass/components/_twitter.scss */
 .twitter-feed footer .button {
   height: 40px;
   line-height: 38px;
@@ -2198,9 +2419,10 @@ textarea {
   font-size: 1.4rem;
   letter-spacing: 2px;
   padding: 0 15px;
+  display: inline-block;
 }
 @media screen and (max-width: 767px) {
-  /* line 66, ../sass/components/_twitter.scss */
+  /* line 86, ../sass/components/_twitter.scss */
   #signposts .twitter-feed footer {
     position: relative;
     padding: 0 0 20px;
@@ -2434,7 +2656,7 @@ textarea {
   position: relative;
   float: left;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   /* line 28, ../sass/components/_signposts.scss */
   .signpost {
     width: 33.33%;
@@ -2481,22 +2703,134 @@ textarea {
   vertical-align: middle;
 }
 /* line 67, ../sass/components/_signposts.scss */
+.signpost footer {
+  top: auto;
+  right: auto;
+  bottom: 20px;
+  left: auto;
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+/* line 71, ../sass/components/_signposts.scss */
+.signpost footer .button {
+  color: #1d1d1d;
+  border-color: #1d1d1d;
+  height: 40px;
+  line-height: 38px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  /* line 71, ../sass/components/_signposts.scss */
+  .signpost footer .button {
+    height: 30px;
+    line-height: 28px;
+    padding: 0 10px;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+/* line 87, ../sass/components/_signposts.scss */
 #carousel .signpost {
   width: 33.33%;
 }
 @media screen and (max-width: 660px) {
-  /* line 71, ../sass/components/_signposts.scss */
+  /* line 91, ../sass/components/_signposts.scss */
   #carousel .signpost.twitter .content:before {
     padding-top: 100%;
   }
 }
-/* line 84, ../sass/components/_signposts.scss */
+/* line 99, ../sass/components/_signposts.scss */
+.signpost figcaption {
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  filter: alpha(opacity=0);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: block;
+}
+/* line 106, ../sass/components/_signposts.scss */
+.signpost figcaption:before {
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 112, ../sass/components/_signposts.scss */
+.signpost figcaption div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 98%;
+}
+/* line 117, ../sass/components/_signposts.scss */
+.signpost figcaption h3, .signpost figcaption h4 {
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* line 122, ../sass/components/_signposts.scss */
+.signpost figcaption .button {
+  color: white;
+  border-color: white;
+}
+/* line 126, ../sass/components/_signposts.scss */
+.signpost figcaption h3 {
+  position: relative;
+}
+/* line 128, ../sass/components/_signposts.scss */
+.signpost figcaption h3:after {
+  content: "";
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  margin-left: -20px;
+}
+/* line 138, ../sass/components/_signposts.scss */
+.signpost figcaption h4 {
+  font-family: "Freight-BigBookItalic_gdi", sans-serif;
+  text-transform: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+/* line 146, ../sass/components/_signposts.scss */
+.signpost a {
+  display: block;
+  cursor: pointer;
+}
+/* line 150, ../sass/components/_signposts.scss */
+.signpost a:hover figcaption, .signpost a.active figcaption {
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 160, ../sass/components/_signposts.scss */
 .signpost:before {
   content: "";
   display: block;
   padding-top: 100%;
 }
-/* line 89, ../sass/components/_signposts.scss */
+/* line 165, ../sass/components/_signposts.scss */
 .signpost .content {
   top: 7px;
   right: 7px;
@@ -2509,7 +2843,7 @@ textarea {
   transition: background-color 0.5s ease;
 }
 @media screen and (max-width: 660px) {
-  /* line 89, ../sass/components/_signposts.scss */
+  /* line 165, ../sass/components/_signposts.scss */
   .signpost .content {
     top: 5px;
     right: 5px;
@@ -2518,7 +2852,7 @@ textarea {
     position: absolute;
   }
 }
-/* line 96, ../sass/components/_signposts.scss */
+/* line 172, ../sass/components/_signposts.scss */
 .signpost .content figure {
   top: 0;
   right: 0;
@@ -2527,16 +2861,16 @@ textarea {
   position: absolute;
   overflow: hidden;
 }
-/* line 99, ../sass/components/_signposts.scss */
+/* line 175, ../sass/components/_signposts.scss */
 .signpost .content figure .bg {
   top: -1px;
   right: -1px;
   bottom: -1px;
   left: -1px;
   position: absolute;
-  -webkit-transition: -webkit-transform 2s ease;
-  -moz-transition: -moz-transform 2s ease;
-  transition: transform 2s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  transition: transform 0.5s ease;
   z-index: 1;
   background-position: top center;
   background-repeat: no-repeat;
@@ -2546,11 +2880,11 @@ textarea {
   background-size: cover;
   background-color: red;
 }
-/* line 107, ../sass/components/_signposts.scss */
+/* line 183, ../sass/components/_signposts.scss */
 .signpost .content:hover {
   background-color: #dae6e1;
 }
-/* line 109, ../sass/components/_signposts.scss */
+/* line 185, ../sass/components/_signposts.scss */
 .signpost .content:hover .bg {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -2558,38 +2892,38 @@ textarea {
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-/* line 113, ../sass/components/_signposts.scss */
+/* line 189, ../sass/components/_signposts.scss */
 .signpost .content .logo {
   width: 100%;
   height: 100%;
   position: relative;
 }
-/* line 117, ../sass/components/_signposts.scss */
+/* line 193, ../sass/components/_signposts.scss */
 .signpost .content .logo:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 123, ../sass/components/_signposts.scss */
+/* line 199, ../sass/components/_signposts.scss */
 .signpost .content .logo .img-wrap {
   width: 70%;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
 }
-/* line 128, ../sass/components/_signposts.scss */
+/* line 204, ../sass/components/_signposts.scss */
 .signpost .content .logo .img-wrap img {
   width: 100%;
   height: auto;
   margin: 0 auto;
   display: inline-block;
 }
-/* line 134, ../sass/components/_signposts.scss */
+/* line 210, ../sass/components/_signposts.scss */
 .signpost .content .logo .img-wrap.portrait {
   height: 40%;
 }
-/* line 136, ../sass/components/_signposts.scss */
+/* line 212, ../sass/components/_signposts.scss */
 .signpost .content .logo .img-wrap.portrait img {
   width: auto;
   height: 100%;
@@ -3453,7 +3787,6 @@ body.page-template-template-facebook {
 }
 /* line 67, ../sass/templates/_news.scss */
 .posts-footer a {
-  display: inline-block;
   margin: 0 auto;
   font-family: "BrandonGrotesque-Bold_gdi", sans-serif;
   letter-spacing: 1px;
@@ -3462,12 +3795,14 @@ body.page-template-template-facebook {
   line-height: 32px;
   padding: 0;
   position: relative;
+  display: none;
 }
 /* line 77, ../sass/templates/_news.scss */
 .posts-footer a.loading {
   padding: 0 45px 0 0;
+  display: inline-block;
 }
-/* line 79, ../sass/templates/_news.scss */
+/* line 80, ../sass/templates/_news.scss */
 .posts-footer a.loading:after {
   content: "";
   display: block;
@@ -3483,7 +3818,11 @@ body.page-template-template-facebook {
   left: auto;
   position: absolute;
 }
-/* line 89, ../sass/templates/_news.scss */
+/* line 90, ../sass/templates/_news.scss */
 .svg .posts-footer a.loading:after {
   background-image: url("../images/spin.svg");
+}
+/* line 95, ../sass/templates/_news.scss */
+.posts-footer a.end {
+  display: none;
 }

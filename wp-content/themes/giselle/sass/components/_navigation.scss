@@ -34,11 +34,12 @@ nav#nav{
 			line-height: 90%;
 		}
 		ul.sub-menu{
-			padding:0 0 0 20px;
+			padding:8px 0 0 20px;
 			border:none;
 			li{
 				text-indent:-7px; 
 				border:none;
+				padding:5px 0;
 				&:before{
 					content:"-";
 					position:relative;
@@ -52,6 +53,7 @@ nav#nav{
 				@include font-size(14);
 				font-family:$brandongrotesque-medium;
 				padding:0;
+				letter-spacing: 0.5px;
 				@media screen and (max-width: $break-xlarge){
 					@include font-size(12);
 				}

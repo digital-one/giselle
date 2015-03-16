@@ -1161,7 +1161,7 @@ var gform = {
                         if(pendingUploads){
                             alert(strings.currently_uploading);
                             window["gf_submitting_" + formID] = false;
-                            $('#gform_ajax_spinner_' + formID).remove();
+                          $('#gform_ajax_spinner_' + formID).remove(); 
                             return false;
                         }
                     });

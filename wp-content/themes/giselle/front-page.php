@@ -4,8 +4,11 @@
   <div id="slick" class="slick-slider">
 	<!--<div class="slick-list">
 		<div class="slick-track">-->
-<div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
-<div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"></div>
+
+      
+<div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"><div class="vcenter"><div class="caption"><div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/marccain.svg" /></div><h3>New Spring/Summer Collections</h3><h4>available in store now</h4><a href="#" class="button">View more</a></div></div></div>
+<div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"><div class="vcenter"><div class="caption">Caption</div></div></div>
+
 <!--</div>
 </div>-->
 <?php /*
@@ -24,9 +27,50 @@
 <main id="main">
 <div class="handle"><a>Scroll Down</a></div>
 <section id="signposts">
-<header><h2>SPRING/SUMMER COLLECTIONS IN STORE NOW</h2></header>
+<header><h2>SPRING/SUMMER 2015 COLLECTIONS IN STORE NOW</h2></header>
 <div class="posts">
-<div class="signpost"><a href="" class="content"><figure><div class="bg" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/signpost-img-1.jpg');"></div><figcaption></figcaption></figure></a></div>
+
+<?php
+if(get_field('signposts',$post->ID)):
+while(the_repeater_field('signposts',$post->ID)): 
+  switch(get_sub_field('signpost_type')){
+    case 'collection':
+    $collection = get_sub_field('signpost_collection');
+      list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($collection->ID), 'signpost');
+      $brand = get_field('collection_brand',$collection->ID);
+      ?>
+      <div class="signpost overlay"><a href="<?php echo get_permalink($collection->ID) ?>" title="<?php echo $collection->post_title ?>" class="content null"><figure><div class="bg" style="background-image:url(<?php echo $src ?>);"></div><figcaption><div><h3><?php echo $brand->post_name ?></h3><h4><?php echo $collection->post_name ?></h4></div><footer><span class="button">View More</span></footer></figcaption></figure></a></div>
+      <?php
+    break;
+    case 'brand':
+      $brand = get_sub_field('signpost_brand');
+       list($svg,$w,$h) = wp_get_attachment_image_src(get_field('brand_logo_svg',$brand->ID), 'full');
+       list($png,$w,$h) = wp_get_attachment_image_src(get_field('brand_logo_png',$brand->ID), 'full');
+       $class=  $h > $w ? ' portrait' : '';
+       $src = !empty($svg) ? $svg : $png;
+    ?>
+    <div class="signpost"><a href="<?php echo get_permalink($brand->ID)?>" class="content"><div class="logo"><div class="img-wrap<?php echo $class ?>"><img src="<?php echo $src ?>" onerror="this.onerror=null; this.src='<?php echo $png ?>'" /></div></div></a></div>
+    <?php
+    break;
+    case 'tweet':
+    $feed = get_sub_field('signpost_twitter_feed');
+?>
+<div class="signpost twitter">
+  <div class="content">
+    <div id="<?php echo $feed ?>" class="twitter-feed"></div>
+      <footer><a href="https://twitter.com/giselle_york" target="_blank" class="button">Follow Us</a></footer>
+  </div>
+
+</div>
+<?php
+    break;
+  }
+  endwhile;
+  endif;
+
+?>
+<?php /*
+<div class="signpost"><a href="#" class="content"><figure><div class="bg" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/signpost-img-1.jpg');"></div><figcaption><div><h3>MARCCAIN</h3><h4>Express Yourself</h4></div><footer><span class="button">View More</span></footer></figcaption></figure></a></div>
 <div class="signpost"><a href="" class="content">Content</a></div>
 <div class="signpost"><a href="" class="content"><div class="logo"><div class="img-wrap"><img src="<?php echo get_template_directory_uri(); ?>/images/marccain.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/images/marccain.png'" /></div></div></a></div>
 <div class="signpost"><div class="content">Content</div></div>
@@ -67,7 +111,7 @@
 
 <div class="signpost"><div class="content">Content</div></div>
 
-
+*/ ?>
 
 
 </div>
@@ -76,8 +120,7 @@
 </section>
 <section id="about" class="gutter">
 	<div class="container">
-<h2>WELCOME TO GISELLE, YORK</h2>
-<p class="intro">Serving customers around Yorkshire, Teeside, Tyne &amp; Wear and the Midlands, Giselle specialise in <i>Mother of the Bride, Wedding Outfits</i> and <i>Special Occasion Wear</i> as well as leading the way in contemporary fashion including <i>Marccain</i>, <i>Riani</i> and so many more.</p>
+<?php echo $post->post_content ?>
 <div class="underline"><span></span></div>
 <figure><img src="<?php echo get_template_directory_uri(); ?>/images/shop-front.jpg" /></figure>
 </div>
@@ -85,23 +128,7 @@
 	<section id="newsletter-signup">
     <h2>SIGN UP FOR OUR NEWSLETTER</h2>
 		<div class="container">
-<div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_1"><a id="gf_1" name="gf_1" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_1" id="gform_1" action="/facebook-mailing-list-signup/#gf_1">
-                        <div class="gform_body"><ul id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below"><li id="field_1_1" class="gfield gfield_contains_required field_sublabel_below field_description_below"><label class="gfield_label" for="input_1_1">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_1_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li><li id="field_1_2" class="gfield gfield_contains_required field_sublabel_below field_description_below"><label class="gfield_label" for="input_1_2">Email Address<span class="gfield_required">*</span></label><div class="ginput_container">
-                            <input name="input_2" id="input_1_2" type="text" value="" class="medium" tabindex="2" placeholder="Email Address">
-                        </div></li>
-                            </ul></div>
-        <div class="gform_footer top_label"> <input type="submit" id="gform_submit_button_1" class="gform_button button" value="Submit" tabindex="3" onclick="if(window[&quot;gf_submitting_1&quot;]){return false;}  window[&quot;gf_submitting_1&quot;]=true;  "> <input type="hidden" name="gform_ajax" value="form_id=1&amp;title=&amp;description=&amp;tabindex=1">
-            <input type="hidden" class="gform_hidden" name="is_submit_1" value="1">
-            <input type="hidden" class="gform_hidden" name="gform_submit" value="1">
-            
-            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
-            <input type="hidden" class="gform_hidden" name="state_1" value="WyJbXSIsIjQ3MjNjOTIwMTUzOTI2Y2VjNWQ4MGRlN2UwMDYxNzVhIl0=">
-            <input type="hidden" class="gform_hidden" name="gform_target_page_number_1" id="gform_target_page_number_1" value="0">
-            <input type="hidden" class="gform_hidden" name="gform_source_page_number_1" id="gform_source_page_number_1" value="1">
-            <input type="hidden" name="gform_field_values" value="">
-         </div>
-          </form>
-        </div>
+<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]') ?>
     </div>
 </section>
 

@@ -1,7 +1,11 @@
 .gform_wrapper{
-	margin:0 0 40px;
+	margin:0 auto 40px;
 	#newsletter-signup &{
-		margin:0;
+		margin:0 auto;
+		width:500px;
+		@media only screen and(max-width: $break-medium){
+			width:80%;
+		}
 	}
 	.gform_body{
 		@extend %clearfix;
@@ -9,9 +13,12 @@
 	.gform_footer{
 		text-align: center;
 		margin:20px 0 0;
+		margin:0;
+		position: relative;
 	}
 	li{
 		margin-bottom: 15px;
+		@extend %clearfix;
 	}
 	.gfield_label{
 		display:none;
@@ -41,6 +48,7 @@
    		#newsletter-signup &{
    			width:500px;
    			height:50px;
+   			margin:0 auto;
    			line-height: 50px;
    			background-color: $light-grey;
    			color: $dark-grey;
@@ -62,12 +70,16 @@
 		height:35px;
 		line-height: 35px;
 		border:none;
+		display: inline-block;
 		text-transform: uppercase;
 		#newsletter-signup &{
 			@include font-size(16);
 			height:50px;
 			line-height: 50px;
 			border: 1px solid $dark-grey;
+		}
+		&:focus{
+			outline:none;
 		}
 	}
 	.validation_error,.validation_message{
@@ -79,7 +91,12 @@
 	.validation_message{
 		margin: 3px 0 0;
 	}
+	.gform_ajax_spinner{
+		@include abs-pos(0,0,auto,auto);
+	}
 }
 .gform_confirmation_message{
-		margin-bottom: 40px;
-	}
+	margin-bottom: 40px;
+	@include font-size(18);
+	line-height: 140%;
+}

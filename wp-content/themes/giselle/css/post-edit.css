@@ -1,0 +1,4 @@
+.acf-image-uploader img{
+	height: auto !important;
+	min-height: 1px !important;
+}

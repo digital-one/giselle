@@ -16,7 +16,10 @@
 	}
 }
 .gutter{
-	padding: 0 15%;
+	padding: 0 22%;
+	@media screen and (max-width: $break-large){
+		padding:0 10%;
+	}
 	@media screen and (max-width: $break-small){
 		padding:0 20px;
 	}

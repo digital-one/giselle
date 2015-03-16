@@ -9,8 +9,14 @@
 	@media screen and (max-width: $break-xlarge){
 		padding: 0;
 	}
+	@media screen and (max-width:$break-medium){
+		padding:70px 0 90px;
+	}
 	@media screen and (max-width: $break-small){
 		margin:-40px 0 0;
+	}
+	a{
+		display: inline-block !important;
 	}
 	.user{
 		width:38px;
@@ -36,20 +42,33 @@
 		line-height:140%;
 		font-family: $brandongrotesque-regular;
 		letter-spacing: 0;
-		margin-bottom: 0;
+		margin-bottom: 10px;
 		a{
 			&:link,&:visited{
 				font-family: $brandongrotesque-bold;
 			}
 		}
-		@media screen and (max-width: $break-medium){
+		@media screen and (min-width:$break-medium) and (max-width:900px){
+			@include font-size(14);
+		}
+		@media screen and (max-width: $break-medium -1){
 			@include font-size(16);
 		}
 		@media screen and (max-width: $break-small){
 			@include font-size(14);
 		}
 	}
-	.timePosted,.interact{
+	.timePosted{
+		@include font-size(12);
+		display: block;
+		text-align: center;
+		font-family: $brandongrotesque-regular;
+		margin:0;
+		@media screen and (min-width:$break-medium) and (max-width: $break-xlarge){
+			display:none;
+		}
+	}
+	.interact{
 		display: none;
 	}
 	footer{
@@ -61,6 +80,7 @@
 			@include font-size(14);
 			letter-spacing: 2px;
 			padding: 0 15px;
+			display: inline-block;
 		}
 		@media screen and (max-width: $break-medium - 1){
 			#signposts &{
