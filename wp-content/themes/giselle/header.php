@@ -35,4 +35,3 @@
 <span>MENU</span>
 <?php wp_nav_menu( array( 'menu' => 'Main Menu', 'menu_class' => '' ) ); ?>
 </nav>
-

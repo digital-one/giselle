@@ -958,7 +958,7 @@ body {
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.1);
 }
 /* line 8, ../sass/components/_container.scss */
-.page-template-template-brand #wrap, .page-template-template-product #wrap {
+.single-cpt_brand #wrap, .single-cpt_collection #wrap {
   height: 100%;
 }
 /* line 12, ../sass/components/_container.scss */
@@ -1016,7 +1016,7 @@ body {
   padding-top: 94px;
 }
 /* line 53, ../sass/components/_container.scss */
-.page-template-template-brand #main, .page-template-template-product #main {
+.single-cpt_brand #main, .single-cpt_collection #main {
   height: 100%;
   padding: 0;
 }
@@ -1032,7 +1032,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   /* line 63, ../sass/components/_container.scss */
-  .page-template-template-brand #main, .page-template-template-product #main {
+  .single-cpt_brand #main, .single-cpt_collection #main {
     padding: 87px 0 0;
   }
 }
@@ -1987,16 +1987,22 @@ textarea {
   background-position: center top;
 }
 /* line 60, ../sass/components/_slick-slider.scss */
-.slick-slider .slick-list .slick-track .slick-slide:before {
+.slick-slider .slick-list .slick-track .slick-slide .inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 64, ../sass/components/_slick-slider.scss */
+.slick-slider .slick-list .slick-track .slick-slide .inner:before {
   content: "";
   height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 66, ../sass/components/_slick-slider.scss */
+/* line 71, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .vcenter {
   display: inline-block;
-  width: 100%;
+  width: 99%;
   vertical-align: middle;
   z-index: 999;
   margin: 0 auto;
@@ -2004,7 +2010,7 @@ textarea {
   background-color: transparent;
   position: relative;
 }
-/* line 77, ../sass/components/_slick-slider.scss */
+/* line 81, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption {
   margin: 100px auto 0;
   width: 40%;
@@ -2013,13 +2019,13 @@ textarea {
   padding: 30px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 77, ../sass/components/_slick-slider.scss */
+  /* line 81, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption {
     width: 50%;
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 77, ../sass/components/_slick-slider.scss */
+  /* line 81, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption {
     margin: 0 auto 0;
     width: 100%;
@@ -2027,7 +2033,7 @@ textarea {
     padding: 15px;
   }
 }
-/* line 93, ../sass/components/_slick-slider.scss */
+/* line 97, ../sass/components/_slick-slider.scss */
 .csstransitions .slick-slider .slick-list .slick-track .slick-slide .caption {
   opacity: 0;
   -moz-opacity: 0;
@@ -2037,7 +2043,7 @@ textarea {
   -moz-transition: margin 0.3s ease, opacity 0.3s ease-in;
   transition: margin 0.3s ease, opacity 0.3s ease-in;
 }
-/* line 97, ../sass/components/_slick-slider.scss */
+/* line 101, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption .button {
   height: 30px;
   line-height: 28px;
@@ -2046,12 +2052,12 @@ textarea {
   font-size: 1.2rem;
 }
 @media only screen and (max-width: 660px) {
-  /* line 97, ../sass/components/_slick-slider.scss */
+  /* line 101, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption .button {
     display: none;
   }
 }
-/* line 106, ../sass/components/_slick-slider.scss */
+/* line 110, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption.move {
   margin: 80px auto 0;
   opacity: 1;
@@ -2060,12 +2066,12 @@ textarea {
   filter: alpha(opacity=100);
 }
 @media only screen and (max-width: 660px) {
-  /* line 106, ../sass/components/_slick-slider.scss */
+  /* line 110, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption.move {
     margin: 0 auto;
   }
 }
-/* line 113, ../sass/components/_slick-slider.scss */
+/* line 117, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption h3 {
   position: relative;
   padding-bottom: 20px;
@@ -2073,13 +2079,13 @@ textarea {
   line-height: 130%;
 }
 @media only screen and (max-width: 660px) {
-  /* line 113, ../sass/components/_slick-slider.scss */
+  /* line 117, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption h3 {
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
 }
-/* line 122, ../sass/components/_slick-slider.scss */
+/* line 126, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption h3:after {
   content: "";
   top: auto;
@@ -2092,7 +2098,7 @@ textarea {
   background-color: #1d1d1d;
   margin-left: -30px;
 }
-/* line 131, ../sass/components/_slick-slider.scss */
+/* line 135, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption h4 {
   font-family: "Freight-BigBook_gdi", sans-serif;
   text-transform: none;
@@ -2101,47 +2107,47 @@ textarea {
   letter-spacing: 2px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 131, ../sass/components/_slick-slider.scss */
+  /* line 135, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption h4 {
     font-size: 18px;
     font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 131, ../sass/components/_slick-slider.scss */
+  /* line 135, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption h4 {
     margin-bottom: 0px;
   }
 }
-/* line 143, ../sass/components/_slick-slider.scss */
+/* line 147, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption .logo {
   width: 60%;
   display: inline-block;
   margin: 0 auto 25px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 143, ../sass/components/_slick-slider.scss */
+  /* line 147, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption .logo {
     width: 70%;
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 143, ../sass/components/_slick-slider.scss */
+  /* line 147, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-list .slick-track .slick-slide .caption .logo {
     width: 50%;
     margin-bottom: 15px;
   }
 }
-/* line 154, ../sass/components/_slick-slider.scss */
+/* line 158, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-list .slick-track .slick-slide .caption .logo img {
   width: 100%;
   height: auto;
 }
-/* line 163, ../sass/components/_slick-slider.scss */
+/* line 167, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel {
   padding: 0 40px;
 }
-/* line 168, ../sass/components/_slick-slider.scss */
+/* line 172, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel .slick-prev, .slick-slider#carousel .slick-next {
   width: 14px;
   height: 24px;
@@ -2158,7 +2164,7 @@ textarea {
   margin-top: -12px;
   z-index: 9999;
 }
-/* line 180, ../sass/components/_slick-slider.scss */
+/* line 184, ../sass/components/_slick-slider.scss */
 .slick-slider#carousel .slick-next {
   top: 50%;
   right: 15px;
@@ -2167,12 +2173,12 @@ textarea {
   position: absolute;
   background-image: url("../images/carousel-next.svg");
 }
-/* line 185, ../sass/components/_slick-slider.scss */
+/* line 189, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-prev, .slick-slider .slick-next {
   background-color: transparent;
   border: none;
 }
-/* line 190, ../sass/components/_slick-slider.scss */
+/* line 194, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap {
   width: auto;
   background-color: transparent;
@@ -2187,7 +2193,7 @@ textarea {
   height: 100%;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 190, ../sass/components/_slick-slider.scss */
+  /* line 194, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap {
     top: auto;
     right: auto;
@@ -2198,33 +2204,33 @@ textarea {
     width: 100%;
   }
 }
-/* line 203, ../sass/components/_slick-slider.scss */
+/* line 207, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner {
   height: 100%;
   position: relative;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 203, ../sass/components/_slick-slider.scss */
+  /* line 207, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap .inner {
     width: 100%;
     height: auto;
   }
 }
-/* line 210, ../sass/components/_slick-slider.scss */
+/* line 214, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 216, ../sass/components/_slick-slider.scss */
+/* line 220, ../sass/components/_slick-slider.scss */
 .slick-slider .slick-dots-wrap .inner div {
   vertical-align: middle;
   display: inline-block;
   color: white;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 216, ../sass/components/_slick-slider.scss */
+  /* line 220, ../sass/components/_slick-slider.scss */
   .slick-slider .slick-dots-wrap .inner div {
     width: 100%;
     width: 100%;
@@ -2247,7 +2253,7 @@ textarea {
     right: 50%;
   }
 }
-/* line 227, ../sass/components/_slick-slider.scss */
+/* line 231, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots {
   background-color: white;
   position: relative;
@@ -2256,24 +2262,24 @@ textarea {
   padding: 15px 0;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 227, ../sass/components/_slick-slider.scss */
+  /* line 231, ../sass/components/_slick-slider.scss */
   .slick-slider ul.slick-dots {
     background-color: transparent;
     padding: 0;
   }
 }
-/* line 237, ../sass/components/_slick-slider.scss */
+/* line 241, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li {
   padding: 10px 15px;
   display: block;
 }
 @media only screen and (max-width: 660px) and (orientation: portrait) {
-  /* line 237, ../sass/components/_slick-slider.scss */
+  /* line 241, ../sass/components/_slick-slider.scss */
   .slick-slider ul.slick-dots li {
     padding: 0 5px;
   }
 }
-/* line 243, ../sass/components/_slick-slider.scss */
+/* line 247, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li button {
   display: block;
   border: none;
@@ -2287,7 +2293,7 @@ textarea {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-/* line 253, ../sass/components/_slick-slider.scss */
+/* line 257, ../sass/components/_slick-slider.scss */
 .slick-slider ul.slick-dots li.slick-active button {
   background-color: black;
 }
@@ -3279,7 +3285,45 @@ textarea {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 173, ../sass/templates/_brand.scss */
+/* line 172, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+}
+/* line 176, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 182, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter .logo {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  padding: 40px;
+}
+/* line 190, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter .logo img {
+  width: 100%;
+  height: auto;
+}
+/* line 194, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter .logo.portrait {
+  width: auto;
+  height: 30%;
+}
+/* line 197, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter .logo.portrait img {
+  width: auto;
+  height: 100%;
+}
+/* line 204, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text {
   height: 100%;
   width: 100%;
@@ -3288,62 +3332,62 @@ textarea {
   background-color: white;
 }
 @media only screen and (max-width: 768px) {
-  /* line 173, ../sass/templates/_brand.scss */
+  /* line 204, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text {
     padding: 0 15%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 173, ../sass/templates/_brand.scss */
+  /* line 204, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text {
     padding: 0 10px;
   }
 }
-/* line 186, ../sass/templates/_brand.scss */
+/* line 217, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 192, ../sass/templates/_brand.scss */
+/* line 223, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text div {
   vertical-align: middle;
   display: inline-block;
   width: 99%;
 }
-/* line 197, ../sass/templates/_brand.scss */
+/* line 228, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo {
   width: 60%;
   height: auto;
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 202, ../sass/templates/_brand.scss */
+/* line 233, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo img {
   width: 100%;
   height: auto;
   display: inline-block;
   margin: 0 auto;
 }
-/* line 208, ../sass/templates/_brand.scss */
+/* line 239, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo.portrait {
   height: 170px;
 }
-/* line 210, ../sass/templates/_brand.scss */
+/* line 241, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo.portrait img {
   width: auto;
   height: 100%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 216, ../sass/templates/_brand.scss */
+  /* line 247, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text h2, .section-inner .column .row .content .text h3 {
     font-size: 14px;
     font-size: 1.4rem;
     margin-bottom: 10px;
   }
 }
-/* line 222, ../sass/templates/_brand.scss */
+/* line 253, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text p {
   font-family: "Freight-BigBook_gdi", sans-serif;
   letter-spacing: 0.7px;
@@ -3353,23 +3397,23 @@ textarea {
   line-height: 140%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 222, ../sass/templates/_brand.scss */
+  /* line 253, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text p {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
-/* line 231, ../sass/templates/_brand.scss */
+/* line 262, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text p:last-child {
   margin: 0;
 }
-/* line 237, ../sass/templates/_brand.scss */
+/* line 268, ../sass/templates/_brand.scss */
 .section-inner .column .row.top {
   height: 45%;
   padding-bottom: 10px;
 }
 @media only screen and (min-width: 661px) and (max-width: 768px) {
-  /* line 237, ../sass/templates/_brand.scss */
+  /* line 268, ../sass/templates/_brand.scss */
   .section-inner .column .row.top {
     height: 100%;
     top: 0;
@@ -3380,7 +3424,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 237, ../sass/templates/_brand.scss */
+  /* line 268, ../sass/templates/_brand.scss */
   .section-inner .column .row.top {
     padding-bottom: 0;
     top: 0;
@@ -3391,7 +3435,7 @@ textarea {
     height: 50%;
   }
 }
-/* line 249, ../sass/templates/_brand.scss */
+/* line 280, ../sass/templates/_brand.scss */
 .section-inner .column .row.top .content {
   top: 0;
   right: 0;
@@ -3400,7 +3444,7 @@ textarea {
   position: absolute;
 }
 @media only screen and (max-width: 768px) {
-  /* line 249, ../sass/templates/_brand.scss */
+  /* line 280, ../sass/templates/_brand.scss */
   .section-inner .column .row.top .content {
     top: 0;
     right: 0;
@@ -3409,19 +3453,19 @@ textarea {
     position: absolute;
   }
 }
-/* line 256, ../sass/templates/_brand.scss */
+/* line 287, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom {
   height: 55%;
   padding-top: 10px;
 }
 @media only screen and (min-width: 661px) and (max-width: 768px) {
-  /* line 256, ../sass/templates/_brand.scss */
+  /* line 287, ../sass/templates/_brand.scss */
   .section-inner .column .row.bottom {
     display: none;
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 256, ../sass/templates/_brand.scss */
+  /* line 287, ../sass/templates/_brand.scss */
   .section-inner .column .row.bottom {
     top: auto;
     right: 7px;
@@ -3431,7 +3475,7 @@ textarea {
     height: 50%;
   }
 }
-/* line 266, ../sass/templates/_brand.scss */
+/* line 297, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom .content {
   top: 7px;
   right: 0;

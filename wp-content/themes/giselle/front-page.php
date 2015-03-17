@@ -11,6 +11,7 @@ while(the_repeater_field('slider')):
 list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('slide_image'), 'slider');
        $link="";
        $is_brand = false;
+       $is_offer = false;
        $class="";
        $sub_head = get_sub_field('slide_sub_heading');
        $button = get_sub_field('slide_button_label');
@@ -27,9 +28,18 @@ list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('slide_image'), 'sl
         case 'page':
         $link = get_sub_field('slide_page');
         break;
+        case 'offer':
+        $is_offer = true; 
+        break;
        }
 ?>    
-<div class="slick-slide slide preload" style="background-image:url('<?php echo $src ?>');"><?php if(!empty($link)):?><a href="<?php echo $link ?>"><div class="vcenter"><div class="caption"><?php if($is_brand):?><div class="logo<?php echo $class ?>"><img src="<?php echo $logo_src ?>" /></div><?php endif ?><h3><?php echo get_sub_field('slide_heading')?></h3><?php if(!empty($sub_head)):?><h4><?php echo $sub_head ?></h4><?php endif ?><?php if(!empty($button)):?><a href="#" class="button"><?php echo $button ?></a><?php endif?></div></div><?php if(!empty($link)):?></a><?php endif ?></div>
+<div class="slick-slide slide preload" style="background-image:url('<?php echo $src ?>');">
+  <?php if(!empty($link)):?><a class="inner" href="<?php echo $link ?>"><?php else: ?><div class="inner"><?php endif ?>
+  <?php if(!$is_offer):?>
+  <div class="vcenter"><div class="caption"><?php if($is_brand):?><div class="logo<?php echo $class ?>"><img src="<?php echo $logo_src ?>" /></div><?php endif ?><h3><?php echo get_sub_field('slide_heading')?></h3><?php if(!empty($sub_head)):?><h4><?php echo $sub_head ?></h4><?php endif ?><?php if(!empty($button)):?><span class="button"><?php echo $button ?></span><?php endif?></div></div><?php endif ?>
+  <?php if(!empty($link)):?></a><?php else: ?></div><?php endif ?></div>
+<?php endwhile ?>
+<?php endif ?>
 <?php /*
 <div class="slick-slide slide preload" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/marccain-slide.jpg');"><div class="vcenter"><div class="caption">Caption</div></div></div>
 */ ?>

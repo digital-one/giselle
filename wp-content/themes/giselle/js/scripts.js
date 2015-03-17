@@ -29,7 +29,8 @@ var _handleShown = true,
 	_isMobile,
 	_isDesktop,
 	_container,
-	_scrollDirection;
+	_scrollDirection,
+	_currentPathName;
 
 //Homepage slider
 
@@ -62,6 +63,20 @@ $('#slick').slick({
 
 
 }
+
+//Collection slider
+if($('.single-cpt_collection #gallery').length){
+$('.single-cpt_collection #gallery').slick({
+	dots: true,
+    autoplay: true,
+    fade: false,
+    autoplaySpeed: 4000,
+    speed: 600,
+    pauseOnHover: true,
+    arrows: true
+})
+}
+
 
 //About Us Carousel
 
@@ -369,6 +384,7 @@ var _images = [],
 		}
 	});
 	_imageTotal = _images.length;
+	console.log(_images);
 	if(_imageTotal==0){
 		_callback();
 		return;
@@ -400,6 +416,53 @@ show_content = function(){
 	init_masonry();
 	load_posts();
 }
+
+init_pop_state = function(){
+ window.onpopstate = function (event){ 
+    if(location.pathname != currentPathname){
+ 	 if ($firstLoad){
+		//$firstLoad = false;
+	} else {
+	if (event.state != null){
+	//console.log('not null')
+// there is something in the history state for this entry, so we go ahead and load it
+// but we pass in false so that it doesn't write another entry over it...
+loadContent(location.href,false);
+}else{
+	//console.log('null')
+// if there is nothing in the state (either first load or returning to a page that was a first load)
+// then we tell it not to load the ajax, but instead just load the default content
+loadContent(null,false);
+}
+} 
+}
+}
+}
+
+load_history_content = function(_url){
+
+	history.pushState({}, '', _url); //push the url
+	 _currentPathname = location.pathname;
+	$.get(_url).done(function(data){
+		var _page = $(data).find('#content');
+	});
+}
+
+send_push_link = function(e){
+	e.preventDefault();
+  var _this = $(e.currentTarget),
+  	  _url = _this.attr('href');
+	console.log(url);
+hideContent(function(){
+	loadContent(url,true);
+})
+  
+}
+
+init_history = function(){
+	$('body').on('click','.push-link',send_push_link);
+}
+
 
 $(window).on( 'DOMMouseScroll mousewheel', function ( event ) {
   if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { 

@@ -169,7 +169,38 @@
 				@include abs-pos(0,0,0,0);
 				//position: relative;
 				@include bg-cover;
-				
+				.vcenter{
+					width:100%;
+					display: inline-block;
+					height:100%;
+					&:before{
+						content:"";
+						height:100%;
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.logo{
+						display: inline-block;
+						vertical-align: middle;
+						background-color: rgba(255,255,255,.7);
+						margin:0 auto;
+						width:30%;
+						height:auto;
+						padding: 40px;
+						img{
+							width:100%;
+							height:auto;
+						}
+						&.portrait{
+							width:auto;
+							height:30%;
+							img{
+								width:auto;
+								height:100%;
+							}
+						}
+					}
+				}
 				.text{
 					height:100%;
 					width:100%;

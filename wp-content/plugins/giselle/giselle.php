@@ -84,6 +84,7 @@
             'menu_position'       => 5,
             'can_export'          => true,
             'has_archive'         => true,
+            'rewrite'             => array('slug' => 'news/archive'),
             'exclude_from_search' => false,
             'publicly_queryable'  => true,
             'capability_type'     => 'page',
@@ -124,6 +125,7 @@
             'menu_position'       => 10,
             'can_export'          => true,
             'has_archive'         => true,
+            'rewrite'             => array('slug' => 'brands/archive'),
             'exclude_from_search' => false,
             'publicly_queryable'  => true,
             'capability_type'     => 'page',
@@ -163,6 +165,7 @@
             'menu_position'       => 15,
             'can_export'          => true,
             'has_archive'         => true,
+            'rewrite'             => array('slug' => 'collections/archive'),
             'exclude_from_search' => false,
             'publicly_queryable'  => true,
             'capability_type'     => 'page',
@@ -255,7 +258,8 @@ function custom_image_sizes($sizes) {
 	$myimgsizes = array(
 	"slide" => __("Slide"),
   	"news-tn" => __("News Thumbnail"),
-  	"brand" => __("Brand")
+  	"brand" => __("Brand"),
+    "signpost" => __("Signpost")
   );
      
        $newimgsizes = array_merge($sizes, $myimgsizes);

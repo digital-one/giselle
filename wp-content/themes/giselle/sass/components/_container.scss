@@ -5,7 +5,7 @@
 #wrap{
 	position:relative;
 	right:0;
-	.page-template-template-brand &,.page-template-template-product &{
+	.single-cpt_brand &,.single-cpt_collection &{
 		height:100%;
 	}
 	@include box-shadow;
@@ -50,7 +50,7 @@
 	.page-template-template-contact &{
 		padding-top:94px;
 	}
-	.page-template-template-brand &, .page-template-template-product &{
+	.single-cpt_brand &, .single-cpt_collection &{
 		height:100%;
 		padding:0;
 	}
@@ -60,7 +60,7 @@
 			padding:94px 0 0;
 		}
 	}
-	.page-template-template-brand &, .page-template-template-product &{
+	.single-cpt_brand &, .single-cpt_collection &{
 		@media only screen  and (max-width : $break-medium) {
 			padding: 87px 0 0;
 		}
