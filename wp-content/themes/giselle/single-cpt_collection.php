@@ -37,8 +37,17 @@ list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('gallery_image'), '
 </div></div>
  <div class="column half right">
 <div class="row">
-<div class="content"><div class="text"><div><div class="logo<?php echo $class ?>"><img src="<?php echo $logo_src ?>" onerror="this.onerror=null; this.src='<?php echo $png ?>'" /></div><h2><?php echo $post->post_title ?></h2>
-<?php echo $post->post_content ?><a href="<?php echo $link ?>" class="button">VIEW MORE</a></div></div></div>
+<?php
+$display_title = get_field('collection_displayed_title',$post->ID); 
+$title = !empty($display_title) ? $display_title : $post->post_title;
+?>
+
+<div class="content"><div class="text"><div><div class="logo<?php echo $class ?>"><img src="<?php echo $logo_src ?>" onerror="this.onerror=null; this.src='<?php echo $png ?>'" /></div><h2><?php echo $title ?></h2>
+<?php echo $post->post_content ?>
+<?php if(get_field('link_to_brand_page',$post->ID)==1): ?>
+<a href="<?php echo $link ?>" class="button">VIEW MORE</a>
+<?php endif ?>
+</div></div></div>
 </div>
 </div>
 </div>

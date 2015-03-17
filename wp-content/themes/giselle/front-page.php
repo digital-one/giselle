@@ -72,8 +72,10 @@ while(the_repeater_field('signposts',$post->ID)):
     $collection = get_sub_field('signpost_collection');
       list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($collection->ID), 'signpost');
       $brand = get_field('collection_brand',$collection->ID);
+      $display_title = get_field('collection_displayed_title',$collection->ID);
+      $title = !empty($display_title) ? $display_title : $collection->post_title;
       ?>
-      <div class="signpost overlay"><a href="<?php echo get_permalink($collection->ID) ?>" title="<?php echo $collection->post_title ?>" class="content null"><figure><div class="bg" style="background-image:url(<?php echo $src ?>);"></div><figcaption><div><h3><?php echo $brand->post_name ?></h3><h4><?php echo $collection->post_name ?></h4></div><footer><span class="button">View More</span></footer></figcaption></figure></a></div>
+      <div class="signpost overlay"><a href="<?php echo get_permalink($collection->ID) ?>" title="<?php echo $collection->post_title ?>" class="content null"><figure><div class="bg" style="background-image:url(<?php echo $src ?>);"></div><figcaption><div><h3><?php echo $brand->post_title ?></h3><h4><?php echo $title ?></h4></div><footer><span class="button">View More</span></footer></figcaption></figure></a></div>
       <?php
     break;
     case 'brand':
@@ -159,12 +161,7 @@ while(the_repeater_field('signposts',$post->ID)):
 <figure><img src="<?php echo get_template_directory_uri(); ?>/images/shop-front.jpg" /></figure>
 </div>
 	</section>
-	<section id="newsletter-signup">
-    <h2>SIGN UP FOR OUR NEWSLETTER</h2>
-		<div class="container">
-<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]') ?>
-    </div>
-</section>
+	<?php get_template_part('newsletter'); ?>
 
 </main>
 <?php get_footer() ?>

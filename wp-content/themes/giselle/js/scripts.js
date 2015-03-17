@@ -92,7 +92,7 @@ $('#carousel').slick({
   		slidesToScroll: 1,
   		responsive: [
     	{
-      		breakpoint: 1024,
+      		breakpoint: 767,
       		settings: {
         	slidesToShow: 2,
         	slidesToScroll: 1,
@@ -102,7 +102,7 @@ $('#carousel').slick({
     },
     	
     	{
-      	breakpoint: 660,
+      	breakpoint: 379,
       	settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -122,6 +122,19 @@ $('.signpost.overlay a.null').on('click',function(e){
 })
 }
 
+show_overlay = function(){
+	if($.cookie('show_overlay')!=1){
+	setTimeout(function() {
+     $('#overlay').show();
+}, 4000);
+	}
+	$('#overlay a.close').on('click',function(e){
+		e.preventDefault();
+		$('#overlay').hide();
+		$.cookie('show_overlay', 1, { expires: 1 });
+
+	})
+}
 //Visibility of homepage scroll handle
 
 show_hide_handle = function(_scroll){
@@ -331,13 +344,13 @@ on_fullpage_init = function(){
 		_windowHeight = $(window).height(),
 		_pageHeight = _windowHeight-_headerHeight,
 		_navHeight = $('#fp-nav').outerHeight(),
-		_yPos = ((_windowHeight/2) + _headerHeight) - _navHeight/2;
+		_yPos = (((_pageHeight - _navHeight)/2) + _headerHeight) + _navHeight/2;
 
 	$('#fp-nav').css({
 		'top': _yPos+'px'
 	}).show();
 
-	$('#fullpage .handle a').on('click',function(e){
+	$('.fullpage .handle a').on('click',function(e){
 		e.preventDefault();
 		$.fn.fullpage.moveTo(2, 0);
 	})
@@ -384,7 +397,6 @@ var _images = [],
 		}
 	});
 	_imageTotal = _images.length;
-	console.log(_images);
 	if(_imageTotal==0){
 		_callback();
 		return;
@@ -480,6 +492,9 @@ $(window).on('resize',function(){
 	refresh_page();
 	if(_fullpageActive) $.fn.fullpage.setScrollingSpeed(0); //set fullpage animation speed to zero
 	init_map();
+	if(_isDesktop){
+		on_fullpage_init();
+	}
 })
 
 $(window).on('scroll',load_posts);
@@ -493,6 +508,7 @@ $(window).on('scroll',function(){
 get_viewport_size();
 //init_fullpage();
 refresh_page();
+show_overlay();
 init_map();
 init_twitter_feeds();
 preload_images(show_content);

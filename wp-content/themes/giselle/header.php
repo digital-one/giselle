@@ -27,7 +27,11 @@
 <div id="wrap">
 <!--header-->
 <header id="header">
+<?php if(is_front_page()): ?>
 <h1 id="home-link">Giselle Ladieswear</h1>
+<?php else: ?>
+<a href="<?php echo home_url() ?>" id="home-link">Giselle Ladieswear</a>
+<?php endif ?>
 <a id="menu-toggle"><span>MENU</span></a>
 </header>
 <!--/header-->

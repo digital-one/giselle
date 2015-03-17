@@ -35,28 +35,28 @@
 			@include font-size(14);
 		}
 	}
-	nav.social{
-		@include centered-menu;
-		margin-bottom: 55px;
-		li{
-			margin: 0 5px;
-			a{
-				display: block;
-				width:32px;
-				height:32px;
-				@extend %ir;
-				background-image:url('../images/twitter.svg');
-				background-position: left top;
-				background-repeat: no-repeat;
-				background-size: 100% auto;
-				@include opacity(.4);
-				@include transition(opacity .5s ease);
-				&.facebook{
-					background-image:url('../images/facebook.svg');
-				}
-				&:hover,&:active{
-					@include opacity(.8);
-				}
+}
+nav.social{
+	@include centered-menu;
+	margin-bottom: 55px;
+	li{
+		margin: 0 5px;
+		a{
+			display: block;
+			width:32px;
+			height:32px;
+			@extend %ir;
+			background-image:url('../images/twitter.svg');
+			background-position: left top;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			@include opacity(.4);
+			@include transition(opacity .5s ease);
+			&.facebook{
+				background-image:url('../images/facebook.svg');
+			}
+			&:hover,&:active{
+				@include opacity(.8);
 			}
 		}
 	}

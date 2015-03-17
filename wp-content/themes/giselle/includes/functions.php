@@ -50,6 +50,9 @@ function init_scripts_styles() {
 		wp_register_script( 'twitter_fetcher', get_stylesheet_directory_uri() . '/js/twitter-fetcher.js', array(), null, false );
   		wp_enqueue_script( 'twitter_fetcher' );
 
+  		//jquery cookie
+		wp_register_script( 'jquery_cookie', get_stylesheet_directory_uri() . '/js/jquery.cookie.js', array(), null, false );
+  		wp_enqueue_script( 'jquery_cookie' );
 
 		// retina js
 	//	wp_register_script( 'retina_js', get_stylesheet_directory_uri() . '/js/retina.min.js', array(), null, false );

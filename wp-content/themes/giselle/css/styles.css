@@ -870,7 +870,7 @@ header#header:after,
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
 /* line 9, ../sass/helpers/_placeholders.scss */
-header#header #home-link, #footer h3, #footer nav.social li a, .slick-slider .slick-prev, .slick-slider .slick-next, .slick-slider ul.slick-dots li button, .handle a, .section-inner a.close, #facebook-signup h1, #facebook-signup h2, #gallery .slick-prev, #gallery .slick-next {
+header#header #home-link, #footer h3, nav.social li a, .slick-slider .slick-prev, .slick-slider .slick-next, .slick-slider ul.slick-dots li button, .handle a, a.close, #facebook-signup h1, #facebook-signup h2, #gallery .slick-prev, #gallery .slick-next {
   overflow: hidden;
   text-indent: -10000px;
 }
@@ -1350,15 +1350,16 @@ nav#nav a:hover, nav#nav a:active {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 38, ../sass/components/_footer.scss */
-#footer nav.social {
+
+/* line 39, ../sass/components/_footer.scss */
+nav.social {
   width: 100%;
   position: relative;
   overflow: hidden;
   margin-bottom: 55px;
 }
 /* line 5, ../sass/helpers/mixins/_centered-menu.scss */
-#footer nav.social ul {
+nav.social ul {
   clear: left;
   float: left;
   position: relative;
@@ -1366,18 +1367,18 @@ nav#nav a:hover, nav#nav a:active {
   text-align: center;
 }
 /* line 11, ../sass/helpers/mixins/_centered-menu.scss */
-#footer nav.social ul li {
+nav.social ul li {
   display: block;
   float: left;
   position: relative;
   right: 50%;
 }
-/* line 41, ../sass/components/_footer.scss */
-#footer nav.social li {
+/* line 42, ../sass/components/_footer.scss */
+nav.social li {
   margin: 0 5px;
 }
-/* line 43, ../sass/components/_footer.scss */
-#footer nav.social li a {
+/* line 44, ../sass/components/_footer.scss */
+nav.social li a {
   display: block;
   width: 32px;
   height: 32px;
@@ -1393,12 +1394,12 @@ nav#nav a:hover, nav#nav a:active {
   -moz-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
-/* line 54, ../sass/components/_footer.scss */
-#footer nav.social li a.facebook {
+/* line 55, ../sass/components/_footer.scss */
+nav.social li a.facebook {
   background-image: url("../images/facebook.svg");
 }
-/* line 57, ../sass/components/_footer.scss */
-#footer nav.social li a:hover, #footer nav.social li a:active {
+/* line 58, ../sass/components/_footer.scss */
+nav.social li a:hover, nav.social li a:active {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
@@ -3115,33 +3116,6 @@ textarea {
   }
 }
 /* line 55, ../sass/templates/_brand.scss */
-.section-inner a.close {
-  top: 120px;
-  right: 15px;
-  bottom: auto;
-  left: auto;
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  display: block;
-  background-image: url("../images/close-black.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  z-index: 9999;
-  cursor: pointer;
-}
-/* line 67, ../sass/templates/_brand.scss */
-.ie8 .section-inner a.close {
-  background-image: url("../images/close-black.png");
-}
-@media only screen and (max-width: 768px) {
-  /* line 70, ../sass/templates/_brand.scss */
-  .page-template-template-product .section-inner a.close {
-    top: 10px;
-  }
-}
-/* line 76, ../sass/templates/_brand.scss */
 .section-inner .column {
   width: 50%;
   height: 100%;
@@ -3150,12 +3124,12 @@ textarea {
   position: relative;
   float: left;
 }
-/* line 83, ../sass/templates/_brand.scss */
+/* line 62, ../sass/templates/_brand.scss */
 .section-inner .column.full-width {
   width: 100%;
 }
 @media only screen and (max-width: 660px) {
-  /* line 86, ../sass/templates/_brand.scss */
+  /* line 65, ../sass/templates/_brand.scss */
   .section-inner .column.full-width:before {
     content: "";
     padding-top: 80%;
@@ -3163,13 +3137,13 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 93, ../sass/templates/_brand.scss */
+  /* line 72, ../sass/templates/_brand.scss */
   .section-inner .column.half {
     overflow: hidden;
     width: 100%;
     position: relative;
   }
-  /* line 98, ../sass/templates/_brand.scss */
+  /* line 77, ../sass/templates/_brand.scss */
   .section-inner .column.half:before {
     content: "";
     padding-top: 130%;
@@ -3177,14 +3151,14 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 105, ../sass/templates/_brand.scss */
+  /* line 84, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.left {
     overflow: hidden;
     width: 100%;
     height: auto;
     position: relaive;
   }
-  /* line 111, ../sass/templates/_brand.scss */
+  /* line 90, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.left:before {
     content: "";
     padding-top: 100%;
@@ -3192,18 +3166,18 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 118, ../sass/templates/_brand.scss */
+  /* line 97, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.left:before {
     padding-top: 120%;
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 125, ../sass/templates/_brand.scss */
+  /* line 104, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right {
     height: auto;
     width: 100%;
   }
-  /* line 129, ../sass/templates/_brand.scss */
+  /* line 108, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right:before {
     content: "";
     padding-top: 60%;
@@ -3211,19 +3185,19 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 125, ../sass/templates/_brand.scss */
+  /* line 104, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right {
     height: auto;
     width: 100%;
   }
-  /* line 138, ../sass/templates/_brand.scss */
+  /* line 117, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column.half.right:before {
     content: "";
     padding-top: 120%;
     display: inline-block;
   }
 }
-/* line 147, ../sass/templates/_brand.scss */
+/* line 126, ../sass/templates/_brand.scss */
 .section-inner .column .row {
   width: 100%;
   display: block;
@@ -3246,7 +3220,7 @@ textarea {
   */
 }
 @media only screen and (max-width: 768px) {
-  /* line 147, ../sass/templates/_brand.scss */
+  /* line 126, ../sass/templates/_brand.scss */
   .section-inner .column .row {
     top: 7px;
     right: 7px;
@@ -3258,7 +3232,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 158, ../sass/templates/_brand.scss */
+  /* line 137, ../sass/templates/_brand.scss */
   .page-template-template-product .section-inner .column .row {
     top: 7px;
     right: 7px;
@@ -3269,7 +3243,7 @@ textarea {
     height: auto;
   }
 }
-/* line 165, ../sass/templates/_brand.scss */
+/* line 144, ../sass/templates/_brand.scss */
 .section-inner .column .row .content {
   display: block;
   background-color: #e9f0ed;
@@ -3285,45 +3259,73 @@ textarea {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 172, ../sass/templates/_brand.scss */
+/* line 151, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .vcenter {
   width: 100%;
   display: inline-block;
   height: 100%;
 }
-/* line 176, ../sass/templates/_brand.scss */
+/* line 155, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .vcenter:before {
   content: "";
   height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 182, ../sass/templates/_brand.scss */
+/* line 161, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .vcenter .logo {
   display: inline-block;
   vertical-align: middle;
   background-color: rgba(255, 255, 255, 0.7);
   margin: 0 auto;
-  width: 30%;
+  width: 40%;
+  max-width: 450px;
   height: auto;
   padding: 40px;
 }
-/* line 190, ../sass/templates/_brand.scss */
+@media only screen and (max-width: 1450px) {
+  /* line 161, ../sass/templates/_brand.scss */
+  .section-inner .column .row .content .vcenter .logo {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* line 161, ../sass/templates/_brand.scss */
+  .section-inner .column .row .content .vcenter .logo {
+    width: 50%;
+    padding: 20px;
+  }
+}
+/* line 177, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .vcenter .logo img {
   width: 100%;
   height: auto;
 }
-/* line 194, ../sass/templates/_brand.scss */
+/* line 181, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .vcenter .logo.portrait {
   width: auto;
   height: 30%;
 }
-/* line 197, ../sass/templates/_brand.scss */
+/* line 184, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .vcenter .logo.portrait img {
   width: auto;
   height: 100%;
 }
-/* line 204, ../sass/templates/_brand.scss */
+/* line 189, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter .logo.right {
+  margin: 0 -40% 0 auto;
+}
+@media only screen and (max-width: 660px) {
+  /* line 189, ../sass/templates/_brand.scss */
+  .section-inner .column .row .content .vcenter .logo.right {
+    margin: 0 -50% 0 auto;
+  }
+}
+/* line 195, ../sass/templates/_brand.scss */
+.section-inner .column .row .content .vcenter .logo.transparent {
+  background-color: none;
+}
+/* line 200, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text {
   height: 100%;
   width: 100%;
@@ -3332,62 +3334,62 @@ textarea {
   background-color: white;
 }
 @media only screen and (max-width: 768px) {
-  /* line 204, ../sass/templates/_brand.scss */
+  /* line 200, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text {
     padding: 0 15%;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 204, ../sass/templates/_brand.scss */
+  /* line 200, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text {
     padding: 0 10px;
   }
 }
-/* line 217, ../sass/templates/_brand.scss */
+/* line 213, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 223, ../sass/templates/_brand.scss */
+/* line 219, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text div {
   vertical-align: middle;
   display: inline-block;
   width: 99%;
 }
-/* line 228, ../sass/templates/_brand.scss */
+/* line 224, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo {
   width: 60%;
   height: auto;
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 233, ../sass/templates/_brand.scss */
+/* line 229, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo img {
   width: 100%;
   height: auto;
   display: inline-block;
   margin: 0 auto;
 }
-/* line 239, ../sass/templates/_brand.scss */
+/* line 235, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo.portrait {
   height: 170px;
 }
-/* line 241, ../sass/templates/_brand.scss */
+/* line 237, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text .logo.portrait img {
   width: auto;
   height: 100%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 247, ../sass/templates/_brand.scss */
+  /* line 243, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text h2, .section-inner .column .row .content .text h3 {
     font-size: 14px;
     font-size: 1.4rem;
     margin-bottom: 10px;
   }
 }
-/* line 253, ../sass/templates/_brand.scss */
+/* line 249, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text p {
   font-family: "Freight-BigBook_gdi", sans-serif;
   letter-spacing: 0.7px;
@@ -3397,23 +3399,23 @@ textarea {
   line-height: 140%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 253, ../sass/templates/_brand.scss */
+  /* line 249, ../sass/templates/_brand.scss */
   .section-inner .column .row .content .text p {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
-/* line 262, ../sass/templates/_brand.scss */
+/* line 258, ../sass/templates/_brand.scss */
 .section-inner .column .row .content .text p:last-child {
   margin: 0;
 }
-/* line 268, ../sass/templates/_brand.scss */
+/* line 264, ../sass/templates/_brand.scss */
 .section-inner .column .row.top {
   height: 45%;
   padding-bottom: 10px;
 }
 @media only screen and (min-width: 661px) and (max-width: 768px) {
-  /* line 268, ../sass/templates/_brand.scss */
+  /* line 264, ../sass/templates/_brand.scss */
   .section-inner .column .row.top {
     height: 100%;
     top: 0;
@@ -3424,7 +3426,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 268, ../sass/templates/_brand.scss */
+  /* line 264, ../sass/templates/_brand.scss */
   .section-inner .column .row.top {
     padding-bottom: 0;
     top: 0;
@@ -3435,7 +3437,7 @@ textarea {
     height: 50%;
   }
 }
-/* line 280, ../sass/templates/_brand.scss */
+/* line 276, ../sass/templates/_brand.scss */
 .section-inner .column .row.top .content {
   top: 0;
   right: 0;
@@ -3444,7 +3446,7 @@ textarea {
   position: absolute;
 }
 @media only screen and (max-width: 768px) {
-  /* line 280, ../sass/templates/_brand.scss */
+  /* line 276, ../sass/templates/_brand.scss */
   .section-inner .column .row.top .content {
     top: 0;
     right: 0;
@@ -3453,19 +3455,19 @@ textarea {
     position: absolute;
   }
 }
-/* line 287, ../sass/templates/_brand.scss */
+/* line 283, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom {
   height: 55%;
   padding-top: 10px;
 }
 @media only screen and (min-width: 661px) and (max-width: 768px) {
-  /* line 287, ../sass/templates/_brand.scss */
+  /* line 283, ../sass/templates/_brand.scss */
   .section-inner .column .row.bottom {
     display: none;
   }
 }
 @media only screen and (max-width: 660px) {
-  /* line 287, ../sass/templates/_brand.scss */
+  /* line 283, ../sass/templates/_brand.scss */
   .section-inner .column .row.bottom {
     top: auto;
     right: 7px;
@@ -3475,13 +3477,41 @@ textarea {
     height: 50%;
   }
 }
-/* line 297, ../sass/templates/_brand.scss */
+/* line 293, ../sass/templates/_brand.scss */
 .section-inner .column .row.bottom .content {
   top: 7px;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
+}
+
+/* line 314, ../sass/templates/_brand.scss */
+a.close {
+  top: 120px;
+  right: 15px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  display: block;
+  background-image: url("../images/close-black.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 9999;
+  cursor: pointer;
+}
+/* line 326, ../sass/templates/_brand.scss */
+.ie8 a.close {
+  background-image: url("../images/close-black.png");
+}
+@media only screen and (max-width: 768px) {
+  /* line 329, ../sass/templates/_brand.scss */
+  .page-template-template-product a.close {
+    top: 10px;
+  }
 }
 
 /* line 1, ../sass/templates/_facebook-signup.scss */
@@ -3563,7 +3593,7 @@ body.page-template-template-facebook {
 /* line 23, ../sass/templates/_about.scss */
 #image-banner .image-wrap:before {
   content: "";
-  padding-top: 60%;
+  padding-top: 70%;
   display: inline-block;
 }
 /* line 29, ../sass/templates/_about.scss */
@@ -3869,4 +3899,99 @@ body.page-template-template-facebook {
 /* line 95, ../sass/templates/_news.scss */
 .posts-footer a.end {
   display: none;
+}
+
+/* line 1, ../sass/templates/_overlay.scss */
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  text-align: center;
+  display: none;
+}
+/* line 11, ../sass/templates/_overlay.scss */
+#overlay:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 17, ../sass/templates/_overlay.scss */
+#overlay .popup {
+  width: 40%;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: middle;
+  background-color: white;
+  color: #1d1d1d;
+}
+@media only screen and (max-width: 1450px) {
+  /* line 17, ../sass/templates/_overlay.scss */
+  #overlay .popup {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* line 17, ../sass/templates/_overlay.scss */
+  #overlay .popup {
+    width: 90%;
+  }
+}
+/* line 32, ../sass/templates/_overlay.scss */
+#overlay .popup .inner {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 50px 30px 30px;
+  position: relative;
+}
+/* line 38, ../sass/templates/_overlay.scss */
+#overlay .popup .inner .close {
+  top: 15px;
+  right: 15px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+}
+/* line 42, ../sass/templates/_overlay.scss */
+#overlay .popup p {
+  font-family: "BrandonGrotesque-Regular_gdi", sans-serif;
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+/* line 46, ../sass/templates/_overlay.scss */
+#overlay .popup .button {
+  border: 1px solid #1d1d1d;
+  height: 40px;
+  line-height: 38px;
+}
+/* line 51, ../sass/templates/_overlay.scss */
+#overlay .popup .gform_wrapper input.medium {
+  background-color: #e9f0ed;
+  height: 40px;
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#overlay .popup .gform_wrapper input.medium::-webkit-input-placeholder {
+  color: #1d1d1d;
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#overlay .popup .gform_wrapper input.medium::-moz-placeholder {
+  color: #1d1d1d;
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#overlay .popup .gform_wrapper input.medium:-moz-placeholder {
+  color: #1d1d1d;
+}
+/* line 4, ../sass/bourbon/css3/_placeholder.scss */
+#overlay .popup .gform_wrapper input.medium:-ms-input-placeholder {
+  color: #1d1d1d;
+}
+/* line 59, ../sass/templates/_overlay.scss */
+#overlay nav.social {
+  margin-bottom: 0;
 }
