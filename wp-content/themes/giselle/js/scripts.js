@@ -67,7 +67,7 @@ $('#slick').slick({
 //Collection slider
 if($('.single-cpt_collection #gallery').length){
 $('.single-cpt_collection #gallery').slick({
-	dots: true,
+	dots: false,
     autoplay: true,
     fade: false,
     autoplaySpeed: 4000,
@@ -114,12 +114,20 @@ $('#carousel').slick({
 
 //Double click signposts for touch devices
 
-if(isTouchDevice.any()){
-$('.signpost.overlay a.null').on('click',function(e){
+show_overlay = function(e){
 	e.preventDefault();
-	$('.signpost.overlay a').removeClass('active').addClass('null');
-	$(this).addClass('active').removeClass('null');
-})
+	var _this = e.currentTarget;
+	$('.signpost.overlay a').removeClass('active').off('click',show_overlay);
+	$(_this).addClass('active').on('click',goto_link);
+
+}
+goto_link = function(e){
+	var _this = e.currentTarget;
+	location.href=$(_this).attr('href');
+}
+if(isTouchDevice.any()){
+
+	$('.signpost.overlay a').on('click',show_overlay);
 }
 
 show_overlay = function(){

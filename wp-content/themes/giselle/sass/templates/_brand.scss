@@ -22,9 +22,9 @@
 	@media only screen  and (max-width : $break-small){
 		height:auto !important;
 	}
-	.page-template-template-product &{
+	.single-cpt_collection &{
 		@media only screen and(max-width: $break-medium){
-			height:auto;
+			height:auto !important;
 		}
 	}
 	&.non-fullpage{
@@ -46,9 +46,9 @@
 	@media only screen  and (max-width : $break-medium) {
 		padding:0 7px 0;
 	}
-	.page-template-template-product &{
+	.single-cpt_collection &{
 	 	@media only screen  and (max-width : $break-medium){
-	 		padding:40px 7px 0;
+	 		padding:50px 7px 0;
 	 	}
 	 }
 	@extend %clearfix;
@@ -81,8 +81,8 @@
 				}
 			}
 			&.left{
-				.page-template-template-product &{
-					@media only screen and(max-width: $break-small){
+				.single-cpt_collection &{
+					@media only screen and(max-width: $break-medium){
 						overflow: hidden;
 						width:100%;
 						height:auto;
@@ -101,8 +101,8 @@
 				}
 			}
 			&.right{
-				.page-template-template-product &{
-					@media only screen and(max-width: $break-small){
+				.single-cpt_collection &{
+					@media only screen and(max-width: $break-medium){
 						height:auto;
 						width:100%;
 						&:before{
@@ -116,8 +116,11 @@
 						width:100%;
 						&:before{
 							content:"";
-							padding-top:120%;
+							padding-top:100%;
 							display: inline-block;
+							@media only screen and(max-width: $break-xsmall){
+								padding-top:140%;
+							}
 						}
 					}
 				}
@@ -134,7 +137,7 @@
 				width:auto;
 				height:auto;
 			}
-			.page-template-template-product &{
+			.single-cpt_collection &{
 				@media only screen and(max-width: $break-small){
 					@include abs-pos(7px,7px,7px,7px);
 					width:auto;
@@ -226,6 +229,9 @@
 						height:auto;
 						text-align: center;
 						margin-bottom: 50px;
+						@media only screen  and (max-width : $break-medium){
+							width:50%;
+						}
 						img{
 							width: 100%;
 							height: auto;
@@ -252,6 +258,9 @@
 						word-spacing: 1px;
 						@include font-size(20);
 						@media only screen  and (max-width : $break-medium){
+							@include font-size(18);
+						}
+						@media only screen  and (max-width : $break-small){
 							@include font-size(16);
 						}
 						line-height: 140%;
@@ -326,9 +335,9 @@ a.close{
 	.ie8 &{
 		background-image:url('../images/close-black.png');
 	}
-	.page-template-template-product &{
+	.single-cpt_collection &{
 	 	@media only screen  and (max-width : $break-medium) {
-	 		top: 10px;
+	 		top: 20px;
 	 	}
 	 }
 }

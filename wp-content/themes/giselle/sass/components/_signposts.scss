@@ -118,6 +118,10 @@
 			color: white;
 			margin-bottom: 20px;
 			padding-bottom: 20px;
+			@media screen and (max-width: $break-medium){
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+			}
 		}
 		.button{
 			color: white;
@@ -141,6 +145,9 @@
 			margin-bottom: 0;
 			padding-bottom: 0;
 			@include font-size(24);
+			@media screen and (max-width: $break-medium){
+				@include font-size(16);
+			}
 		}
 	}
 	a{
